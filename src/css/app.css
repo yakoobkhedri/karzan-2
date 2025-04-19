@@ -209,6 +209,9 @@ a {
 .overlay{
   position: relative;
 }
+.bg-gradient-1{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 2.12%, rgba(0, 0, 0, 0.04) 67.99%);
+}
 .bg-blur {
   background-color: #FFFFFFE5;
   -webkit-backdrop-filter: blur(4px);
@@ -219,6 +222,9 @@ a {
 }
 .shadow-2{
   box-shadow: 0px 0px 200px 0px #0000001A;
+}
+.shadow-3{
+  box-shadow: 0px 0px 156.73px 0px #0000001A;
 }
 /* number input */
 input[type="number"] {
@@ -459,16 +465,16 @@ header.active #headerarrow path{
   content: none !important;
 }
 .swiper-pagination-bullet{
-  width: 10px;
-  height: 7px;
-  border-radius: 60px;
+  width: 7px;
+  height: 4px;
+  border-radius: 41px;
   background-color: #00000040;
   opacity: 100%;
   transition: all .4s;
 }
 .swiper-pagination-bullet-active{
-  width: 34px;
-  background-color: white;
+  width: 23px;
+  background-color: #EE5D38;
 }
 /* hover */
 

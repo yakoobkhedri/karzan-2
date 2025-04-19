@@ -21,58 +21,24 @@ tab.forEach((item) => {
 // swiper
 
 
-var courses = new Swiper(".courses", {
+var solutions = new Swiper(".solutions", {
   slidesPerView: 1.2,
   loop:true,
-  spaceBetween: 22,
+  spaceBetween: 30,
   breakpoints: {
-    630: {
+    768: {
       slidesPerView: 2,
     },
-    768: {
-      slidesPerView: 2.5,
-    },
     1100: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
     },
     1400: {
-      slidesPerView: 4.5,
+      slidesPerView: 4,
     }
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-var courses2 = new Swiper(".courses2", {
-  slidesPerView: 1.2,
-  loop:true,
-  spaceBetween: 22,
-  breakpoints: {
-    630: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2.5,
-    },
-    1100: {
-      slidesPerView: 3.5,
-    },
-    1400: {
-      slidesPerView: 4.5,
-    }
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next3",
-    prevEl: ".swiper-button-prev3",
   },
 });
 

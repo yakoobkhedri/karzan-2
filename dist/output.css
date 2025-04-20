@@ -730,6 +730,10 @@ video {
   top: 76px;
 }
 
+.-top-36 {
+  top: -9rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -910,6 +914,29 @@ video {
 
 .mb-\[30px\] {
   margin-bottom: 30px;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .block {
@@ -1420,6 +1447,14 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#ffff\] {
+  border-color: #ffff;
+}
+
+.border-\[\#ffffff13\] {
+  border-color: #ffffff13;
+}
+
 .bg-\[\#004d8b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 77 139 / var(--tw-bg-opacity));
@@ -1489,6 +1524,19 @@ video {
 .bg-\[\#FCDFD7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 223 215 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#110e2d10\] {
+  background-color: #110e2d10;
+}
+
+.bg-\[\#F3F5F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 245 248 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#efefef51\] {
+  background-color: #efefef51;
 }
 
 .p-1 {
@@ -1701,6 +1749,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .font-black {
@@ -2677,6 +2729,15 @@ header.active #headerarrow path{
 @media (max-width: 660px){
 }
 
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 14 45 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
+}
+
 .active\:scale-95:active {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -2685,6 +2746,10 @@ header.active #headerarrow path{
 
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+
+.group:hover .group-hover\:fill-white {
+  fill: #fff;
 }
 
 .group:hover .group-hover\:stroke-red-600 {
@@ -3095,6 +3160,10 @@ header.active #headerarrow path{
   font-family: RokhFaNum-Light;
 }
 
+:is([dir="rtl"] .rtl\:font-iranSansRegular) {
+  font-family: IranSansFaNum-Regular;
+}
+
 @media (min-width: 400px) {
   .min-\[400px\]\:-top-1 {
     top: -0.25rem;
@@ -3156,6 +3225,10 @@ header.active #headerarrow path{
     border-radius: 30px;
   }
 
+  .sm\:rounded-\[20px\] {
+    border-radius: 20px;
+  }
+
   .sm\:rounded-t-\[30px\] {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -3187,6 +3260,16 @@ header.active #headerarrow path{
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .sm\:leading-10 {

@@ -790,6 +790,10 @@ video {
   grid-column: span 9 / span 9;
 }
 
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1622,6 +1626,10 @@ video {
   padding: 38px;
 }
 
+.p-\[22px\] {
+  padding: 22px;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1700,6 +1708,11 @@ video {
 .py-\[3px\] {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -2919,6 +2932,14 @@ header.active #headerarrow path{
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-left-10) {
+  left: -2.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-5) {
+  left: -1.25rem;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -2963,6 +2984,10 @@ header.active #headerarrow path{
   margin-right: 2.5rem;
 }
 
+:is([dir="ltr"] .ltr\:ml-10) {
+  margin-left: 2.5rem;
+}
+
 :is([dir="ltr"] .ltr\:rotate-\[-10deg\]) {
   --tw-rotate: -10deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2981,6 +3006,11 @@ header.active #headerarrow path{
 :is([dir="ltr"] .ltr\:rounded-r-\[90px\]) {
   border-top-right-radius: 90px;
   border-bottom-right-radius: 90px;
+}
+
+:is([dir="ltr"] .ltr\:rounded-l-\[15px\]) {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 :is([dir="ltr"] .ltr\:rounded-tl-sm) {
@@ -3041,6 +3071,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:pr-\[21px\]) {
   padding-right: 21px;
+}
+
+:is([dir="ltr"] .ltr\:pr-\[13px\]) {
+  padding-right: 13px;
 }
 
 :is([dir="ltr"] .ltr\:text-right) {
@@ -3115,6 +3149,14 @@ header.active #headerarrow path{
   right: auto;
 }
 
+:is([dir="rtl"] .rtl\:-right-10) {
+  right: -2.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-5) {
+  right: -1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:-ml-20) {
   margin-left: -5rem;
 }
@@ -3143,6 +3185,10 @@ header.active #headerarrow path{
   margin-right: auto;
 }
 
+:is([dir="rtl"] .rtl\:mr-10) {
+  margin-right: 2.5rem;
+}
+
 :is([dir="rtl"] .rtl\:rotate-180) {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3161,6 +3207,11 @@ header.active #headerarrow path{
 :is([dir="rtl"] .rtl\:rounded-l-\[90px\]) {
   border-top-left-radius: 90px;
   border-bottom-left-radius: 90px;
+}
+
+:is([dir="rtl"] .rtl\:rounded-r-\[15px\]) {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 :is([dir="rtl"] .rtl\:rounded-tr-sm) {
@@ -3205,6 +3256,10 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:pr-\[70px\]) {
   padding-right: 70px;
+}
+
+:is([dir="rtl"] .rtl\:pl-\[13px\]) {
+  padding-left: 13px;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
@@ -3300,6 +3355,10 @@ header.active #headerarrow path{
     border-radius: 30px;
   }
 
+  .sm\:rounded-\[25px\] {
+    border-radius: 25px;
+  }
+
   .sm\:rounded-t-\[30px\] {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -3350,6 +3409,11 @@ header.active #headerarrow path{
   :is([dir="rtl"] .rtl\:sm\:rounded-l-\[30px\]) {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:rounded-r-\[30px\]) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 }
 

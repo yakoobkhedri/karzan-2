@@ -726,6 +726,10 @@ video {
   top: 76px;
 }
 
+.-top-96 {
+  top: -24rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -786,12 +790,12 @@ video {
   grid-column: span 5 / span 5;
 }
 
-.col-span-9 {
-  grid-column: span 9 / span 9;
-}
-
 .col-span-7 {
   grid-column: span 7 / span 7;
+}
+
+.col-span-9 {
+  grid-column: span 9 / span 9;
 }
 
 .m-4 {
@@ -835,6 +839,21 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-\[17px\] {
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .-mr-2 {
@@ -943,6 +962,10 @@ video {
 
 .mt-\[77px\] {
   margin-top: 77px;
+}
+
+.mt-\[13px\] {
+  margin-top: 13px;
 }
 
 .line-clamp-2 {
@@ -1091,6 +1114,14 @@ video {
   height: 100%;
 }
 
+.h-\[51px\] {
+  height: 51px;
+}
+
+.h-\[10px\] {
+  height: 10px;
+}
+
 .min-h-\[132px\] {
   min-height: 132px;
 }
@@ -1179,6 +1210,14 @@ video {
   width: 100%;
 }
 
+.w-\[141px\] {
+  width: 141px;
+}
+
+.w-\[178px\] {
+  width: 178px;
+}
+
 .min-w-\[238px\] {
   min-width: 238px;
 }
@@ -1213,6 +1252,14 @@ video {
 
 .max-w-content {
   max-width: 1396px;
+}
+
+.max-w-\[141px\] {
+  max-width: 141px;
+}
+
+.max-w-\[178px\] {
+  max-width: 178px;
 }
 
 .flex-shrink-0 {
@@ -1344,6 +1391,10 @@ video {
   gap: 2rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -1418,6 +1469,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[36px\] {
+  border-radius: 36px;
 }
 
 .rounded-b-\[20px\] {
@@ -1586,6 +1641,32 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#E8E8F4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 232 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F1F4F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 244 247 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffff\] {
+  background-color: #ffff;
+}
+
+.bg-\[\#ffffff51\] {
+  background-color: #ffffff51;
+}
+
+.bg-\[\#ffffff5c\] {
+  background-color: #ffffff5c;
+}
+
+.bg-\[\#ffffff5b\] {
+  background-color: #ffffff5b;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1618,6 +1699,10 @@ video {
   padding: 2rem;
 }
 
+.p-\[22px\] {
+  padding: 22px;
+}
+
 .p-\[30px\] {
   padding: 30px;
 }
@@ -1626,8 +1711,8 @@ video {
   padding: 38px;
 }
 
-.p-\[22px\] {
-  padding: 22px;
+.p-\[9px\] {
+  padding: 9px;
 }
 
 .px-10 {
@@ -1695,6 +1780,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1710,9 +1800,9 @@ video {
   padding-bottom: 3px;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.px-\[34px\] {
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .pb-10 {
@@ -2852,8 +2942,16 @@ header.active #headerarrow path{
   right: 0px !important;
 }
 
+:is([dir="ltr"] .ltr\:-left-10) {
+  left: -2.5rem;
+}
+
 :is([dir="ltr"] .ltr\:-left-2) {
   left: -0.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-left-5) {
+  left: -1.25rem;
 }
 
 :is([dir="ltr"] .ltr\:-left-6) {
@@ -2932,14 +3030,6 @@ header.active #headerarrow path{
   right: auto;
 }
 
-:is([dir="ltr"] .ltr\:-left-10) {
-  left: -2.5rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-5) {
-  left: -1.25rem;
-}
-
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -2964,6 +3054,10 @@ header.active #headerarrow path{
   margin-right: -1.5rem;
 }
 
+:is([dir="ltr"] .ltr\:ml-10) {
+  margin-left: 2.5rem;
+}
+
 :is([dir="ltr"] .ltr\:ml-\[68px\]) {
   margin-left: 68px;
 }
@@ -2984,13 +3078,14 @@ header.active #headerarrow path{
   margin-right: 2.5rem;
 }
 
-:is([dir="ltr"] .ltr\:ml-10) {
-  margin-left: 2.5rem;
-}
-
 :is([dir="ltr"] .ltr\:rotate-\[-10deg\]) {
   --tw-rotate: -10deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rounded-l-\[15px\]) {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 :is([dir="ltr"] .ltr\:rounded-r-\[15px\]) {
@@ -3006,11 +3101,6 @@ header.active #headerarrow path{
 :is([dir="ltr"] .ltr\:rounded-r-\[90px\]) {
   border-top-right-radius: 90px;
   border-bottom-right-radius: 90px;
-}
-
-:is([dir="ltr"] .ltr\:rounded-l-\[15px\]) {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 :is([dir="ltr"] .ltr\:rounded-tl-sm) {
@@ -3069,12 +3159,12 @@ header.active #headerarrow path{
   padding-right: 1rem;
 }
 
-:is([dir="ltr"] .ltr\:pr-\[21px\]) {
-  padding-right: 21px;
-}
-
 :is([dir="ltr"] .ltr\:pr-\[13px\]) {
   padding-right: 13px;
+}
+
+:is([dir="ltr"] .ltr\:pr-\[21px\]) {
+  padding-right: 21px;
 }
 
 :is([dir="ltr"] .ltr\:text-right) {
@@ -3121,6 +3211,14 @@ header.active #headerarrow path{
   left: -77px;
 }
 
+:is([dir="rtl"] .rtl\:-right-10) {
+  right: -2.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-5) {
+  right: -1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:-right-\[22px\]) {
   right: -22px;
 }
@@ -3149,14 +3247,6 @@ header.active #headerarrow path{
   right: auto;
 }
 
-:is([dir="rtl"] .rtl\:-right-10) {
-  right: -2.5rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-5) {
-  right: -1.25rem;
-}
-
 :is([dir="rtl"] .rtl\:-ml-20) {
   margin-left: -5rem;
 }
@@ -3177,16 +3267,16 @@ header.active #headerarrow path{
   margin-left: 2.5rem;
 }
 
+:is([dir="rtl"] .rtl\:mr-10) {
+  margin-right: 2.5rem;
+}
+
 :is([dir="rtl"] .rtl\:mr-\[68px\]) {
   margin-right: 68px;
 }
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
-}
-
-:is([dir="rtl"] .rtl\:mr-10) {
-  margin-right: 2.5rem;
 }
 
 :is([dir="rtl"] .rtl\:rotate-180) {
@@ -3226,6 +3316,10 @@ header.active #headerarrow path{
   padding-right: 0.25rem !important;
 }
 
+:is([dir="rtl"] .rtl\:pl-\[13px\]) {
+  padding-left: 13px;
+}
+
 :is([dir="rtl"] .rtl\:pl-\[21px\]) {
   padding-left: 21px;
 }
@@ -3256,10 +3350,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:pr-\[70px\]) {
   padding-right: 70px;
-}
-
-:is([dir="rtl"] .rtl\:pl-\[13px\]) {
-  padding-left: 13px;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
@@ -3355,13 +3445,14 @@ header.active #headerarrow path{
     border-radius: 30px;
   }
 
-  .sm\:rounded-\[25px\] {
-    border-radius: 25px;
-  }
-
   .sm\:rounded-t-\[30px\] {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+  }
+
+  .sm\:rounded-t-\[23px\] {
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
   }
 
   .sm\:p-\[30px\] {

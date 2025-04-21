@@ -41,6 +41,15 @@ var solutions = new Swiper(".solutions", {
     clickable: true,
   },
 });
+var portfollio = new Swiper(".portfollio", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
+  },
+});
 
 // acordion
 

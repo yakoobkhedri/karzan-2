@@ -476,6 +476,18 @@ header.active #headerarrow path{
   width: 23px;
   background-color: #EE5D38;
 }
+/* demo portfollio effect */
+.demo-bg:hover{
+  background-position: center bottom;
+  transition: background-position 4s linear;
+}
+
+.demo-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  transition: background-position 1s linear;
+}
 /* hover */
 
 .btnHover:hover{

@@ -2,7 +2,6 @@
 
 let tab = Array.from(document.querySelectorAll('.tab'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-
 tab.forEach((item) => {
   item.addEventListener('click', function() {
     tab.forEach((items) => {items.classList.remove('active')});
@@ -18,8 +17,8 @@ tab.forEach((item) => {
       })
   })
 })
-// swiper
 
+// swiper
 
 var solutions = new Swiper(".solutions", {
   slidesPerView: 1.2,
@@ -41,6 +40,7 @@ var solutions = new Swiper(".solutions", {
     clickable: true,
   },
 });
+
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,
   loop:true,
@@ -48,6 +48,31 @@ var portfollio = new Swiper(".portfollio", {
   navigation: {
     nextEl: '.swiper-button-next', // دکمه بعدی
     prevEl: '.swiper-button-prev', // دکمه قبلی
+  },
+});
+
+var costumer = new Swiper(".costumer", {
+  slidesPerView: 1.2,
+  loop:true,
+  spaceBetween: 33,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next2', // دکمه بعدی
+    prevEl: '.swiper-button-prev2', // دکمه قبلی
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
   },
 });
 

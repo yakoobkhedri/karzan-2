@@ -468,9 +468,11 @@ header.active #headerarrow path{
 }
 /* tab slider */
 .tabs {
+  display: flex;
+  gap: 30px;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* برای مرورگرهای فایرفاکس */
-  -ms-overflow-style: none; /* برای اینترنت اکسپلورر و اج */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabs::-webkit-scrollbar {
@@ -508,6 +510,85 @@ header.active #headerarrow path{
 .tabsContent > div.active {
   opacity: 1;
   display: block;
+}
+.tabs-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tab {
+  scroll-snap-align: start;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  flex: 0 0 auto;
+}
+
+/* Pagination */
+.tabs-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.pagination-dot {
+  width: 11px;
+  height: 6px;
+  border-radius: 60px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  opacity: 1 !important; /* تضمین opacity 100% */
+  transition: all 0.3s ease; /* فقط تغییر رنگ زمینه */
+}
+
+.pagination-dot.active {
+  width: 34px;
+  background-color: #EE5D38;
+  opacity: 1 !important; /* تضمین opacity 100% */
+  transform: none; /* حذف هرگونه transform */
+}
+
+/* استایل‌های ریسپانسیو */
+
+@media (min-width: 1300px) {
+  .tab {
+    width: calc((100% - 90px) / 4); /* 4 تب با گپ 30px */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .tab {
+    width: calc((100% - 60px) / 3); /* 3 تب با گپ 30px */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab {
+    width: calc((100% - 30px) / 2); /* 2 تب با گپ 30px */
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs {
+      scroll-snap-type: x mandatory;
+  }
+  
+  .tab {
+      width: 100% !important;
+      flex: 0 0 auto;
+  }
+  
+  .slider-nav {
+      display: none;
+  }
 }
 /* swiper */
 .swiper-button-prev::after,.swiper-button-next::after {

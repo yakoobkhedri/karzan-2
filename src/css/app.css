@@ -466,6 +466,49 @@ header.active #headerarrow path{
 .ltrReverse{
   @apply ltr:[transform:rotateY(180deg)];
 }
+/* tab slider */
+.tabs {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* برای مرورگرهای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر و اج */
+}
+
+.tabs::-webkit-scrollbar {
+  display: none; /* برای کروم و سافاری */
+}
+
+.tabs > div {
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+}
+.tabs > div.active  {
+  background-color: transparent;
+}
+.tabs > div.active > div:first-child {
+  opacity: 50%;
+  visibility: visible;
+}
+.tabs > div.active > img {
+  opacity: 100%;
+  visibility: visible;
+}
+.tabs > div > svg  {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 100%;
+}
+.tabs > div.active > svg  {
+  opacity: 0%;
+}
+.tabsContent > div {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.tabsContent > div.active {
+  opacity: 1;
+  display: block;
+}
 /* swiper */
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;

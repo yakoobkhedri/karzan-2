@@ -1792,7 +1792,7 @@
                 </div>
               </div>
               <div class="flex items-center gap-4">
-                <div class="flex-center w-10 h-10 rounded-full bg-secondary cursor-pointer active:scale-95">
+                <div class="flex-center w-10 h-10 rounded-full bg-secondary slider-prev cursor-pointer active:scale-95">
                   <svg class="ltrReverse" width="19" height="14" viewBox="0 0 19 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5"
@@ -1802,7 +1802,7 @@
                       stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </div>
-                <div class="flex-center w-10 h-10 rounded-full bg-secondary cursor-pointer active:scale-95">
+                <div class="flex-center w-10 h-10 rounded-full bg-secondary slider-next cursor-pointer active:scale-95">
                   <svg class="ltrReverse" width="25" height="24" viewBox="0 0 25 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5"
@@ -1818,13 +1818,16 @@
               <svg class="-top-[18px] absolute rtl:right-[22px] ltr:left-[22px] rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#ECF1F7"></path>
               </svg>
-              <div class="grid grid-cols-4 gap-[30px]">
-                <div
-                  class="pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
+              <div class="grid grid-cols-4 gap-[30px] tabs relative">
+                <div data-id="1"
+                  class="cursor-pointer opacity-50 bg-white rounded-[15px] sm:rounded-[20px] pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
                   <div
-                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-50 w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
+                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-0 invisible transition w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
                   </div>
-                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full">
+                  <svg class="-top-[5px] rtl:right-[52px] ltr:left-[52px] absolute z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#ecf1f7"></path>
+                  </svg>
+                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full opacity-0 invisible transition">
                   <div class="relative">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -1837,7 +1840,7 @@
                     class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                     <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی وبسایت
                     </h2>
-                    <p class="opacity-60 leading-8 text-sm">
+                    <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
                       طراحی وب‌سایت اختصاصی با تمامی امکانات پیشرفته، سازگار با سئو و موبایل
                     </p>
                     <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -1852,12 +1855,15 @@
                     </a>
                   </div>
                 </div>
-                <div
-                  class="opacity-50 pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
+                <div data-id="2"
+                  class="cursor-pointer opacity-50 bg-white rounded-[15px] sm:rounded-[20px] pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
                   <div
-                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-50 w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
+                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-0 invisible transition w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
                   </div>
-                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full">
+                  <svg class="-top-[5px] rtl:right-[52px] ltr:left-[52px] absolute z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#ecf1f7"></path>
+                  </svg>
+                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full opacity-0 invisible transition">
                   <div class="relative">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -1876,7 +1882,7 @@
                     class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                     <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی UI , UX
                     </h2>
-                    <p class="opacity-60 leading-8 text-sm">
+                    <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
                       طراحی رابط و واسط کاربری با درک نیاز ها و خواسته های مخاطب های هدف
                     </p>
                     <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -1891,12 +1897,15 @@
                     </a>
                   </div>
                 </div>
-                <div
-                  class="opacity-50 pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
+                <div data-id="3"
+                  class="cursor-pointer opacity-50 bg-white rounded-[15px] sm:rounded-[20px] pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
                   <div
-                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-50 w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
-                  </div>
-                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full">
+                  class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-0 invisible transition w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
+                </div>
+                <svg class="-top-[5px] rtl:right-[52px] ltr:left-[52px] absolute z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#ecf1f7"></path>
+                </svg>
+                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full opacity-0 invisible transition">
                   <div class="relative">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -1909,7 +1918,7 @@
                     class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                     <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی اپ موبایل
                     </h2>
-                    <p class="opacity-60 leading-8 text-sm">
+                    <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
                       طراحی نرم‌افزار های حرفه ای در پلتفرم‌های مختلف از جمله iOS، Android، Windows و macOS
                     </p>
                     <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -1924,12 +1933,15 @@
                     </a>
                   </div>
                 </div>
-                <div
-                  class="opacity-50 pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
+                <div data-id="4"
+                  class="cursor-pointer opacity-50 bg-white rounded-[15px] sm:rounded-[20px] pb-5 pt-7 rtl:pr-[25px] rtl:pl-[21px] ltr:pl-[25px] ltr:pr-[21px] flex items-start gap-4 relative">
                   <div
-                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-50 w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
+                    class="rtl:rounded-l-[30px] ltr:rounded-r-[30px] bg-white opacity-0 invisible transition w-[18px] my-auto inset-y-0 h-[72%] absolute rtl:-left-[14px] ltr:-right-[14px]">
                   </div>
-                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full">
+                  <svg class="-top-[5px] rtl:right-[52px] ltr:left-[52px] absolute z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#ecf1f7"></path>
+                  </svg>
+                  <img alt="bg" src="../img/Rectangle 91.png" class="absolute inset-0 w-full h-full opacity-0 invisible transition">
                   <div class="relative">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -1941,7 +1953,7 @@
                   <div
                     class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                     <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">پرداخت یاری</h2>
-                    <p class="opacity-60 leading-8 text-sm">
+                    <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
                       توسعه نرم‌افزار پرداخت امن برای پردازش خودکار تراکنش‌ها با تجربه‌ای راحت و کاربرپسند
                     </p>
                     <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -1957,50 +1969,187 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-5 rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e2e7ed"></path>
-                </svg>
-                <div class="flex items-center justify-between gap-2">
-                  <div
-                    class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                    <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
-                    <h1>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</h1>
-                  </div>
-                  <div class="flex items-center justify-end gap-3">
-                    <div>
-                      <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
-                        145+</p>
-                      <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
-                    </div>
-                    <div class="flex items-center">
-                      <img alt="img" src="../img/Icon(2).png"
-                        class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
-                      <img alt="img" src="../img/Icon(1).png"
-                        class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
-                      <img alt="img" src="../img/Icon (2).png"
-                        class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
-                      <img alt="img" src="../img/Icon.png"
-                        class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
-                    </div>
-                  </div>
-                </div>
-                <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست، بلکه
-                  یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق وب
-                  ‌سایت شکل می‌گیرد و این تجربه می‌ تواند تأثیر مستقیم بر اعتماد سازی، جذب مشتری و افزایش فروش شما داشته
-                  باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک می‌
-                  کند در رقابت بازار پیشرو باشید.</p>
-                <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
-                  <p>بیشتر بدانید</p>
-                  <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.5"
-                      d="M16.6668 10.625C16.8326 10.625 16.9916 10.5592 17.1088 10.4419C17.226 10.3247 17.2918 10.1658 17.2918 10C17.2918 9.83424 17.226 9.67527 17.1088 9.55806C16.9916 9.44085 16.8326 9.375 16.6668 9.375L16.6668 10.625ZM16.6668 9.375L3.3335 9.375L3.3335 10.625L16.6668 10.625L16.6668 9.375Z"
-                      fill="#110E2D" />
-                    <path d="M8.33325 5L3.33325 10L8.33325 15" stroke="#110E2D" stroke-width="1.25"
-                      stroke-linecap="round" stroke-linejoin="round" />
+              <div class="mt-5 tabsContent">
+                <div data-id="1" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e2e7ed"></path>
                   </svg>
-                </a>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      <h1>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</h1>
+                    </div>
+                    <div class="flex items-center justify-end gap-3">
+                      <div>
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                          145+</p>
+                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                      </div>
+                      <div class="flex items-center">
+                        <img alt="img" src="../img/Icon(2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                        <img alt="img" src="../img/Icon(1).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                        <img alt="img" src="../img/Icon (2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                        <img alt="img" src="../img/Icon.png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست، بلکه
+                    یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق وب
+                    ‌سایت شکل می‌گیرد و این تجربه می‌ تواند تأثیر مستقیم بر اعتماد سازی، جذب مشتری و افزایش فروش شما داشته
+                    باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک می‌
+                    کند در رقابت بازار پیشرو باشید.</p>
+                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                    <p>بیشتر بدانید</p>
+                    <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5"
+                        d="M16.6668 10.625C16.8326 10.625 16.9916 10.5592 17.1088 10.4419C17.226 10.3247 17.2918 10.1658 17.2918 10C17.2918 9.83424 17.226 9.67527 17.1088 9.55806C16.9916 9.44085 16.8326 9.375 16.6668 9.375L16.6668 10.625ZM16.6668 9.375L3.3335 9.375L3.3335 10.625L16.6668 10.625L16.6668 9.375Z"
+                        fill="#110E2D" />
+                      <path d="M8.33325 5L3.33325 10L8.33325 15" stroke="#110E2D" stroke-width="1.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div data-id="2" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e2e7ed"></path>
+                  </svg>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
+                    </div>
+                    <div class="flex items-center justify-end gap-3">
+                      <div>
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                          145+</p>
+                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                      </div>
+                      <div class="flex items-center">
+                        <img alt="img" src="../img/Icon(2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                        <img alt="img" src="../img/Icon(1).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                        <img alt="img" src="../img/Icon (2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                        <img alt="img" src="../img/Icon.png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست، بلکه
+                    یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق وب
+                    ‌سایت شکل می‌گیرد و این تجربه می‌ تواند تأثیر مستقیم بر اعتماد سازی، جذب مشتری و افزایش فروش شما داشته
+                    باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک می‌
+                    کند در رقابت بازار پیشرو باشید.</p>
+                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                    <p>بیشتر بدانید</p>
+                    <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5"
+                        d="M16.6668 10.625C16.8326 10.625 16.9916 10.5592 17.1088 10.4419C17.226 10.3247 17.2918 10.1658 17.2918 10C17.2918 9.83424 17.226 9.67527 17.1088 9.55806C16.9916 9.44085 16.8326 9.375 16.6668 9.375L16.6668 10.625ZM16.6668 9.375L3.3335 9.375L3.3335 10.625L16.6668 10.625L16.6668 9.375Z"
+                        fill="#110E2D" />
+                      <path d="M8.33325 5L3.33325 10L8.33325 15" stroke="#110E2D" stroke-width="1.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div data-id="3" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e2e7ed"></path>
+                  </svg>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
+                    </div>
+                    <div class="flex items-center justify-end gap-3">
+                      <div>
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                          145+</p>
+                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                      </div>
+                      <div class="flex items-center">
+                        <img alt="img" src="../img/Icon(2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                        <img alt="img" src="../img/Icon(1).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                        <img alt="img" src="../img/Icon (2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                        <img alt="img" src="../img/Icon.png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست، بلکه
+                    یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق وب
+                    ‌سایت شکل می‌گیرد و این تجربه می‌ تواند تأثیر مستقیم بر اعتماد سازی، جذب مشتری و افزایش فروش شما داشته
+                    باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک می‌
+                    کند در رقابت بازار پیشرو باشید.</p>
+                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                    <p>بیشتر بدانید</p>
+                    <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5"
+                        d="M16.6668 10.625C16.8326 10.625 16.9916 10.5592 17.1088 10.4419C17.226 10.3247 17.2918 10.1658 17.2918 10C17.2918 9.83424 17.226 9.67527 17.1088 9.55806C16.9916 9.44085 16.8326 9.375 16.6668 9.375L16.6668 10.625ZM16.6668 9.375L3.3335 9.375L3.3335 10.625L16.6668 10.625L16.6668 9.375Z"
+                        fill="#110E2D" />
+                      <path d="M8.33325 5L3.33325 10L8.33325 15" stroke="#110E2D" stroke-width="1.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div data-id="4" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#e2e7ed"></path>
+                  </svg>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
+                    </div>
+                    <div class="flex items-center justify-end gap-3">
+                      <div>
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                          145+</p>
+                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                      </div>
+                      <div class="flex items-center">
+                        <img alt="img" src="../img/Icon(2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                        <img alt="img" src="../img/Icon(1).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                        <img alt="img" src="../img/Icon (2).png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                        <img alt="img" src="../img/Icon.png"
+                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست، بلکه
+                    یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق وب
+                    ‌سایت شکل می‌گیرد و این تجربه می‌ تواند تأثیر مستقیم بر اعتماد سازی، جذب مشتری و افزایش فروش شما داشته
+                    باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک می‌
+                    کند در رقابت بازار پیشرو باشید.</p>
+                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                    <p>بیشتر بدانید</p>
+                    <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5"
+                        d="M16.6668 10.625C16.8326 10.625 16.9916 10.5592 17.1088 10.4419C17.226 10.3247 17.2918 10.1658 17.2918 10C17.2918 9.83424 17.226 9.67527 17.1088 9.55806C16.9916 9.44085 16.8326 9.375 16.6668 9.375L16.6668 10.625ZM16.6668 9.375L3.3335 9.375L3.3335 10.625L16.6668 10.625L16.6668 9.375Z"
+                        fill="#110E2D" />
+                      <path d="M8.33325 5L3.33325 10L8.33325 15" stroke="#110E2D" stroke-width="1.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -4570,7 +4719,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../js/play-video.js"></script>
+  <script src="../js/tab-slider.js"></script>
   <script src="../js/modal.js"></script>
 </body>
 

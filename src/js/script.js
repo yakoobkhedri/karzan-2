@@ -54,7 +54,7 @@ var portfollio = new Swiper(".portfollio", {
 var costumer = new Swiper(".costumer", {
   slidesPerView: 1.2,
   loop:true,
-  spaceBetween: 33,
+  spaceBetween: 45,
   breakpoints: {
     768: {
       slidesPerView: 2,

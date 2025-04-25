@@ -614,11 +614,6 @@ video {
   bottom: 0px;
 }
 
-.inset-y-6 {
-  top: 1.5rem;
-  bottom: 1.5rem;
-}
-
 .\!-top-5 {
   top: -1.25rem !important;
 }
@@ -715,8 +710,16 @@ video {
   top: -18px;
 }
 
+.-top-\[1px\] {
+  top: -1px;
+}
+
 .-top-\[29px\] {
   top: -29px;
+}
+
+.-top-\[34px\] {
+  top: -34px;
 }
 
 .-top-\[3px\] {
@@ -749,6 +752,10 @@ video {
 
 .bottom-\[-1px\] {
   bottom: -1px;
+}
+
+.bottom-\[-4px\] {
+  bottom: -4px;
 }
 
 .left-0 {
@@ -813,26 +820,6 @@ video {
 
 .top-\[76px\] {
   top: 76px;
-}
-
-.top-\[-3px\] {
-  top: -3px;
-}
-
-.bottom-\[-3px\] {
-  bottom: -3px;
-}
-
-.bottom-\[-4px\] {
-  bottom: -4px;
-}
-
-.-top-\[34px\] {
-  top: -34px;
-}
-
-.-top-\[1px\] {
-  top: -1px;
 }
 
 .-z-0 {
@@ -957,11 +944,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .-mr-2 {
@@ -1249,12 +1231,24 @@ video {
   height: 51px;
 }
 
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[67\%\] {
+  height: 67%;
+}
+
 .h-\[71\%\] {
   height: 71%;
 }
 
 .h-\[72\%\] {
   height: 72%;
+}
+
+.h-\[75\%\] {
+  height: 75%;
 }
 
 .h-\[77\%\] {
@@ -1277,32 +1271,16 @@ video {
   height: 87%;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .h-\[91\%\] {
   height: 91%;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[62\%\] {
-  height: 62%;
-}
-
-.h-\[67\%\] {
-  height: 67%;
-}
-
-.h-\[75\%\] {
-  height: 75%;
 }
 
 .min-h-\[116px\] {
@@ -1373,6 +1351,10 @@ video {
   width: 14px;
 }
 
+.w-\[15px\] {
+  width: 15px;
+}
+
 .w-\[172px\] {
   width: 172px;
 }
@@ -1387,6 +1369,10 @@ video {
 
 .w-\[21px\] {
   width: 21px;
+}
+
+.w-\[330px\] {
+  width: 330px;
 }
 
 .w-\[50px\] {
@@ -1423,38 +1409,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[350px\] {
-  width: 350px;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[320px\] {
-  width: 320px;
-}
-
-.w-\[330px\] {
-  width: 330px;
-}
-
-.w-\[17px\] {
-  width: 17px;
-}
-
-.w-\[15px\] {
-  width: 15px;
 }
 
 .min-w-\[238px\] {
@@ -1912,6 +1866,11 @@ video {
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fbfbfb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ffffff5b\] {
   background-color: #ffffff5b;
 }
@@ -1937,16 +1896,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e3e3e3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 227 227 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fbfbfb\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -2361,11 +2310,6 @@ video {
 
 .blur {
   --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3518,6 +3462,10 @@ header.active #headerarrow path{
   left: -1.75rem;
 }
 
+:is([dir="ltr"] .ltr\:-left-\[15px\]) {
+  left: -15px;
+}
+
 :is([dir="ltr"] .ltr\:-left-\[19px\]) {
   left: -19px;
 }
@@ -3546,12 +3494,24 @@ header.active #headerarrow path{
   right: -1.25rem;
 }
 
+:is([dir="ltr"] .ltr\:-right-7) {
+  right: -1.75rem;
+}
+
 :is([dir="ltr"] .ltr\:-right-\[14px\]) {
   right: -14px;
 }
 
+:is([dir="ltr"] .ltr\:-right-\[15px\]) {
+  right: -15px;
+}
+
 :is([dir="ltr"] .ltr\:-right-\[175px\]) {
   right: -175px;
+}
+
+:is([dir="ltr"] .ltr\:-right-\[27px\]) {
+  right: -27px;
 }
 
 :is([dir="ltr"] .ltr\:-right-\[28px\]) {
@@ -3564,6 +3524,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:-right-\[77px\]) {
   right: -77px;
+}
+
+:is([dir="ltr"] .ltr\:-top-1) {
+  top: -0.25rem;
 }
 
 :is([dir="ltr"] .ltr\:left-0) {
@@ -3584,6 +3548,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:left-4) {
   left: 1rem;
+}
+
+:is([dir="ltr"] .ltr\:left-5) {
+  left: 1.25rem;
 }
 
 :is([dir="ltr"] .ltr\:left-6) {
@@ -3612,10 +3580,6 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:left-\[35px\]) {
   left: 35px;
-}
-
-:is([dir="ltr"] .ltr\:left-\[4\%\]) {
-  left: 4%;
 }
 
 :is([dir="ltr"] .ltr\:left-\[46px\]) {
@@ -3660,66 +3624,6 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:-top-1) {
-  top: -0.25rem;
-}
-
-:is([dir="ltr"] .ltr\:left-\[18px\]) {
-  left: 18px;
-}
-
-:is([dir="ltr"] .ltr\:left-5) {
-  left: 1.25rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-11) {
-  left: -2.75rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-14) {
-  left: -3.5rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-16) {
-  left: -4rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-20) {
-  left: -5rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-12) {
-  left: -3rem;
-}
-
-:is([dir="ltr"] .ltr\:-right-\[17px\]) {
-  right: -17px;
-}
-
-:is([dir="ltr"] .ltr\:-right-\[15px\]) {
-  right: -15px;
-}
-
-:is([dir="ltr"] .ltr\:-right-\[20px\]) {
-  right: -20px;
-}
-
-:is([dir="ltr"] .ltr\:-right-\[25px\]) {
-  right: -25px;
-}
-
-:is([dir="ltr"] .ltr\:-right-\[27px\]) {
-  right: -27px;
-}
-
-:is([dir="ltr"] .ltr\:-right-7) {
-  right: -1.75rem;
-}
-
-:is([dir="ltr"] .ltr\:-left-\[15px\]) {
-  left: -15px;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -3838,6 +3742,10 @@ header.active #headerarrow path{
   padding-left: 0px;
 }
 
+:is([dir="ltr"] .ltr\:pl-11) {
+  padding-left: 2.75rem;
+}
+
 :is([dir="ltr"] .ltr\:pl-2) {
   padding-left: 0.5rem;
 }
@@ -3852,6 +3760,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:pl-7) {
   padding-left: 1.75rem;
+}
+
+:is([dir="ltr"] .ltr\:pl-\[0px\]) {
+  padding-left: 0px;
 }
 
 :is([dir="ltr"] .ltr\:pl-\[13px\]) {
@@ -3874,6 +3786,10 @@ header.active #headerarrow path{
   padding-right: 0px;
 }
 
+:is([dir="ltr"] .ltr\:pr-11) {
+  padding-right: 2.75rem;
+}
+
 :is([dir="ltr"] .ltr\:pr-4) {
   padding-right: 1rem;
 }
@@ -3884,22 +3800,6 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:pr-\[21px\]) {
   padding-right: 21px;
-}
-
-:is([dir="ltr"] .ltr\:pl-\[0px\]) {
-  padding-left: 0px;
-}
-
-:is([dir="ltr"] .ltr\:pr-9) {
-  padding-right: 2.25rem;
-}
-
-:is([dir="ltr"] .ltr\:pr-11) {
-  padding-right: 2.75rem;
-}
-
-:is([dir="ltr"] .ltr\:pl-11) {
-  padding-left: 2.75rem;
 }
 
 :is([dir="ltr"] .ltr\:text-right) {
@@ -3935,12 +3835,24 @@ header.active #headerarrow path{
   left: -1.25rem;
 }
 
+:is([dir="rtl"] .rtl\:-left-7) {
+  left: -1.75rem;
+}
+
 :is([dir="rtl"] .rtl\:-left-\[14px\]) {
   left: -14px;
 }
 
+:is([dir="rtl"] .rtl\:-left-\[15px\]) {
+  left: -15px;
+}
+
 :is([dir="rtl"] .rtl\:-left-\[175px\]) {
   left: -175px;
+}
+
+:is([dir="rtl"] .rtl\:-left-\[27px\]) {
+  left: -27px;
 }
 
 :is([dir="rtl"] .rtl\:-left-\[28px\]) {
@@ -3973,6 +3885,10 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:-right-7) {
   right: -1.75rem;
+}
+
+:is([dir="rtl"] .rtl\:-right-\[15px\]) {
+  right: -15px;
 }
 
 :is([dir="rtl"] .rtl\:-right-\[19px\]) {
@@ -4023,6 +3939,10 @@ header.active #headerarrow path{
   right: 1rem;
 }
 
+:is([dir="rtl"] .rtl\:right-5) {
+  right: 1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:right-6) {
   right: 1.5rem;
 }
@@ -4051,10 +3971,6 @@ header.active #headerarrow path{
   right: 35px;
 }
 
-:is([dir="rtl"] .rtl\:right-\[4\%\]) {
-  right: 4%;
-}
-
 :is([dir="rtl"] .rtl\:right-\[46px\]) {
   right: 46px;
 }
@@ -4073,62 +3989,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:top-\[-3px\]) {
   top: -3px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[18px\]) {
-  right: 18px;
-}
-
-:is([dir="rtl"] .rtl\:right-5) {
-  right: 1.25rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-11) {
-  right: -2.75rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-14) {
-  right: -3.5rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-16) {
-  right: -4rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-20) {
-  right: -5rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-12) {
-  right: -3rem;
-}
-
-:is([dir="rtl"] .rtl\:-left-\[17px\]) {
-  left: -17px;
-}
-
-:is([dir="rtl"] .rtl\:-left-\[15px\]) {
-  left: -15px;
-}
-
-:is([dir="rtl"] .rtl\:-left-\[20px\]) {
-  left: -20px;
-}
-
-:is([dir="rtl"] .rtl\:-left-\[25px\]) {
-  left: -25px;
-}
-
-:is([dir="rtl"] .rtl\:-left-\[27px\]) {
-  left: -27px;
-}
-
-:is([dir="rtl"] .rtl\:-left-7) {
-  left: -1.75rem;
-}
-
-:is([dir="rtl"] .rtl\:-right-\[15px\]) {
-  right: -15px;
 }
 
 :is([dir="rtl"] .rtl\:-ml-20) {
@@ -4173,10 +4033,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
-}
-
-:is([dir="rtl"] .rtl\:-mr-11) {
-  margin-right: -2.75rem;
 }
 
 :is([dir="rtl"] .rtl\:-rotate-\[20deg\]) {
@@ -4226,12 +4082,20 @@ header.active #headerarrow path{
   padding-right: 0.25rem !important;
 }
 
+:is([dir="rtl"] .rtl\:pl-11) {
+  padding-left: 2.75rem;
+}
+
 :is([dir="rtl"] .rtl\:pl-\[13px\]) {
   padding-left: 13px;
 }
 
 :is([dir="rtl"] .rtl\:pl-\[21px\]) {
   padding-left: 21px;
+}
+
+:is([dir="rtl"] .rtl\:pr-11) {
+  padding-right: 2.75rem;
 }
 
 :is([dir="rtl"] .rtl\:pr-28) {
@@ -4250,6 +4114,10 @@ header.active #headerarrow path{
   padding-right: 1.75rem;
 }
 
+:is([dir="rtl"] .rtl\:pr-\[0px\]) {
+  padding-right: 0px;
+}
+
 :is([dir="rtl"] .rtl\:pr-\[13px\]) {
   padding-right: 13px;
 }
@@ -4264,26 +4132,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:pr-\[70px\]) {
   padding-right: 70px;
-}
-
-:is([dir="rtl"] .rtl\:pr-\[0px\]) {
-  padding-right: 0px;
-}
-
-:is([dir="rtl"] .rtl\:pr-\[30px\]) {
-  padding-right: 30px;
-}
-
-:is([dir="rtl"] .rtl\:pl-9) {
-  padding-left: 2.25rem;
-}
-
-:is([dir="rtl"] .rtl\:pl-11) {
-  padding-left: 2.75rem;
-}
-
-:is([dir="rtl"] .rtl\:pr-11) {
-  padding-right: 2.75rem;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
@@ -4506,14 +4354,14 @@ header.active #headerarrow path{
     line-height: 1.75rem;
   }
 
-  :is([dir="ltr"] .ltr\:sm\:rounded-r-\[30px\]) {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-
   :is([dir="ltr"] .ltr\:sm\:rounded-l-\[30px\]) {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:rounded-r-\[30px\]) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:rounded-l-\[30px\]) {

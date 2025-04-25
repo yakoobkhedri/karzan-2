@@ -47,7 +47,7 @@ module.exports = {
         'custom':'calc((100% - 1392px) / 2)'
        },
       maxWidth:{
-        'content':'1396px',
+        'content':'1450px',
       },
     }
 },

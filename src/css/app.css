@@ -466,6 +466,13 @@ header.active #headerarrow path{
 .ltrReverse{
   @apply ltr:[transform:rotateY(180deg)];
 }
+.ltrReverse3{
+  @apply ltr:[transform:rotateY(360deg)];
+  @apply ltr:[transform:rotateX(0deg)];
+}
+.ltrReverse4{
+  @apply ltr:[transform:rotateX(180deg)];
+}
 /* tab slider */
 .tabs {
   display: flex;

@@ -477,7 +477,7 @@ header.active #headerarrow path{
   @apply ltr:[transform:rotateX(180deg)];
 }
 /* tab slider */
-.tabs {
+.tabs,.tabs2 {
   display: flex;
   gap: 30px;
   scroll-behavior: smooth;
@@ -485,33 +485,36 @@ header.active #headerarrow path{
   -webkit-overflow-scrolling: touch;
 }
 
-.tabs::-webkit-scrollbar {
+.tabs::-webkit-scrollbar,.tabs2::-webkit-scrollbar {
   display: none; /* برای کروم و سافاری */
 }
 
-.tabs > div {
+.tabs > div,.tabs2 > div {
   transition: all 0.3s ease;
   flex: 0 0 auto;
 }
-.tabs > div.active  {
+.tabs > div.active,.tabs2 > div.active  {
   background-color: transparent;
 }
-.tabs > div.active > div:first-child {
+.tabs > div.active > div:first-child,.tabs2 > div.active > div:first-child {
   opacity: 50%;
   visibility: visible;
 }
-.tabs > div.active > img {
+.tabs > div.active > img,.tabs2 > div.active > img {
   opacity: 100%;
   visibility: visible;
 }
-.tabs > div > svg  {
+.tabs2 > div > img {
+ transform: rotateX(180deg);
+}
+.tabs > div > svg,.tabs2 > div > svg  {
   transition: opacity 0.3s ease-in-out;
   opacity: 100%;
 }
-.tabs > div.active > svg  {
+.tabs > div.active > svg,.tabs2 > div.active > svg  {
   opacity: 0%;
 }
-.tabsContent > div {
+.tabsContent > div,.tabsContent2 > div {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   display: none;
@@ -521,7 +524,11 @@ header.active #headerarrow path{
   opacity: 1;
   display: block;
 }
-.tabs-container {
+.tabsContent2 > div.active {
+  opacity: 1;
+  display: grid;
+}
+.tabs-container,.tabs-container2 {
   position: relative;
   overflow: hidden;
 }
@@ -535,31 +542,31 @@ header.active #headerarrow path{
   scrollbar-width: none;
 }
 
-.tab {
+.tab,.tab2 {
   scroll-snap-align: start;
   transition: opacity 0.3s ease, transform 0.3s ease;
   flex: 0 0 auto;
 }
 
 /* Pagination */
-.tabs-pagination {
+.tabs-pagination,.tabs-pagination2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
 }
 
-.pagination-dot {
+.pagination-dot,.pagination-dot2 {
   width: 11px;
   height: 6px;
   border-radius: 60px;
   background-color: #e0e0e0;
   cursor: pointer;
   opacity: 1 !important; /* تضمین opacity 100% */
-  transition: all 0.3s ease; /* فقط تغییر رنگ زمینه */
+  transition: all 0.4s ease; 
 }
 
-.pagination-dot.active {
+.pagination-dot.active,.pagination-dot2.active {
   width: 34px;
   background-color: #EE5D38;
   opacity: 1 !important; /* تضمین opacity 100% */

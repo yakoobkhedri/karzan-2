@@ -584,6 +584,10 @@ video {
   position: fixed;
 }
 
+.\!absolute {
+  position: absolute !important;
+}
+
 .absolute {
   position: absolute;
 }
@@ -906,6 +910,11 @@ video {
   margin: auto;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -1221,6 +1230,10 @@ video {
 
 .h-\[50\%\] {
   height: 50%;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[50px\] {
@@ -1618,10 +1631,6 @@ video {
   gap: 42px;
 }
 
-.gap-\[76px\] {
-  gap: 76px;
-}
-
 .gap-y-7 {
   row-gap: 1.75rem;
 }
@@ -1891,6 +1900,11 @@ video {
 
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -2172,10 +2186,6 @@ video {
 
 .text-\[28px\] {
   font-size: 28px;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
 }
 
 .text-\[34px\] {
@@ -3296,6 +3306,91 @@ header.active #headerarrow path{
   .slider-nav {
     display: none;
   }
+}
+
+/* vertical tab slider */
+
+.vertical-tabs-container {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /* جلوگیری از انتخاب متن هنگام درگ */
+}
+
+.vertical-tabs-slider {
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+.vertical-tabs-slider.grabbing {
+  cursor: grabbing;
+  transition: none;
+}
+
+.tab-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #00000052;
+  min-height: 78px !important;
+}
+
+.tab-item.active {
+  opacity: 1 !important;
+  background-color: #EDF2F8 !important;
+  border: 0;
+  max-width: none !important;
+  gap: 46px;
+}
+
+.tab-item div h2 {
+  transition: all .4s;
+}
+
+.tab-item.active div h2:first-child {
+  font-size: 30px !important;
+}
+
+.tab-item.active div h2:last-child {
+  font-size: 20px !important;
+}
+
+.tab-item > div:last-child {
+  display: none;
+}
+
+.tab-item.active > div:last-child {
+  display: flex;
+}
+
+.tab-content {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-btn-up, .nav-btn-down {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn-up:hover, .nav-btn-down:hover {
+  background-color: #ddd;
 }
 
 /* swiper */

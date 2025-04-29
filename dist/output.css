@@ -2250,6 +2250,14 @@ video {
   padding-top: 30px;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -4498,6 +4506,10 @@ header.active #headerarrow path{
     margin-top: 0.5rem;
   }
 
+  .sm\:-mb-\[90px\] {
+    margin-bottom: -90px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -4921,6 +4933,10 @@ header.active #headerarrow path{
     margin-top: -0px;
   }
 
+  .md\:-mb-\[90px\] {
+    margin-bottom: -90px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4992,6 +5008,10 @@ header.active #headerarrow path{
 
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:p-\[30px\] {
+    padding: 30px;
   }
 
   .md\:px-10 {

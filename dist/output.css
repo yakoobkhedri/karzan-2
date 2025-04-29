@@ -842,6 +842,30 @@ video {
   top: -2.25rem;
 }
 
+.-top-\[300px\] {
+  top: -300px;
+}
+
+.-top-\[90px\] {
+  top: -90px;
+}
+
+.-top-\[140px\] {
+  top: -140px;
+}
+
+.top-\[98px\] {
+  top: 98px;
+}
+
+.top-\[52px\] {
+  top: 52px;
+}
+
+.top-\[49px\] {
+  top: 49px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1140,6 +1164,14 @@ video {
   margin-top: 115px;
 }
 
+.-mt-\[109px\] {
+  margin-top: -109px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1353,6 +1385,10 @@ video {
   height: 100%;
 }
 
+.h-\[81\%\] {
+  height: 81%;
+}
+
 .min-h-\[116px\] {
   min-height: 116px;
 }
@@ -1531,6 +1567,14 @@ video {
 
 .max-w-content {
   max-width: 1450px;
+}
+
+.max-w-\[209px\] {
+  max-width: 209px;
+}
+
+.max-w-\[270px\] {
+  max-width: 270px;
 }
 
 .flex-shrink-0 {
@@ -2325,6 +2369,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[27px\] {
+  font-size: 27px;
 }
 
 .font-black {
@@ -5024,6 +5072,19 @@ header.active #headerarrow path{
     padding-right: 5rem;
   }
 
+  .md\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:leading-9 {
+    line-height: 2.25rem;
+  }
+
   :is([dir="ltr"] .ltr\:md\:-right-10) {
     right: -2.5rem;
   }
@@ -5121,6 +5182,14 @@ header.active #headerarrow path{
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
   }
 
   .lg\:mt-4 {
@@ -5247,6 +5316,34 @@ header.active #headerarrow path{
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:top-0 {
+    top: 0px;
+  }
+
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .xl\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:mt-auto {
+    margin-top: auto;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -5255,7 +5352,64 @@ header.active #headerarrow path{
     display: none;
   }
 
+  .xl\:h-\[90\%\] {
+    height: 90%;
+  }
+
+  .xl\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .xl\:max-w-\[209px\] {
+    max-width: 209px;
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:leading-9 {
+    line-height: 2.25rem;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:-left-7) {
+    left: -1.75rem;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:pl-\[0px\]) {
+    padding-left: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:pr-11) {
+    padding-right: 2.75rem;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:pl-0) {
+    padding-left: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:-right-7) {
+    right: -1.75rem;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:pr-\[0px\]) {
+    padding-right: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:pl-11) {
+    padding-left: 2.75rem;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:pr-0) {
+    padding-right: 0px;
   }
 }

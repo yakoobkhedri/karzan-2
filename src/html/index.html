@@ -139,15 +139,15 @@
     </a>
   </div>
 
-  <header class="relative">
+  <header class="relative mt-[22px] md:mt-0">
     <div class="max-w-content mx-auto px-4">
-      <div class="flex bg-white justify-between py-4 px-20 rounded-b-[27px] gap-2 items-center shadow-1">
+      <div class="flex bg-white justify-between py-4 px-4 md:px-20 rounded-t-[15px] sm:rounded-t-[27px] md:rounded-t-none rounded-b-[15px] sm:rounded-b-[27px] gap-2 items-center shadow-6 md:shadow-1">
         <div>
-          <a><img alt="logo" class="w-[112px]" src="../img/Karzaan.png"></a>
+          <a><img alt="logo" class="sm:w-[112px] w-[85px]" src="../img/Karzaan.png"></a>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center gap-4 sm:gap-0s">
           <a
-            class="bg-[#EDF2F8] rounded-[200px] h-14 w-20 flex items-center rtl:-ml-5 ltr:-mr-5 rtl:pr-[18px] ltr:pl-[18px]">
+            class="sm:bg-[#EDF2F8] sm:rounded-[200px] sm:h-14 sm:w-20 flex items-center rtl:sm:-ml-10 ltr:sm:-mr-10 rtl:sm:pr-[18px] ltr:sm:pl-[18px]">
             <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M14.9812 19.76L19.0337 24.3675C20.5337 26.0737 21.2849 26.9275 22.0712 26.7187C22.8562 26.5112 23.1262 25.3887 23.6649 23.1425L26.6524 10.6825C27.4837 7.22249 27.8987 5.49374 26.9762 4.63999C26.0537 3.78624 24.4549 4.42124 21.2574 5.68999L6.42492 11.5812C3.86742 12.5975 2.58867 13.105 2.50742 13.9775C2.49785 14.0664 2.49785 14.1561 2.50742 14.245C2.58617 15.1187 3.86242 15.63 6.41742 16.6537C7.57367 17.1175 8.15242 17.35 8.56742 17.7937C8.61409 17.8437 8.65909 17.8954 8.70242 17.9487C9.08492 18.4237 9.24742 19.0487 9.57367 20.2937L10.1849 22.6275C10.5012 23.84 10.6599 24.4475 11.0762 24.53C11.4924 24.6125 11.8537 24.11 12.5774 23.1037L14.9812 19.76ZM14.9812 19.76L14.5849 19.3475C14.1324 18.875 13.9062 18.64 13.9062 18.3475C13.9062 18.055 14.1312 17.8187 14.5849 17.3475L19.0512 12.6925"
@@ -155,23 +155,29 @@
             </svg>
           </a>
           <a
-            class="w-[172px] h-14 rounded-[200px] bg-secondary btnHover px-4 text-white flex items-center justify-end gap-5">
-            <div>
-              <p class="opacity-50 rtl:text-left ltr:text-right">0912</p>
-              <p class="font-extrabold -mt-1">0325850</p>
+            class="sm:w-[172px] sm:h-14 sm:rounded-[200px] sm:bg-secondary btnHover sm:px-4 text-white flex items-center justify-end gap-5">
+            <div class="hidden sm:block">
+              <p class="opacity-50 rtl:text-left ltr:text-right hidden sm:block">0912</p>
+              <p class="font-extrabold -mt-1 hidden sm:block">0325850</p>
             </div>
             <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
+              <path class="stroke-[#EE5D38] sm:stroke-white"
                 d="M17.4999 4.25V8M23.7499 6.75L21.2499 9.25M26.2499 13H22.4999M11.4474 7.64L10.9449 6.5075C10.6149 5.7675 10.4512 5.3975 10.2049 5.11375C9.89686 4.75839 9.4948 4.49714 9.04493 4.36C8.68618 4.25 8.27993 4.25 7.46993 4.25C6.28493 4.25 5.69243 4.25 5.19493 4.4775C4.58122 4.77568 4.10616 5.29909 3.86868 5.93875C3.68993 6.455 3.74118 6.98625 3.84368 8.05C4.93535 19.3625 11.1374 25.5646 22.4499 26.6562C23.5124 26.7587 24.0449 26.81 24.5624 26.6313C25.2014 26.3938 25.7243 25.9193 26.0224 25.3062C26.2499 24.8075 26.2499 24.215 26.2499 23.03C26.2499 22.2188 26.2499 21.8137 26.1399 21.455C26.0028 21.0051 25.7415 20.6031 25.3862 20.295C25.1024 20.0488 24.7324 19.885 23.9924 19.555L22.8599 19.0525C22.0574 18.6963 21.6574 18.5175 21.2499 18.4788C20.8598 18.4413 20.4663 18.4961 20.1012 18.6387C19.7199 18.7875 19.3824 19.0675 18.7087 19.63C18.0374 20.1887 17.7024 20.4675 17.2924 20.6175C16.8985 20.7538 16.4784 20.797 16.0649 20.7437C15.6337 20.6812 15.3024 20.5038 14.6412 20.15C12.5837 19.05 11.4499 17.9162 10.3499 15.8587C9.99618 15.1962 9.81993 14.8663 9.75618 14.4338C9.70294 14.0212 9.74572 13.602 9.88118 13.2087C10.0312 12.7975 10.3112 12.4625 10.8699 11.7912C11.4324 11.1162 11.7124 10.78 11.8612 10.3988C12.0037 10.0338 12.0587 9.64 12.0212 9.25C11.9824 8.84375 11.8037 8.4425 11.4474 7.64Z"
                 stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </a>
-          <div id="hamIcon" class="cursor-pointer min-[1160px]:hidden">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4.66663 8.16666H8.16663M23.3333 8.16666H12.8333M23.3333 19.8333H19.8333M4.66663 19.8333H15.1666M4.66663 14H23.3333"
-                stroke="#404040" stroke-width="2" stroke-linecap="round" />
+          <div class="md:hidden relative">
+            <svg id="headerarrow" class="-top-[29px] absolute ltr:-left-[17px] mx-auto rtl:-right-[17px] sm:hidden z-10" width="36" height="28" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z" fill="#f5f5f5"></path>
             </svg>
+            <svg width="1" height="26" viewBox="0 0 1 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line opacity="0.12" x1="0.5" x2="0.5" y2="26" stroke="black" stroke-dasharray="5 5"/>
+              </svg>
+          </div>
+          <div id="hamIcon" class="cursor-pointer md:hidden rtl:md:mr-4 ltr:md:ml-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 5H20M4 12H20M4 19H14" stroke="#110E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             <svg class="cursor-pointer hidden" width="28" height="28" viewBox="0 0 28 28" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M20 8L8 20M8 8L20 20" stroke="#404040" stroke-width="2" stroke-linecap="round" />
@@ -179,7 +185,7 @@
           </div>
         </div>
       </div>
-      <div class="max-w-[1237px] mx-auto">
+      <div class="max-w-[1237px] mx-auto max-[1350px]:px-10 hidden md:block">
         <div class="bg-primary rounded-b-[27px] p-3 relative">
           <img alt="bg" src="../img/Pattern.png" class="absolute inset-0 h-full mx-auto">
           <ul class=" text-xs gap-6 flex items-center justify-center font-semibold relative">
@@ -1749,13 +1755,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -1827,13 +1833,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -1905,13 +1911,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -1983,13 +1989,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -2061,13 +2067,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -2139,13 +2145,13 @@
                           </div>
                           <div class="flex items-center">
                             <img alt="img" src="../img/Icon(2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                             <img alt="img" src="../img/Icon(1).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                             <img alt="img" src="../img/Icon (2).png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                             <img alt="img" src="../img/Icon.png"
-                              class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                              class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                           </div>
                         </div>
                         <div class="mt-6 flex items-center justify-end gap-5">
@@ -2189,21 +2195,21 @@
       </div>
     </section>
 
-    <section class="relative mt-[140px]">
+    <section class="relative sm:mt-[140px] mt-[92px]">
       <div class="max-w-content mx-auto px-4 relative">
-        <img alt="img" src="../img/Vector 65.png" class="absolute rtl:right-0 ltr:left-0 ltrReverse -top-24">
+        <img alt="img" src="../img/Vector 65.png" class="absolute rtl:right-0 ltr:left-0 ltrReverse -top-24 hidden md:block">
         <div>
-          <div class="rounded-t-[15px] sm:rounded-t-[30px] bg-white shadow-2 h-5 mx-[59px] relative"></div>
-          <div class="rounded-t-[15px] sm:rounded-t-[30px] bg-white shadow-2 h-5 mx-[30px] relative"></div>
-          <div class="rounded-[15px] sm:rounded-[30px] bg-white shadow-2 p-[30px] pt-4 relative">
-            <svg class="-top-[5px] rtl:right-[53px] ltr:left-[53px] absolute z-10" width="44" height="24"
+          <div class="rounded-t-[30px] bg-white shadow-2 h-5 mx-[59px] relative"></div>
+          <div class="rounded-t-[30px] bg-white shadow-2 h-5 mx-[30px] relative"></div>
+          <div class="rounded-[30px] bg-white shadow-2 p-3 sm:p-[30px] pt-4 relative">
+            <svg class="-top-[5px] rtl:right-[33px] rtl:sm:right-[53px] ltr:left-[33px] ltr:sm:left-[53px] absolute z-10" width="44" height="24"
               viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
                 fill="#f3f3f3"></path>
             </svg>
             <div class="flex items-center justify-between gap-2">
-              <div class="flex items-center gap-9">
+              <div class="flex items-center gap-8 sm:gap-9">
                 <div class="relative">
                   <div class="w-5 h-5 shadow-5 absolute top-1 rtl:right-1 ltr:left-1 bg-[#fdeeea]"></div>
                   <svg class="relative" width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -2220,13 +2226,13 @@
                   </svg>
                 </div>
                 <div>
-                  <p class="text-xl rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">خدمات ما</p>
-                  <p class="opacity-50 text-primary rtl:font-iranYekanLight ltr:font-MontserratRegular text-xs">تیم حرفه
+                  <p class="sm:text-xl text-lg rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">خدمات ما</p>
+                  <p class="opacity-50 text-primary rtl:font-iranYekanLight ltr:font-MontserratRegular text-xs hidden sm:block">تیم حرفه
                     ای و پیشرفته ما آماده ارائه خدمات حرفه ای و درجه یک برای کسب و کار شما در هر زمینه ای برای
                     پیــشــرفت و رشد میباشد</p>
                 </div>
               </div>
-              <div class="flex items-center gap-4">
+              <div class="hidden sm:flex items-center gap-4">
                 <div
                   class="w-10 h-10 rounded-full bg-secondary slider-nav slider-prev hidden md:flex items-center justify-center cursor-pointer active:scale-95">
                   <svg class="ltrReverse" width="19" height="14" viewBox="0 0 19 14" fill="none"
@@ -2251,7 +2257,7 @@
                 </div>
               </div>
             </div>
-            <div class="mt-4 bg-[#ECF1F7] rounded-[15px] sm:rounded-[30px] p-[30px] relative">
+            <div class="mt-4 bg-[#ECF1F7] rounded-[30px] p-3 sm:p-[30px] relative">
               <svg class="-top-[18px] absolute rtl:right-[22px] ltr:left-[22px] rotate-180 z-10" width="44" height="24"
                 viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -2283,10 +2289,10 @@
                         <img alt="img" src="../img/WEB DESIGN.png" class="mt-3 mx-auto">
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
-                        <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی وبسایت
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        <h2 class="sm:text-[22px] text-lg text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی وبسایت
                         </h2>
-                        <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
+                        <p class="opacity-60 leading-7 sm:leading-8 text-xs sm:text-sm min-h-[75px] sm:min-h-[128px] line-clamp-4">
                           طراحی وب‌سایت اختصاصی با تمامی امکانات پیشرفته، سازگار با سئو و موبایل
                         </p>
                         <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -2329,11 +2335,11 @@
                         <img alt="img" src="../img/UI UX DESIG.png" class="mt-3 mx-auto">
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
-                        <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی UI ,
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        <h2 class="sm:text-[22px] text-lg text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی UI ,
                           UX
                         </h2>
-                        <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
+                        <p class="opacity-60 leading-7 sm:leading-8 text-xs sm:text-sm min-h-[75px] sm:min-h-[128px] line-clamp-4">
                           طراحی رابط و واسط کاربری با درک نیاز ها و خواسته های مخاطب های هدف
                         </p>
                         <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -2370,11 +2376,11 @@
                         <img alt="img" src="../img/MOBILE APP.png" class="mt-3 mx-auto">
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
-                        <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی اپ
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        <h2 class="sm:text-[22px] text-lg text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">طراحی اپ
                           موبایل
                         </h2>
-                        <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
+                        <p class="opacity-60 leading-7 sm:leading-8 text-xs sm:text-sm min-h-[75px] sm:min-h-[128px] line-clamp-4">
                           طراحی نرم‌افزار های حرفه ای در پلتفرم‌های مختلف از جمله iOS، Android، Windows و macOS
                         </p>
                         <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -2411,10 +2417,10 @@
                         <img alt="img" src="../img/PAYMENT.png" class="mt-3 mx-auto">
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
-                        <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">پرداخت یاری
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        <h2 class="sm:text-[22px] text-lg text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">پرداخت یاری
                         </h2>
-                        <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
+                        <p class="opacity-60 leading-7 sm:leading-8 text-xs sm:text-sm min-h-[75px] sm:min-h-[128px] line-clamp-4">
                           توسعه نرم‌افزار پرداخت امن برای پردازش خودکار تراکنش‌ها با تجربه‌ای راحت و کاربرپسند
                         </p>
                         <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -2451,10 +2457,10 @@
                         <img alt="img" src="../img/PAYMENT.png" class="mt-3 mx-auto">
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
-                        <h2 class="text-[22px] text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">پرداخت یاری
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        <h2 class="sm:text-[22px] text-lg text-primary rtl:font-iranSansBlack ltr:font-MontserratBold">پرداخت یاری
                         </h2>
-                        <p class="opacity-60 leading-8 text-sm min-h-[128px] line-clamp-4">
+                        <p class="opacity-60 leading-7 sm:leading-8 text-xs sm:text-sm min-h-[75px] sm:min-h-[128px] line-clamp-4">
                           توسعه نرم‌افزار پرداخت امن برای پردازش خودکار تراکنش‌ها با تجربه‌ای راحت و کاربرپسند
                         </p>
                         <a class="mt-1 rtl:mr-auto block w-6 h-6">
@@ -2473,8 +2479,8 @@
                 </div>
               </div>
               <div class="mt-5 tabsContent">
-                <div data-id="1" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24"
+                <div data-id="1" class="rounded-[30px] bg-gradient-1 p-3 sm:p-8 pt-5 sm:pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-9 rtl:sm:right-20 ltr:sm:left-20 ltr:left-9 rotate-180 z-10" width="44" height="24"
                     viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2482,29 +2488,29 @@
                   </svg>
                   <div class="flex items-center justify-between gap-2">
                     <div
-                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      class="md:rounded-[200px] rounded-[20px] bg-white py-2 px-2 leading-6 sm:px-[22px] text-xs sm:text-base flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full flex-shrink-0"></div>
                       <h1>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</h1>
                     </div>
-                    <div class="flex items-center justify-end gap-3">
-                      <div>
-                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-2.5 sm:gap-3 flex-shrink-0">
+                      <div class="order-last sm:order-first">
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-lg sm:text-xl rtl:text-left ltr:text-right">
                           145+</p>
-                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                        <p class="opacity-40 text-xs rtl:text-left ltr:text-right -mt-1.5">پروژه تکمیل شده</p>
                       </div>
                       <div class="flex items-center">
                         <img alt="img" src="../img/Icon(2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                         <img alt="img" src="../img/Icon(1).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                         <img alt="img" src="../img/Icon (2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                         <img alt="img" src="../img/Icon.png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                       </div>
                     </div>
                   </div>
-                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
+                  <p class="opacity-60 text-[13px] sm:text-sm leading-6 sm:leading-7 mt-7 border-b pb-5 sm:pb-0 sm:border-b-0 border-[#00000012]">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
                     بلکه
                     یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق
                     وب
@@ -2513,7 +2519,7 @@
                     باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک
                     می‌
                     کند در رقابت بازار پیشرو باشید.</p>
-                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                  <a class="flex items-center sm:justify-end justify-center sm:mt-1 mt-3 gap-1.5 text-sm font-bold text-primary">
                     <p>بیشتر بدانید</p>
                     <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -2525,8 +2531,8 @@
                     </svg>
                   </a>
                 </div>
-                <div data-id="2" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24"
+                <div data-id="2" class="rounded-[30px] bg-gradient-1 p-3 sm:p-8 pt-5 sm:pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-9 rtl:sm:right-20 ltr:sm:left-20 ltr:left-9 rotate-180 z-10" width="44" height="24"
                     viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2534,29 +2540,29 @@
                   </svg>
                   <div class="flex items-center justify-between gap-2">
                     <div
-                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      class="md:rounded-[200px] rounded-[20px] bg-white py-2 px-2 leading-6 sm:px-[22px] text-xs sm:text-base flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full flex-shrink-0"></div>
                       <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
                     </div>
-                    <div class="flex items-center justify-end gap-3">
-                      <div>
-                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-2.5 sm:gap-3 flex-shrink-0">
+                      <div class="order-last sm:order-first">
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-lg sm:text-xl rtl:text-left ltr:text-right">
                           145+</p>
-                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                        <p class="opacity-40 text-xs rtl:text-left ltr:text-right -mt-1.5">پروژه تکمیل شده</p>
                       </div>
                       <div class="flex items-center">
                         <img alt="img" src="../img/Icon(2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                         <img alt="img" src="../img/Icon(1).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                         <img alt="img" src="../img/Icon (2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                         <img alt="img" src="../img/Icon.png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                       </div>
                     </div>
                   </div>
-                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
+                  <p class="opacity-60 text-[13px] sm:text-sm leading-6 sm:leading-7 mt-7 border-b pb-5 sm:pb-0 sm:border-b-0 border-[#00000012]">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
                     بلکه
                     یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق
                     وب
@@ -2565,7 +2571,7 @@
                     باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک
                     می‌
                     کند در رقابت بازار پیشرو باشید.</p>
-                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                  <a class="flex items-center sm:justify-end justify-center sm:mt-1 mt-3 gap-1.5 text-sm font-bold text-primary">
                     <p>بیشتر بدانید</p>
                     <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -2577,8 +2583,8 @@
                     </svg>
                   </a>
                 </div>
-                <div data-id="3" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24"
+                <div data-id="3" class="rounded-[30px] bg-gradient-1 p-3 sm:p-8 pt-5 sm:pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-9 rtl:sm:right-20 ltr:sm:left-20 ltr:left-9 rotate-180 z-10" width="44" height="24"
                     viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2586,29 +2592,29 @@
                   </svg>
                   <div class="flex items-center justify-between gap-2">
                     <div
-                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      class="md:rounded-[200px] rounded-[20px] bg-white py-2 px-2 leading-6 sm:px-[22px] text-xs sm:text-base flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full flex-shrink-0"></div>
                       <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
                     </div>
-                    <div class="flex items-center justify-end gap-3">
-                      <div>
-                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-2.5 sm:gap-3 flex-shrink-0">
+                      <div class="order-last sm:order-first">
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-lg sm:text-xl rtl:text-left ltr:text-right">
                           145+</p>
-                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                        <p class="opacity-40 text-xs rtl:text-left ltr:text-right -mt-1.5">پروژه تکمیل شده</p>
                       </div>
                       <div class="flex items-center">
                         <img alt="img" src="../img/Icon(2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                         <img alt="img" src="../img/Icon(1).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                         <img alt="img" src="../img/Icon (2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                         <img alt="img" src="../img/Icon.png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                       </div>
                     </div>
                   </div>
-                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
+                  <p class="opacity-60 text-[13px] sm:text-sm leading-6 sm:leading-7 mt-7 border-b pb-5 sm:pb-0 sm:border-b-0 border-[#00000012]">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
                     بلکه
                     یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق
                     وب
@@ -2617,7 +2623,7 @@
                     باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک
                     می‌
                     کند در رقابت بازار پیشرو باشید.</p>
-                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                  <a class="flex items-center sm:justify-end justify-center sm:mt-1 mt-3 gap-1.5 text-sm font-bold text-primary">
                     <p>بیشتر بدانید</p>
                     <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -2629,8 +2635,8 @@
                     </svg>
                   </a>
                 </div>
-                <div data-id="4" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24"
+                <div data-id="4" class="rounded-[30px] bg-gradient-1 p-3 sm:p-8 pt-5 sm:pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-9 rtl:sm:right-20 ltr:sm:left-20 ltr:left-9 rotate-180 z-10" width="44" height="24"
                     viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2638,29 +2644,29 @@
                   </svg>
                   <div class="flex items-center justify-between gap-2">
                     <div
-                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      class="md:rounded-[200px] rounded-[20px] bg-white py-2 px-2 leading-6 sm:px-[22px] text-xs sm:text-base flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full flex-shrink-0"></div>
                       <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
                     </div>
-                    <div class="flex items-center justify-end gap-3">
-                      <div>
-                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-2.5 sm:gap-3 flex-shrink-0">
+                      <div class="order-last sm:order-first">
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-lg sm:text-xl rtl:text-left ltr:text-right">
                           145+</p>
-                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                        <p class="opacity-40 text-xs rtl:text-left ltr:text-right -mt-1.5">پروژه تکمیل شده</p>
                       </div>
                       <div class="flex items-center">
                         <img alt="img" src="../img/Icon(2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                         <img alt="img" src="../img/Icon(1).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                         <img alt="img" src="../img/Icon (2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                         <img alt="img" src="../img/Icon.png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                       </div>
                     </div>
                   </div>
-                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
+                  <p class="opacity-60 text-[13px] sm:text-sm leading-6 sm:leading-7 mt-7 border-b pb-5 sm:pb-0 sm:border-b-0 border-[#00000012]">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
                     بلکه
                     یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق
                     وب
@@ -2669,7 +2675,7 @@
                     باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک
                     می‌
                     کند در رقابت بازار پیشرو باشید.</p>
-                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                  <a class="flex items-center sm:justify-end justify-center sm:mt-1 mt-3 gap-1.5 text-sm font-bold text-primary">
                     <p>بیشتر بدانید</p>
                     <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -2681,8 +2687,8 @@
                     </svg>
                   </a>
                 </div>
-                <div data-id="5" class="rounded-[15px] sm:rounded-[30px] bg-gradient-1 p-8 pt-11 relative">
-                  <svg class="-top-[18px] absolute rtl:right-20 ltr:left-20 rotate-180 z-10" width="44" height="24"
+                <div data-id="5" class="rounded-[30px] bg-gradient-1 p-3 sm:p-8 pt-5 sm:pt-11 relative">
+                  <svg class="-top-[18px] absolute rtl:right-9 rtl:sm:right-20 ltr:sm:left-20 ltr:left-9 rotate-180 z-10" width="44" height="24"
                     viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2690,29 +2696,29 @@
                   </svg>
                   <div class="flex items-center justify-between gap-2">
                     <div
-                      class="rounded-[200px] bg-white py-2 px-[22px] flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-                      <div class="w-[7px] h-[7px] bg-secondary rounded-full"></div>
+                      class="md:rounded-[200px] rounded-[20px] bg-white py-2 px-2 leading-6 sm:px-[22px] text-xs sm:text-base flex items-center gap-2.5 rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                      <div class="w-[7px] h-[7px] bg-secondary rounded-full flex-shrink-0"></div>
                       <p>طراحی سایت در تهران با کارزان | زیر قیمت رقبا و پشتیبانی ۲۴ ساعته</p>
                     </div>
-                    <div class="flex items-center justify-end gap-3">
-                      <div>
-                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-xl rtl:text-left ltr:text-right">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-2.5 sm:gap-3 flex-shrink-0">
+                      <div class="order-last sm:order-first">
+                        <p class="rtl:font-rokhFaNumBold ltr:font-MontserratBold text-lg sm:text-xl rtl:text-left ltr:text-right">
                           145+</p>
-                        <p class="opacity-40 text-xs -mt-1.5">پروژه تکمیل شده</p>
+                        <p class="opacity-40 text-xs rtl:text-left ltr:text-right -mt-1.5">پروژه تکمیل شده</p>
                       </div>
                       <div class="flex items-center">
                         <img alt="img" src="../img/Icon(2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white z-4 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white z-4 relative">
                         <img alt="img" src="../img/Icon(1).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-3 relative">
                         <img alt="img" src="../img/Icon (2).png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-2 relative">
                         <img alt="img" src="../img/Icon.png"
-                          class="w-9 h-9 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                          class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-white rtl:-mr-3 ltr:-ml-3 z-1 relative">
                       </div>
                     </div>
                   </div>
-                  <p class="opacity-60 text-sm leading-7 mt-7">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
+                  <p class="opacity-60 text-[13px] sm:text-sm leading-6 sm:leading-7 mt-7 border-b pb-5 sm:pb-0 sm:border-b-0 border-[#00000012]">امروز، داشتن یک وب ‌سایت حرفه ‌ای تنها یک انتخاب نیست،
                     بلکه
                     یک نیاز اساسی برای رشد و موفقیت کسب‌ وکارها محسوب می‌شود. اولین برداشت کاربران از برند شما از طریق
                     وب
@@ -2721,7 +2727,7 @@
                     باشد. یک سایت حرفه ‌ای نه ‌تنها ویترین آنلاین شماست، بلکه یک ابزار بازاریابی قوی است که به شما کمک
                     می‌
                     کند در رقابت بازار پیشرو باشید.</p>
-                  <a class="flex items-center justify-end mt-1 gap-1.5 text-sm font-bold text-primary">
+                  <a class="flex items-center sm:justify-end justify-center sm:mt-1 mt-3 gap-1.5 text-sm font-bold text-primary">
                     <p>بیشتر بدانید</p>
                     <svg class="ltrReverse" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -2734,23 +2740,23 @@
                   </a>
                 </div>
               </div>
-              <div class="tabs-pagination mt-[30px]"></div>
+              <div class="tabs-pagination mt-3 sm:mt-[30px]"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="relative mt-[150px]">
+    <section class="relative sm:mt-[150px] mt-[92px]">
       <div class="max-w-content mx-auto px-4 relative">
-        <img alt="img" src="../img/Vector 66.png" class="absolute rtl:right-0 ltr:left-0 ltrReverse -top-32">
+        <img alt="img" src="../img/Vector 66.png" class="absolute rtl:right-0 ltr:left-0 ltrReverse -top-32 hidden md:block">
         <div
-          class="rounded-[15px] sm:rounded-[30px] bg-[#ECF1F7] rtl:ml-10 ltr:mr-10 grid grid-cols-12 gap-1.5 items-center relative">
-          <div class="col-span-3">
+          class="rounded-[20px] sm:rounded-[30px] bg-[#ECF1F7] rtl:md:ml-10 ltr:md:mr-10 grid grid-cols-12 gap-1.5 items-center relative">
+          <div class="md:col-span-3 col-span-12">
             <div
-              class="rounded-[15px] sm:rounded-[25px] bg-primary flex items-center gap-3 px-7 py-8 rtl:-mr-6 ltr:-ml-6 min-h-[132px] relative">
+              class="rounded-[15px] sm:rounded-[25px] bg-primary flex items-center justify-center sm:justify-start gap-3 -mt-7 md:-mt-0 mx-5 md:mx-0 px-3 sm:px-7 py-8 rtl:md:-mr-6 ltr:md:-ml-6 min-h-[88px] md:min-h-[132px] relative">
               <svg
-                class="absolute inset-y-0 ltr:-right-[28px] rtl:rotate-90 ltr:-rotate-90 my-auto rtl:-left-[28px] z-10"
+                class="absolute -bottom-[18px] md:bottom-0 inset-x-0 md:inset-x-auto md:inset-y-0 ltr:-right-[28px] rtl:md:rotate-90 ltr:md:-rotate-90 mx-auto md:my-auto rtl:-left-[28px] z-10"
                 width="44" height="24" viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2769,18 +2775,18 @@
                 </svg>
               </div>
               <div>
-                <p class="text-xl rtl:font-iranSansBlack ltr:font-MontserratBold text-white">راهکار های سازمانی</p>
-                <p class="text-white opacity-50 text-xs mt-2">با کارزان برای تغییرات دنیای دیجیتال آماده باشید</p>
+                <p class="sm:text-xl text-lg rtl:font-iranSansBlack ltr:font-MontserratBold text-white">راهکار های سازمانی</p>
+                <p class="text-white opacity-50 text-xs mt-2 hidden sm:block">با کارزان برای تغییرات دنیای دیجیتال آماده باشید</p>
               </div>
             </div>
           </div>
-          <div class="col-span-9">
+          <div class="md:col-span-9 col-span-12">
             <div class="relative">
-              <div class="swiper solutions p-[30px] rounded-[15px] sm:rounded-[30px]">
+              <div class="swiper solutions p-5 pb-[30px] sm:p-[30px] rounded-[15px] sm:rounded-[30px]">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex items-center gap-8 relative">
-                      <svg class="-top-[5px] rtl:right-[35px] ltr:left-[35px] absolute z-10" width="44" height="24"
+                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex-col sm:flex-row flex sm:items-center gap-1 sm:gap-8 relative">
+                      <svg class="-top-[5px] rtl:sm:right-[35px] rtl:right-2 ltr:sm:left-[35px] ltr:left-2 absolute z-10" width="44" height="24"
                         viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2793,15 +2799,15 @@
                           fill="#EE5D38" />
                       </svg>
                       <h2
-                        class="opacity-60 leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
+                        class="opacity-60 leading-6 sm:leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
                         مدیریت <br>
                         منابع انسانی
                       </h2>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex items-center gap-8 relative">
-                      <svg class="-top-[5px] rtl:right-[35px] ltr:left-[35px] absolute z-10" width="44" height="24"
+                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex-col sm:flex-row flex sm:items-center gap-1 sm:gap-8 relative">
+                      <svg class="-top-[5px] rtl:sm:right-[35px] rtl:right-2 ltr:sm:left-[35px] ltr:left-2 absolute z-10" width="44" height="24"
                         viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2817,15 +2823,15 @@
                           stroke="#EE5D38" stroke-width="1.50306" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <h2
-                        class="opacity-60 leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
+                        class="opacity-60 leading-6 sm:leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
                         مدیریت<br>
                         مالی
                       </h2>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex items-center gap-8 relative">
-                      <svg class="-top-[5px] rtl:right-[35px] ltr:left-[35px] absolute z-10" width="44" height="24"
+                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex-col sm:flex-row flex sm:items-center gap-1 sm:gap-8 relative">
+                      <svg class="-top-[5px] rtl:sm:right-[35px] rtl:right-2 ltr:sm:left-[35px] ltr:left-2 absolute z-10" width="44" height="24"
                         viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2841,15 +2847,15 @@
                           stroke="#EE5D38" stroke-width="1.50306" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <h2
-                        class="opacity-60 leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
+                        class="opacity-60 leading-6 sm:leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
                         سیستم مدیریت<br>
                         یادگیری LMS
                       </h2>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex items-center gap-8 relative">
-                      <svg class="-top-[5px] rtl:right-[35px] ltr:left-[35px] absolute z-10" width="44" height="24"
+                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex-col sm:flex-row flex sm:items-center gap-1 sm:gap-8 relative">
+                      <svg class="-top-[5px] rtl:sm:right-[35px] rtl:right-2 ltr:sm:left-[35px] ltr:left-2 absolute z-10" width="44" height="24"
                         viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2865,15 +2871,15 @@
                           stroke="#EE5D38" stroke-width="1.50306" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <h2
-                        class="opacity-60 leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
+                        class="opacity-60 leading-6 sm:leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
                         مدیریت<br>
                         دارایی
                       </h2>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex items-center gap-8 relative">
-                      <svg class="-top-[5px] rtl:right-[35px] ltr:left-[35px] absolute z-10" width="44" height="24"
+                    <div class="bg-white rounded-[15px] sm:rounded-[25px] py-6 px-4 flex-col sm:flex-row flex sm:items-center gap-1 sm:gap-8 relative">
+                      <svg class="-top-[5px] rtl:sm:right-[35px] rtl:right-2 ltr:sm:left-[35px] ltr:left-2 absolute z-10" width="44" height="24"
                         viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
@@ -2889,7 +2895,7 @@
                           stroke="#EE5D38" stroke-width="1.50306" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <h2
-                        class="opacity-60 leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
+                        class="opacity-60 leading-6 sm:leading-8 text-primary text-sm rtl:font-iranSansMedium ltr:font-MontserratRegular min-h-[55px] flex items-center">
                         مدیریت<br>
                         دارایی
                       </h2>
@@ -2901,16 +2907,16 @@
             </div>
           </div>
           <div
-            class="absolute rtl:-left-5 ltr:-right-5 w-5 h-[71%] bg-[#E3E7EB] shadow-2 ltr:rounded-r-[15px] ltr:sm:rounded-r-[30px]  rtl:rounded-l-[15px] rtl:sm:rounded-l-[30px]">
+            class="absolute z-1 -bottom-[15px] md:bottom-0 mx-auto md:top-0 md:my-auto ltr:right-0 rtl:right-0 rtl:left-0 rtl:md:right-auto ltr:left-0 ltr:md:left-auto rtl:md:-left-5 ltr:md:-right-5 w-[91%] md:w-5 md:h-[71%] h-4 md:mx-0 bg-[#E3E7EB] shadow-2 ltr:md:rounded-r-[30px] ltr:md:rounded-l-none rounded-b-[20px] md:rounded-br-none rtl:md:rounded-l-[30px]">
           </div>
           <div
-            class="absolute rtl:-left-10 ltr:-right-10  w-5 h-[50%] my-[58px] bg-[#EFEFEF] shadow-2 ltr:rounded-r-[15px] ltr:sm:rounded-r-[30px]  rtl:rounded-l-[15px] rtl:sm:rounded-l-[30px]">
-          </div>
+          class="absolute -bottom-[30px] md:bottom-0 mx-auto md:top-0 md:my-auto ltr:right-0 rtl:right-0 rtl:left-0 rtl:md:right-auto ltr:left-0 ltr:md:left-auto rtl:md:-left-10 ltr:md:-right-10 w-[81%] md:w-5 md:h-[51%] h-4 md:mx-0 bg-[#EFEFEF] shadow-2 ltr:md:rounded-r-[30px] ltr:md:rounded-l-none rounded-b-[20px] md:rounded-br-none rtl:md:rounded-l-[30px]">
+        </div>
         </div>
       </div>
     </section>
 
-    <section class="relative mt-[150px] z-1">
+    <section class="relative sm:mt-[150px] mt-[92px] z-1">
       <div class="max-w-content mx-auto px-5">
         <div
           class="rounded-[15px] sm:rounded-[30px] overflow-hidden bg-white shadow-1 relative p-[30px] pt-4 shadow-2 grid grid-cols-12 items-center gap-6">
@@ -2920,8 +2926,8 @@
               d="M73.603 0H0C14.1842 0 27.3009 7.53381 34.4478 19.7859L36.8642 23.9282L39.2806 19.7859C46.4065 7.57007 59.4669 0.0443115 73.603 0Z"
               fill="#f3f3f3"></path>
           </svg>
-          <div class="lg:col-span-8 col-span-12">
-            <div class="flex items-center gap-9">
+          <div class="lg:col-span-8 col-span-12 order-last lg:order-first">
+            <div class="lg:flex hidden items-center sm:gap-9 gap-8">
               <div class="relative">
                 <div class="w-5 h-5 shadow-5 absolute top-1 rtl:right-1 ltr:left-1 bg-[#fdeeea]"></div>
                 <svg class="relative" width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -2932,8 +2938,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-xl rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">تماس با ما</p>
-                <p class="opacity-50 text-primary rtl:font-iranYekanLight ltr:font-MontserratRegular text-xs">تیم حرفه
+                <p class="sm:text-xl text-lg rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">تماس با ما</p>
+                <p class="opacity-50 text-primary rtl:font-iranYekanLight ltr:font-MontserratRegular text-xs hidden sm:block">تیم حرفه
                   ای و پیشرفته ما آماده ارائه خدمات حرفه ای و درجه یک برای کسب و کار شما در هر زمینه ای برای پیــشــرفت
                   و رشد میباشد</p>
               </div>
@@ -3047,8 +3053,16 @@
             </div>
           </div>
           <div class="lg:col-span-4 col-span-12">
-            <p class="rtl:mr-[68px] ltr:ml-[68px] text-xl rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
-              تماس با ما</p>
+            <div class="flex items-center gap-8">
+              <div class="relative lg:hidden">
+                <div class="w-5 h-5 shadow-5 absolute top-1 rtl:right-1 ltr:left-1 bg-[#fdeeea]"></div>
+                <svg class="relative" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.4999 3.75V7.5M23.7499 6.25L21.2499 8.75M26.2499 12.5H22.4999M11.4474 7.14L10.9449 6.0075C10.6149 5.2675 10.4512 4.8975 10.2049 4.61375C9.89686 4.25839 9.4948 3.99714 9.04493 3.86C8.68618 3.75 8.27993 3.75 7.46993 3.75C6.28493 3.75 5.69243 3.75 5.19493 3.9775C4.58122 4.27568 4.10616 4.79909 3.86868 5.43875C3.68993 5.955 3.74118 6.48625 3.84368 7.55C4.93535 18.8625 11.1374 25.0646 22.4499 26.1562C23.5124 26.2587 24.0449 26.31 24.5624 26.1313C25.2014 25.8938 25.7243 25.4193 26.0224 24.8062C26.2499 24.3075 26.2499 23.715 26.2499 22.53C26.2499 21.7188 26.2499 21.3137 26.1399 20.955C26.0028 20.5051 25.7415 20.1031 25.3862 19.795C25.1024 19.5488 24.7324 19.385 23.9924 19.055L22.8599 18.5525C22.0574 18.1963 21.6574 18.0175 21.2499 17.9788C20.8598 17.9413 20.4663 17.9961 20.1012 18.1387C19.7199 18.2875 19.3824 18.5675 18.7087 19.13C18.0374 19.6887 17.7024 19.9675 17.2924 20.1175C16.8985 20.2538 16.4784 20.297 16.0649 20.2437C15.6337 20.1812 15.3024 20.0038 14.6412 19.65C12.5837 18.55 11.4499 17.4162 10.3499 15.3587C9.99618 14.6962 9.81993 14.3663 9.75618 13.9338C9.70294 13.5212 9.74572 13.102 9.88118 12.7087C10.0312 12.2975 10.3112 11.9625 10.8699 11.2912C11.4324 10.6162 11.7124 10.28 11.8612 9.89875C12.0037 9.53375 12.0587 9.14 12.0212 8.75C11.9824 8.34375 11.8037 7.9425 11.4474 7.14Z" stroke="#EE5D38" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <p class="rtl:lg:mr-[68px] ltr:lg:ml-[68px] text-xl rtl:font-iranSansBlack ltr:font-MontserratBold text-primary">
+                تماس با ما</p>
+            </div>
             <form class="w-full mt-[18px] bg-[#ECF1F7] rounded-[15px] sm:rounded-[30px] p-4 sm:p-[30px] relative">
               <svg class="-top-[18px] absolute rtl:right-[22px] ltr:left-[22px] rotate-180 z-10" width="44" height="24"
                 viewBox="0 0 74 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4371,7 +4385,7 @@
                         </svg>
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                         <h2 class="text-sm text-primary rtl:font-iranSansExtraBold ltr:font-MontserratBold">به کارگیری
                           هوش مصنوعی
                         </h2>
@@ -4401,7 +4415,7 @@
                         </svg>
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                         <h2 class="text-sm text-primary rtl:font-iranSansExtraBold ltr:font-MontserratBold">امکان تسهیم
                           از مبدا
                           مبالغ دوره ها
@@ -4432,7 +4446,7 @@
                         </svg>
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                         <h2 class="text-sm text-primary rtl:font-iranSansExtraBold ltr:font-MontserratBold">سیستم مدیریت
                           برگزاری
                           کلاس های آنلاین
@@ -4463,7 +4477,7 @@
                         </svg>
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                         <h2 class="text-sm text-primary rtl:font-iranSansExtraBold ltr:font-MontserratBold">مدیریت
                           محتوای
                           دوره های آموزشی
@@ -4494,7 +4508,7 @@
                         </svg>
                       </div>
                       <div
-                        class="rtl:pr-5 ltr:pl-5 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
+                        class="rtl:sm:pr-5 rtl:pr-4 ltr:sm:pl-5 ltr:pl-4 border-[#00000012] rtl:border-r-2 ltr:border-l-2 border-dashed relative">
                         <h2 class="text-sm text-primary rtl:font-iranSansExtraBold ltr:font-MontserratBold">سیستم مدیریت
                           برگزاری
                           کلاس های آنلاین
@@ -5410,13 +5424,13 @@
                 </div>
                 <div class="flex items-center">
                   <img alt="img" src="../img/Icon(2).png"
-                    class="w-9 h-9 rounded-full border-3 border-[#DBE0E6] z-4 relative">
+                    class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-[#DBE0E6] z-4 relative">
                   <img alt="img" src="../img/Icon(1).png"
-                    class="w-9 h-9 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-3 relative">
+                    class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-3 relative">
                   <img alt="img" src="../img/Icon (2).png"
-                    class="w-9 h-9 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-2 relative">
+                    class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-2 relative">
                   <img alt="img" src="../img/Icon.png"
-                    class="w-9 h-9 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-1 relative">
+                    class="sm:w-9 w-8 sm:h-9 h-8 rounded-full border-3 border-[#DBE0E6] rtl:-mr-3 ltr:-ml-3 z-1 relative">
                 </div>
               </div>
             </div>

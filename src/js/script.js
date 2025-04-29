@@ -21,12 +21,20 @@ tab.forEach((item) => {
 // swiper
 
 var solutions = new Swiper(".solutions", {
-  slidesPerView: 1.2,
+  grid:{
+    fill: 'row',
+    rows : 2
+  },
+  slidesPerView: 2,
   loop:true,
   spaceBetween: 30,
   breakpoints: {
     768: {
       slidesPerView: 2,
+      grid:{
+        fill: 'col',
+        rows : 1
+      },
     },
     1100: {
       slidesPerView: 3,

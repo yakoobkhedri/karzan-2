@@ -217,6 +217,9 @@ a {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
+.reverse{
+  @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]
+}
 .drop-shadow-1{
   filter: drop-shadow(0px 0px 200px #00000026);
 }

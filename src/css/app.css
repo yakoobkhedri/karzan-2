@@ -220,6 +220,9 @@ a {
 .drop-shadow-1{
   filter: drop-shadow(0px 0px 200px #00000026);
 }
+.drop-shadow-2{
+  filter:drop-shadow(0px 0px 200px #00000008)
+}
 .shadow-1{
   box-shadow: 0px 0px 60px 0px #0000001A;
 }

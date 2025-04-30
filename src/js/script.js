@@ -57,6 +57,15 @@ var skills = new Swiper(".skills", {
     clickable: true,
   },
 });
+var services = new Swiper(".services", {
+  slidesPerView: 2,
+  loop:true,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,
   loop:true,

@@ -854,6 +854,10 @@ video {
   top: 143px;
 }
 
+.-top-\[6px\] {
+  top: -6px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1741,6 +1745,10 @@ video {
   row-gap: 1.75rem;
 }
 
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1853,6 +1861,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-b {
@@ -2038,6 +2050,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4f4f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fcfcfc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
 }
 
 .fill-\[\#fefefe\] {
@@ -3932,6 +3954,14 @@ header.active #headerarrow path{
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:left-\[62px\]) {
+  left: 62px;
+}
+
+:is([dir="ltr"] .ltr\:left-\[45px\]) {
+  left: 45px;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -4291,6 +4321,14 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:top-\[-3px\]) {
   top: -3px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[62px\]) {
+  right: 62px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[45px\]) {
+  right: 45px;
 }
 
 :is([dir="rtl"] .rtl\:-ml-20) {
@@ -4793,6 +4831,11 @@ header.active #headerarrow path{
     padding-right: 22px;
   }
 
+  .sm\:px-\[38px\] {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -4803,6 +4846,10 @@ header.active #headerarrow path{
 
   .sm\:pt-11 {
     padding-top: 2.75rem;
+  }
+
+  .sm\:pb-\[18px\] {
+    padding-bottom: 18px;
   }
 
   .sm\:text-\[22px\] {
@@ -4862,6 +4909,10 @@ header.active #headerarrow path{
     left: 53px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:left-\[62px\]) {
+    left: 62px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:-mr-10) {
     margin-right: -2.5rem;
   }
@@ -4906,6 +4957,10 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:right-\[53px\]) {
     right: 53px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:right-\[62px\]) {
+    right: 62px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:-ml-10) {
@@ -5079,6 +5134,10 @@ header.active #headerarrow path{
     gap: 3.5rem;
   }
 
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:rounded-\[200px\] {
     border-radius: 200px;
   }
@@ -5210,6 +5269,12 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:md\:pr-0) {
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 928px) {
+  .min-\[928px\]\:block {
+    display: block;
   }
 }
 

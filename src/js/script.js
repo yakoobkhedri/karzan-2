@@ -74,20 +74,27 @@ var portfollio = new Swiper(".portfollio", {
     nextEl: '.swiper-button-next', // دکمه بعدی
     prevEl: '.swiper-button-prev', // دکمه قبلی
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 var costumer = new Swiper(".costumer", {
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   loop:true,
   spaceBetween: 45,
   breakpoints: {
-    768: {
+    576: {
       slidesPerView: 2,
     },
-    1100: {
+    992: {
       slidesPerView: 3,
     },
-    1200: {
+    1100: {
+      slidesPerView: 4,
+    },
+    1300: {
       slidesPerView: 5,
     }
   },

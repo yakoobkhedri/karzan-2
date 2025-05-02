@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
   function setTabWidths() {
     tabItems.forEach((tab, index) => {
       // حذف کلاس‌های عرض موجود
-      tab.classList.remove('max-w-[238px]', 'max-w-[332px]');
+      tab.classList.remove('w-238px', 'w-332px');
       
       // اگر اولین یا آخرین تب است
       if (index === 0 || index === tabItems.length - 1) {
-        tab.classList.add('max-w-[238px]');
+        tab.classList.add('w-238px');
         tab.querySelector('div > h2:first-child').style.fontSize = '16px';
         tab.querySelector('div > h2:last-child').style.fontSize = '10px';
       } else {
-        tab.classList.add('max-w-[332px]');
+        tab.classList.add('w-332px');
       }
     });
   }

@@ -1374,6 +1374,10 @@ video {
   height: 224px;
 }
 
+.h-\[88px\] {
+  height: 88px;
+}
+
 .min-h-\[116px\] {
   min-height: 116px;
 }
@@ -1532,6 +1536,10 @@ video {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-\[88px\] {
+  width: 88px;
 }
 
 .min-w-\[238px\] {
@@ -4551,6 +4559,10 @@ header.active #headerarrow path{
     top: -0.25rem;
   }
 
+  .min-\[450px\]\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
   .min-\[450px\]\:hidden {
     display: none;
   }
@@ -4866,6 +4878,10 @@ header.active #headerarrow path{
     padding: 35px;
   }
 
+  .sm\:p-\[38px\] {
+    padding: 38px;
+  }
+
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4904,6 +4920,10 @@ header.active #headerarrow path{
 
   .sm\:pt-\[22px\] {
     padding-top: 22px;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-\[22px\] {
@@ -4949,6 +4969,10 @@ header.active #headerarrow path{
 
   .sm\:leading-8 {
     line-height: 2rem;
+  }
+
+  .sm\:leading-9 {
+    line-height: 2.25rem;
   }
 
   :is([dir="ltr"] .ltr\:sm\:-left-\[27px\]) {
@@ -5384,6 +5408,10 @@ header.active #headerarrow path{
     top: 0px;
   }
 
+  .min-\[910px\]\:mt-0 {
+    margin-top: 0px;
+  }
+
   .min-\[910px\]\:block {
     display: block;
   }
@@ -5413,6 +5441,21 @@ header.active #headerarrow path{
     margin-right: 2.5rem;
   }
 
+  :is([dir="ltr"] .min-\[910px\]\:ltr\:rotate-90) {
+    --tw-rotate: 90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  :is([dir="ltr"] .min-\[910px\]\:ltr\:rotate-0) {
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  :is([dir="ltr"] .min-\[910px\]\:ltr\:rotate-180) {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   :is([dir="ltr"] .ltr\:min-\[910px\]\:pl-2) {
     padding-left: 0.5rem;
   }
@@ -5435,6 +5478,11 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:min-\[910px\]\:ml-10) {
     margin-left: 2.5rem;
+  }
+
+  :is([dir="rtl"] .min-\[910px\]\:rtl\:rotate-0) {
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   :is([dir="rtl"] .rtl\:min-\[910px\]\:pr-2) {

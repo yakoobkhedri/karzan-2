@@ -213,9 +213,9 @@ a {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 2.12%, rgba(0, 0, 0, 0.04) 67.99%);
 }
 .bg-blur {
-  background-color: #FFFFFFE5;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  background-color: #9A9A9A9C;
+  backdrop-filter: blur(16.100000381469727px);
+  -webkit-backdrop-filter: blur(16.100000381469727px);
 }
 .reverse{
   @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]

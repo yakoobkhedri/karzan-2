@@ -21,32 +21,43 @@ tab.forEach((item) => {
 // swiper
 
 var solutions = new Swiper(".solutions", {
-  grid:{
-    fill: 'row',
-    rows : 2
-  },
-  slidesPerView: 2,
-  loop:true,
+  // تنظیمات پایه
+  loop: true,
   spaceBetween: 30,
+  
+  // تنظیمات پیش‌فرض برای موبایل (زیر 768px)
+  slidesPerView: 2,
+  grid: {
+    fill: 'row',
+    rows: 2 // دو ردیف در موبایل
+  },
+  
+  // تنظیمات breakpoint
   breakpoints: {
     768: {
       slidesPerView: 2,
-      grid:{
-        fill: 'col',
-        rows : 1
-      },
+      grid: {
+        rows: 1 // فقط یک ردیف در دسکتاپ
+      }
     },
     1100: {
       slidesPerView: 3,
+      grid: {
+        rows: 1
+      }
     },
     1400: {
       slidesPerView: 4,
+      grid: {
+        rows: 1
+      }
     }
   },
+  
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination3",
     clickable: true,
-  },
+  }
 });
 var skills = new Swiper(".skills", {
   slidesPerView: 1,

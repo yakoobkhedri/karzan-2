@@ -247,6 +247,9 @@ a {
 .shadow-6{
   box-shadow: 0px 0px 50px 0px #0000001A;
 }
+.shadow-next {
+  box-shadow: -2px 0px 24px 0px #0000001A;
+}
 /* number input */
 input[type="number"] {
   -moz-appearance: textfield; /* برای فایرفاکس */

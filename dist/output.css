@@ -3958,10 +3958,6 @@ header.active #headerarrow path{
   left: -1px;
 }
 
-:is([dir="ltr"] .ltr\:left-\[-83px\]) {
-  left: -83px;
-}
-
 :is([dir="ltr"] .ltr\:left-\[15px\]) {
   left: 15px;
 }
@@ -4351,10 +4347,6 @@ header.active #headerarrow path{
   right: -1px;
 }
 
-:is([dir="rtl"] .rtl\:right-\[-83px\]) {
-  right: -83px;
-}
-
 :is([dir="rtl"] .rtl\:right-\[15px\]) {
   right: 15px;
 }
@@ -4534,6 +4526,10 @@ header.active #headerarrow path{
   font-family: IranSansFaNum-Black;
 }
 
+:is([dir="rtl"] .rtl\:font-iranSansBold) {
+  font-family: IranSansFaNum-Bold;
+}
+
 :is([dir="rtl"] .rtl\:font-iranSansExtraBold) {
   font-family: IranSansFaNum-ExtraBold;
 }
@@ -4560,10 +4556,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:font-rokhFaNumLight) {
   font-family: RokhFaNum-Light;
-}
-
-:is([dir="rtl"] .rtl\:font-iranSansBold) {
-  font-family: IranSansFaNum-Bold;
 }
 
 :is([dir="rtl"] .rtl\:\[transform\:rotateY\(180deg\)\]) {
@@ -5028,6 +5020,10 @@ header.active #headerarrow path{
     left: 2.25rem;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:left-\[-83px\]) {
+    left: -83px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:left-\[35px\]) {
     left: 35px;
   }
@@ -5080,6 +5076,10 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:right-9) {
     right: 2.25rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:right-\[-83px\]) {
+    right: -83px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:right-\[35px\]) {

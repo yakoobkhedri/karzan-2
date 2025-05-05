@@ -4518,6 +4518,10 @@ header.active #headerarrow path{
   padding-right: 80px;
 }
 
+:is([dir="rtl"] .rtl\:pr-0) {
+  padding-right: 0px;
+}
+
 :is([dir="rtl"] .rtl\:text-left) {
   text-align: left;
 }
@@ -4959,6 +4963,14 @@ header.active #headerarrow path{
     padding-top: 22px;
   }
 
+  .sm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .sm\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .sm\:text-\[22px\] {
     font-size: 22px;
   }
@@ -5066,6 +5078,10 @@ header.active #headerarrow path{
     padding-left: 18px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:pl-\[80px\]) {
+    padding-left: 80px;
+  }
+
   :is([dir="rtl"] .rtl\:sm\:-right-\[27px\]) {
     right: -27px;
   }
@@ -5122,6 +5138,10 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:pr-\[18px\]) {
     padding-right: 18px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pr-\[80px\]) {
+    padding-right: 80px;
   }
 }
 

@@ -212,10 +212,17 @@ a {
 .bg-gradient-1{
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 2.12%, rgba(0, 0, 0, 0.04) 67.99%);
 }
+.bg-gradient-2{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(197, 197, 197, 0.55) 100%);
+}
 .bg-blur {
   background-color: #9A9A9A9C;
   backdrop-filter: blur(16.100000381469727px);
   -webkit-backdrop-filter: blur(16.100000381469727px);
+}
+.bg-blur-2 {
+  backdrop-filter: blur(45.099998474121094px);
+  -webkit-backdrop-filter: blur(45.099998474121094px);
 }
 .reverse{
   @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]

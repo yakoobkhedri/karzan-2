@@ -727,6 +727,10 @@ video {
   top: -24rem;
 }
 
+.-top-\[113px\] {
+  top: -113px;
+}
+
 .-top-\[13px\] {
   top: -13px;
 }
@@ -749,6 +753,10 @@ video {
 
 .-top-\[31px\] {
   top: -31px;
+}
+
+.-top-\[50px\] {
+  top: -50px;
 }
 
 .-top-\[5px\] {
@@ -1029,16 +1037,16 @@ video {
   margin-top: -1.75rem;
 }
 
+.-mt-\[106px\] {
+  margin-top: -106px;
+}
+
 .-mt-\[109px\] {
   margin-top: -109px;
 }
 
 .-mt-\[18px\] {
   margin-top: -18px;
-}
-
-.-mt-\[86px\] {
-  margin-top: -86px;
 }
 
 .mb-0 {
@@ -1093,6 +1101,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -1109,12 +1121,12 @@ video {
   margin-top: 0.625rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-4 {
@@ -1169,6 +1181,10 @@ video {
   margin-top: 22px;
 }
 
+.mt-\[28px\] {
+  margin-top: 28px;
+}
+
 .mt-\[29px\] {
   margin-top: 29px;
 }
@@ -1195,14 +1211,6 @@ video {
 
 .mt-\[92px\] {
   margin-top: 92px;
-}
-
-.mt-\[28px\] {
-  margin-top: 28px;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
 }
 
 .line-clamp-2 {
@@ -1328,6 +1336,10 @@ video {
 
 .h-\[21px\] {
   height: 21px;
+}
+
+.h-\[245px\] {
+  height: 245px;
 }
 
 .h-\[282px\] {
@@ -1666,6 +1678,10 @@ video {
   max-width: 313px;
 }
 
+.max-w-\[388px\] {
+  max-width: 388px;
+}
+
 .max-w-\[527px\] {
   max-width: 527px;
 }
@@ -1676,10 +1692,6 @@ video {
 
 .max-w-content {
   max-width: 1450px;
-}
-
-.max-w-\[388px\] {
-  max-width: 388px;
 }
 
 .flex-shrink-0 {
@@ -2062,13 +2074,13 @@ video {
   border-color: #ffffff13;
 }
 
+.border-\[\#ffffff20\] {
+  border-color: #ffffff20;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#ffffff20\] {
-  border-color: #ffffff20;
 }
 
 .bg-\[\#00000011\] {
@@ -2169,11 +2181,6 @@ video {
 .bg-\[\#efefef\] {
   --tw-bg-opacity: 1;
   background-color: rgb(239 239 239 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f2f2f2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f3f3f3d4\] {
@@ -2287,6 +2294,10 @@ video {
   padding: 1.75rem;
 }
 
+.p-\[13px\] {
+  padding: 13px;
+}
+
 .p-\[15px\] {
   padding: 15px;
 }
@@ -2297,10 +2308,6 @@ video {
 
 .p-\[9px\] {
   padding: 9px;
-}
-
-.p-\[13px\] {
-  padding: 13px;
 }
 
 .px-10 {
@@ -2441,6 +2448,10 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.pb-\[27px\] {
+  padding-bottom: 27px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -2491,10 +2502,6 @@ video {
 
 .pt-\[31px\] {
   padding-top: 31px;
-}
-
-.pb-\[27px\] {
-  padding-bottom: 27px;
 }
 
 .text-center {
@@ -4191,6 +4198,10 @@ header.active #headerarrow path{
   right: 1.75rem;
 }
 
+:is([dir="ltr"] .ltr\:right-8) {
+  right: 2rem;
+}
+
 :is([dir="ltr"] .ltr\:right-\[-1px\]) {
   right: -1px;
 }
@@ -4223,6 +4234,10 @@ header.active #headerarrow path{
   margin-left: 1rem;
 }
 
+:is([dir="ltr"] .ltr\:ml-6) {
+  margin-left: 1.5rem;
+}
+
 :is([dir="ltr"] .ltr\:ml-\[6px\]) {
   margin-left: 6px;
 }
@@ -4249,6 +4264,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:mr-20) {
   margin-right: 5rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-6) {
+  margin-right: 1.5rem;
 }
 
 :is([dir="ltr"] .ltr\:mr-8) {
@@ -4464,6 +4483,10 @@ header.active #headerarrow path{
   left: 2.5rem;
 }
 
+:is([dir="rtl"] .rtl\:left-8) {
+  left: 2rem;
+}
+
 :is([dir="rtl"] .rtl\:left-\[-1px\]) {
   left: -1px;
 }
@@ -4596,6 +4619,10 @@ header.active #headerarrow path{
   margin-left: 5rem;
 }
 
+:is([dir="rtl"] .rtl\:ml-6) {
+  margin-left: 1.5rem;
+}
+
 :is([dir="rtl"] .rtl\:ml-8) {
   margin-left: 2rem;
 }
@@ -4604,8 +4631,16 @@ header.active #headerarrow path{
   margin-right: 1rem;
 }
 
+:is([dir="rtl"] .rtl\:mr-6) {
+  margin-right: 1.5rem;
+}
+
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="rtl"] .rtl\:ml-auto) {
+  margin-left: auto;
 }
 
 :is([dir="rtl"] .rtl\:-rotate-\[20deg\]) {
@@ -5292,6 +5327,10 @@ header.active #headerarrow path{
     border-top-right-radius: 10px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:rounded-tl-\[10px\]) {
+    border-top-left-radius: 10px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:border-l-2) {
     border-left-width: 2px;
   }
@@ -5360,6 +5399,10 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:rounded-tl-\[10px\]) {
     border-top-left-radius: 10px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:rounded-tr-\[10px\]) {
+    border-top-right-radius: 10px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:border-r-2) {

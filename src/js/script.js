@@ -118,7 +118,26 @@ var costumer = new Swiper(".costumer", {
     clickable: true,
   },
 });
-
+var team = new Swiper(".team", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 44,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1100: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));

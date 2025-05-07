@@ -224,6 +224,10 @@ a {
   backdrop-filter: blur(45.099998474121094px);
   -webkit-backdrop-filter: blur(45.099998474121094px);
 }
+.bg-blur-3{
+  backdrop-filter: blur(37.599998474121094px);
+  -webkit-backdrop-filter: blur(37.599998474121094px);
+}
 .reverse{
   @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]
 }

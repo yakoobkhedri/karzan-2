@@ -121,16 +121,19 @@ var costumer = new Swiper(".costumer", {
 var team = new Swiper(".team", {
   slidesPerView: 1,
   loop:true,
-  spaceBetween: 44,
+  spaceBetween: 33,
   breakpoints: {
     576: {
       slidesPerView: 2,
+      spaceBetween: 33,
     },
     992: {
       slidesPerView: 3,
+      spaceBetween: 33,
     },
-    1100: {
+    1200: {
       slidesPerView: 4,
+      spaceBetween: 44,
     },
   },
   pagination: {

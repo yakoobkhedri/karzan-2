@@ -118,6 +118,30 @@ var costumer = new Swiper(".costumer", {
     clickable: true,
   },
 });
+var costumer2 = new Swiper(".costumer2", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 30,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next2', // دکمه بعدی
+    prevEl: '.swiper-button-prev2', // دکمه قبلی
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+});
 var team = new Swiper(".team", {
   slidesPerView: 1,
   loop:true,

@@ -228,6 +228,10 @@ a {
   backdrop-filter: blur(37.599998474121094px);
   -webkit-backdrop-filter: blur(37.599998474121094px);
 }
+.bg-blur-4 {
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
 .reverse{
   @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]
 }
@@ -406,7 +410,7 @@ header.active #headerarrow path{
 }
 /* editor */
 .editor-section {
-  font-family: YekanBakhFaNum-Regular!important;
+  font-family: IranYekanFaNum-Regular!important;
 }
 .editor-section img{
   border-radius: 18px;
@@ -463,25 +467,25 @@ header.active #headerarrow path{
   position: absolute;
   height: 100%;
   width: 1px;
-  background-color: #00000020;
+  background-color: #110E2D;
   right: 14px;
 }
 .editor-section ul li{
-  @apply relative flex items-center gap-2 p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[#404040] font-semibold;
+  @apply relative flex items-center gap-2 text-sm p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[00000060] font-semibold;
 }
 .editor-section ul li::before{
-  content: url('../src/img/Ellipse 29.PNG');
+  content: url('../src/img/Ellipse 113.PNG');
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
-  top:15px
+  top:15px;
 }
 .editor-section ul li::before{
   @apply rtl:right-2 ltr:left-2
 }
 .editor-section ul li{
-  @apply text-sm sm:text-base text-[#2C2C2C];
+  @apply text-sm text-[#00000060];
 }
 /* tab */
 .tab:hover,.tab.active{

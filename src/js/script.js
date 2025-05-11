@@ -142,6 +142,26 @@ var costumer2 = new Swiper(".costumer2", {
     clickable: true,
   },
 });
+var blog = new Swiper(".blog", {
+  slidesPerView: 1,
+  loop:true,
+  spaceBetween: 30,
+  breakpoints: {
+    630: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next2', // دکمه بعدی
+    prevEl: '.swiper-button-prev2', // دکمه قبلی
+  },
+});
 var team = new Swiper(".team", {
   slidesPerView: 1,
   loop:true,

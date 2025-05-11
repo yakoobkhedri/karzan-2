@@ -422,22 +422,34 @@ header.active #headerarrow path{
   @apply overflow-hidden w-full ltr:text-left text-right;
 }
 .editor-section thead{
-   @apply text-black;
+   @apply text-primary;
 }
 .editor-section th{
-  @apply !py-4 text-sm sm:text-base text-[#404040] font-extrabold border-b border-[#00000013];
+  @apply !py-4 text-sm sm:text-base text-primary font-extrabold;
+}
+.editor-section th{
+  @apply rtl:pr-10
 }
 .editor-section tbody{
-  /* @apply [&>*:nth-child(even)]:bg-white [&>*:nth-child(odd)]:bg-[#F8F8F8]; */
+  @apply bg-white rounded-[15px] sm:rounded-[30px];
 }
-.editor-section tbody tr {
-  @apply text-xs text-[#404040];
+.editor-section tbody tr td {
+  @apply text-sm text-primary opacity-70 rtl:pr-10 ltr:pl-10 rtl:pl-4 ltr:pr-4;
 }
-.editor-section tbody tr td:first-child {
-  @apply text-[#EE5D37] font-semibold opacity-100 text-sm;
+.editor-section tbody tr:first-child td:first-child {
+  @apply rtl:rounded-tr-[15px] rtl:sm:rounded-tr-[30px] ltr:rounded-tl-[15px] ltr:sm:rounded-tl-[30px];
+}
+.editor-section tbody tr:first-child td:last-child {
+  @apply rtl:rounded-tl-[15px] rtl:sm:rounded-tl-[30px] ltr:rounded-tr-[15px] ltr:sm:rounded-tr-[30px];
+}
+.editor-section tbody tr:last-child td:first-child {
+  @apply rtl:rounded-br-[15px] rtl:sm:rounded-br-[30px] ltr:rounded-bl-[15px] ltr:sm:rounded-bl-[30px];
+}
+.editor-section tbody tr:last-child td:last-child {
+  @apply rtl:rounded-bl-[15px] rtl:sm:rounded-bl-[30px] ltr:rounded-br-[15px] ltr:sm:rounded-br-[30px];
 }
 .editor-section tbody td{
-  @apply py-5 opacity-60 border-dashed border-b border-[#00000020] leading-6;
+  @apply py-5 opacity-60 border-b border-[#00000020] leading-6;
 }
 .editor-section tbody td:nth-child(1){
   @apply w-1/3
@@ -449,13 +461,13 @@ header.active #headerarrow path{
   @apply !border-b-0;
 }
 .editor-section a{
-  background-color: #7e7eff;
+  /* background-color: #7e7eff;
   opacity: 100%;
   border-radius: 8px;
   padding: 3px;
   color: white;
   margin-right: 4px;
-  margin-left: 4px;
+  margin-left: 4px; */
 }
 .editor-section ul{
   font-weight: bold;

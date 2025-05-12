@@ -483,7 +483,7 @@ header.active #headerarrow path{
   right: 14px;
 }
 .editor-section ul li{
-  @apply relative flex items-center gap-2 text-sm p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[00000060] font-semibold;
+  @apply relative flex flex-wrap items-center gap-2 text-sm p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[00000070] font-semibold;
 }
 .editor-section ul li::before{
   content: url('../src/img/Ellipse 113.PNG');
@@ -497,7 +497,7 @@ header.active #headerarrow path{
   @apply rtl:right-2 ltr:left-2
 }
 .editor-section ul li{
-  @apply text-sm text-[#00000060];
+  @apply text-sm text-[#00000070];
 }
 /* tab */
 .tab:hover,.tab.active{

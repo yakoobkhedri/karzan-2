@@ -185,6 +185,12 @@ var team = new Swiper(".team", {
     clickable: true,
   },
 });
+var roadmap = new Swiper(".roadmap", {
+  slidesPerView: 4,
+  loop:true,
+  spaceBetween: 5,
+  direction: "vertical",
+});
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));

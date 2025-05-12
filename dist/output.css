@@ -891,6 +891,22 @@ video {
   top: 76px;
 }
 
+.-left-\[140px\] {
+  left: -140px;
+}
+
+.-left-\[60px\] {
+  left: -60px;
+}
+
+.-right-\[140px\] {
+  right: -140px;
+}
+
+.-right-\[60px\] {
+  right: -60px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1173,6 +1189,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1311,10 +1331,6 @@ video {
 
 .mt-\[92px\] {
   margin-top: 92px;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .line-clamp-2 {
@@ -1633,6 +1649,10 @@ video {
   height: 82px;
 }
 
+.h-\[830px\] {
+  height: 830px;
+}
+
 .h-\[84px\] {
   height: 84px;
 }
@@ -1655,10 +1675,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[830px\] {
-  height: 830px;
 }
 
 .min-h-\[124px\] {
@@ -1881,12 +1897,12 @@ video {
   width: 93%;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[95\%\] {
   width: 95%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-\[238px\] {
@@ -2074,10 +2090,6 @@ video {
 
 .gap-1\.5 {
   gap: 0.375rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-2 {
@@ -2415,10 +2427,6 @@ video {
   background-color: #110e2d20;
 }
 
-.bg-\[\#110e2d21\] {
-  background-color: #110e2d21;
-}
-
 .bg-\[\#120F2D24\] {
   background-color: #120F2D24;
 }
@@ -2525,6 +2533,11 @@ video {
   background-color: #d6d9df51;
 }
 
+.bg-\[\#d7d6da\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 214 218 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#d9d9d9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -2618,11 +2631,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d7d6da\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(215 214 218 / var(--tw-bg-opacity));
 }
 
 .fill-\[\#fefefe\] {
@@ -4497,7 +4505,10 @@ header.active #headerarrow path{
   }
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1024px){
+  .shadow-lg-2{
+    box-shadow: 0px 0px 200px 0px #0000001A;
+  }
 }
 
 @media (max-width: 768px){
@@ -4819,6 +4830,14 @@ header.active #headerarrow path{
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-right-\[60px\]) {
+  right: -60px;
+}
+
+:is([dir="ltr"] .ltr\:-right-\[140px\]) {
+  right: -140px;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -4895,12 +4914,12 @@ header.active #headerarrow path{
   margin-right: 2rem;
 }
 
-:is([dir="ltr"] .ltr\:mr-\[68px\]) {
-  margin-right: 68px;
-}
-
 :is([dir="ltr"] .ltr\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="ltr"] .ltr\:-mr-6) {
+  margin-right: -1.5rem;
 }
 
 :is([dir="ltr"] .ltr\:-rotate-90) {
@@ -4920,6 +4939,11 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:rotate-\[20deg\]) {
   --tw-rotate: 20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="ltr"] .ltr\:rotate-180) {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -5293,6 +5317,14 @@ header.active #headerarrow path{
   top: -3px;
 }
 
+:is([dir="rtl"] .rtl\:-left-\[60px\]) {
+  left: -60px;
+}
+
+:is([dir="rtl"] .rtl\:-left-\[140px\]) {
+  left: -140px;
+}
+
 :is([dir="rtl"] .rtl\:-mr-3) {
   margin-right: -0.75rem;
 }
@@ -5333,10 +5365,6 @@ header.active #headerarrow path{
   margin-left: 2rem;
 }
 
-:is([dir="rtl"] .rtl\:ml-\[68px\]) {
-  margin-left: 68px;
-}
-
 :is([dir="rtl"] .rtl\:ml-auto) {
   margin-left: auto;
 }
@@ -5361,6 +5389,10 @@ header.active #headerarrow path{
   margin-right: auto;
 }
 
+:is([dir="rtl"] .rtl\:-ml-20) {
+  margin-left: -5rem;
+}
+
 :is([dir="rtl"] .rtl\:-rotate-\[20deg\]) {
   --tw-rotate: -20deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5373,6 +5405,11 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:rotate-90) {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+:is([dir="rtl"] .rtl\:rotate-0) {
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -7094,6 +7131,10 @@ header.active #headerarrow path{
     fill: #fbfbfb;
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:p-7 {
     padding: 1.75rem;
   }
@@ -7128,6 +7169,10 @@ header.active #headerarrow path{
     line-height: 1.5rem;
   }
 
+  .lg\:leading-\[133\%\] {
+    line-height: 133%;
+  }
+
   .lg\:leading-\[139\%\] {
     line-height: 139%;
   }
@@ -7138,10 +7183,6 @@ header.active #headerarrow path{
 
   .lg\:leading-\[217\%\] {
     line-height: 217%;
-  }
-
-  .lg\:leading-\[133\%\] {
-    line-height: 133%;
   }
 
   :is([dir="ltr"] .ltr\:lg\:-left-7) {
@@ -7423,6 +7464,10 @@ header.active #headerarrow path{
     gap: 0.25rem;
   }
 
+  .xl\:gap-12 {
+    gap: 3rem;
+  }
+
   .xl\:gap-16 {
     gap: 4rem;
   }
@@ -7487,6 +7532,10 @@ header.active #headerarrow path{
     margin-right: 1.5rem;
   }
 
+  :is([dir="ltr"] .ltr\:xl\:mr-\[68px\]) {
+    margin-right: 68px;
+  }
+
   :is([dir="ltr"] .ltr\:xl\:fill-\[\#fbfbfb\]) {
     fill: #fbfbfb;
   }
@@ -7529,6 +7578,10 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:xl\:ml-6) {
     margin-left: 1.5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:ml-\[68px\]) {
+    margin-left: 68px;
   }
 
   :is([dir="rtl"] .rtl\:xl\:mr-0) {

@@ -826,8 +826,10 @@ header.active #headerarrow path{
     transform: scale3d(1, 1, 1);
   }
 }
-@media (max-width: 1280px){
- 
+@media (max-width: 1024px){
+ .shadow-lg-2{
+  box-shadow: 0px 0px 200px 0px #0000001A;
+ }
 }
 @media (max-width: 768px){
  

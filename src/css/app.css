@@ -480,7 +480,9 @@ header.active #headerarrow path{
   height: 100%;
   width: 1px;
   background-color: #110E2D;
-  right: 14px;
+}
+.editor-section ul::before{
+  @apply rtl:right-[14px] ltr:left-[14px];
 }
 .editor-section ul li{
   @apply relative flex flex-wrap items-center gap-2 text-sm p-3 rtl:pr-10 ltr:pl-10 last:mb-0 text-[00000070] font-semibold;

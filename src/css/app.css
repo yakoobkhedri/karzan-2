@@ -230,6 +230,57 @@ linear-gradient(180deg, #069CDF 49.09%, rgba(6, 156, 223, 0.48) 145.21%);
   background-size: cover;
   background-repeat: no-repeat;
 }
+.gradient-before-2::before{
+  content: '';
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:#1E2D48F7;
+}
+.gradient-before-2{
+  background-image: url('../src/img/30e685337f058172181b63a1520fad0f4b4a4f73.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gradient-before-3::before{
+  content: '';
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ background: linear-gradient(0deg, rgba(211, 104, 44, 0), rgba(211, 104, 44, 0)),
+linear-gradient(180deg, #FF8946 49.09%, rgba(211, 104, 44, 0.48) 145.21%);
+}
+.gradient-before-3{
+  background-image: url('../src/img/106ac5c786ce815a74e06c5e3e0a40a790b80581.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gradient-before-4::before{
+  content: '';
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ background: #4D86F1CC;
+}
+.gradient-before-4{
+  background-image: url('../src/img/04ee616b1cab60a04fc0b69cbf5237882029c5f2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gradient-before-5::before{
+   content: '';
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(211.32deg, #64C2DB 0%, #7476ED 51.04%, #E56F8C 100%);
+}
 .bg-blur {
   background-color: #9A9A9A9C;
   backdrop-filter: blur(16.100000381469727px);
@@ -800,6 +851,12 @@ header.active #headerarrow path{
 .swiper-pagination2 .swiper-pagination-bullet-active{
   width: 33px;
   background-color: #110E2D;
+}
+.customer3 .swiper-slide-visible.swiper-slide-prev{
+  transform: translate3d(-56px, 31px, -53px) rotateX(0deg) rotateY(0deg) scale(1) rotate(12deg) !important;
+}
+.customer3 .swiper-slide-visible.swiper-slide-next{
+  transform: translate3d(56px, 33px, -53px) rotateX(0deg) rotateY(0deg) scale(1) rotate(-12deg) !important;
 }
 /* demo portfollio effect */
 .demo-bg:hover{

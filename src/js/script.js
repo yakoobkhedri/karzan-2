@@ -3,18 +3,18 @@
 let tab = Array.from(document.querySelectorAll('.tab'));
 let tabContent = Array.from(document.querySelectorAll('.tabContent'));
 tab.forEach((item) => {
-  item.addEventListener('click', function() {
-    tab.forEach((items) => {items.classList.remove('active')});
-      item.classList.add('active');
-      let tabId = item.dataset.id;
-      tabContent.forEach((content) => {
-          let contentId = content.dataset.id;
-          if (tabId === contentId) {
-              content.classList.add('active');
-          } else {
-            content.classList.remove('active');
-          }
-      })
+  item.addEventListener('click', function () {
+    tab.forEach((items) => { items.classList.remove('active') });
+    item.classList.add('active');
+    let tabId = item.dataset.id;
+    tabContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    })
   })
 })
 
@@ -24,14 +24,14 @@ var solutions = new Swiper(".solutions", {
   // تنظیمات پایه
   loop: true,
   spaceBetween: 30,
-  
+
   // تنظیمات پیش‌فرض برای موبایل (زیر 768px)
   slidesPerView: 2,
   grid: {
     fill: 'row',
     rows: 2 // دو ردیف در موبایل
   },
-  
+
   // تنظیمات breakpoint
   breakpoints: {
     768: {
@@ -53,7 +53,7 @@ var solutions = new Swiper(".solutions", {
       }
     }
   },
-  
+
   pagination: {
     el: ".swiper-pagination3",
     clickable: true,
@@ -61,7 +61,7 @@ var solutions = new Swiper(".solutions", {
 });
 var skills = new Swiper(".skills", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -70,7 +70,7 @@ var skills = new Swiper(".skills", {
 });
 var services = new Swiper(".services", {
   slidesPerView: 2,
-  loop:true,
+  loop: true,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -79,7 +79,7 @@ var services = new Swiper(".services", {
 });
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 30,
   navigation: {
     nextEl: '.swiper-button-next', // دکمه بعدی
@@ -93,7 +93,7 @@ var portfollio = new Swiper(".portfollio", {
 
 var costumer = new Swiper(".costumer", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 45,
   breakpoints: {
     576: {
@@ -120,7 +120,7 @@ var costumer = new Swiper(".costumer", {
 });
 var costumer2 = new Swiper(".costumer2", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 30,
   breakpoints: {
     576: {
@@ -143,18 +143,28 @@ var costumer2 = new Swiper(".costumer2", {
   },
 });
 var customer3 = new Swiper(".customer3", {
-  slidesPerView: 5,
-  loop:true,
-  spaceBetween: 0,
-   centeredSlides: true,   // فعال کردن حالت وسط چین
+  effect: "coverflow",
+  loop: true,
+  autoplay: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
 });
 var blog = new Swiper(".blog", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 30,
   breakpoints: {
     630: {
@@ -174,7 +184,7 @@ var blog = new Swiper(".blog", {
 });
 var team = new Swiper(".team", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   spaceBetween: 33,
   breakpoints: {
     576: {
@@ -197,7 +207,7 @@ var team = new Swiper(".team", {
 });
 var roadmap = new Swiper(".roadmap", {
   slidesPerView: 4,
-  loop:true,
+  loop: true,
   spaceBetween: 5,
   direction: "vertical",
 });

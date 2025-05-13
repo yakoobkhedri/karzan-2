@@ -142,6 +142,16 @@ var costumer2 = new Swiper(".costumer2", {
     clickable: true,
   },
 });
+var customer3 = new Swiper(".customer3", {
+  slidesPerView: 5,
+  loop:true,
+  spaceBetween: 0,
+   centeredSlides: true,   // فعال کردن حالت وسط چین
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 var blog = new Swiper(".blog", {
   slidesPerView: 1,
   loop:true,

@@ -876,6 +876,12 @@ font-size: 14px
   opacity: 0;
   visibility: hidden;
 }
+.bannerbox .swiper-button-next,.bannerbox .swiper-button-prev{
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 100% !important;
+  background: #EE5D38 !important;
+}
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;
 }

@@ -40,6 +40,10 @@ var banner = new Swiper(".banner", {
     el: ".swiper-pagination",
     clickable: true,
   },
+    navigation: {
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
+  },
   allowTouchMove: false,
   
   // اضافه کردن رویداد slideChange

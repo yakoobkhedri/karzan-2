@@ -1876,6 +1876,10 @@ video {
   width: 238px;
 }
 
+.w-\[24px\] {
+  width: 24px;
+}
+
 .w-\[264px\] {
   width: 264px;
 }
@@ -2496,6 +2500,10 @@ video {
 
 .bg-\[\#00000020\] {
   background-color: #00000020;
+}
+
+.bg-\[\#00000030\] {
+  background-color: #00000030;
 }
 
 .bg-\[\#110E2D2E\] {
@@ -4716,14 +4724,33 @@ header.active #headerarrow path{
   background: #EE5D38 !important;
 }
 
-.swiper-pagination5 {
-  background: #f0f0f0;
-  /* رنگ پس‌زمینه خاکستری */
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  /* ایجاد شکل هلالی */
-  -webkit-clip-path: ellipse(50% 100% at 50% 0%);
-          clip-path: ellipse(50% 100% at 50% 0%);
-  /* برش به شکل هلال */
+.swiper-pagination5:after {
+  position: absolute;
+  background-color: white;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 10px;
+  border-top-left-radius: 286%;
+  border-bottom-left-radius: 286%;
+  z-index: 9;
+}
+
+.swiper-pagination5:before {
+  position: absolute;
+  background-color: white;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  border-top-right-radius: 286%;
+  border-bottom-right-radius: 286%;
+  z-index: 9;
+  transform: rotateX(90deg);
 }
 
 .swiper-button-prev::after,.swiper-button-next::after {

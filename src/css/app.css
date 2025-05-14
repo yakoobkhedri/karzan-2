@@ -882,6 +882,11 @@ font-size: 14px
   border-radius: 100% !important;
   background: #EE5D38 !important;
 }
+.swiper-pagination5 {
+  background: #f0f0f0; /* رنگ پس‌زمینه خاکستری */
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* ایجاد شکل هلالی */
+  clip-path: ellipse(50% 100% at 50% 0%); /* برش به شکل هلال */
+}
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;
 }

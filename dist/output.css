@@ -799,6 +799,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
 .bottom-28 {
   bottom: 7rem;
 }
@@ -891,6 +895,10 @@ video {
   top: 1.25rem;
 }
 
+.top-6 {
+  top: 1.5rem;
+}
+
 .top-7 {
   top: 1.75rem;
 }
@@ -915,16 +923,8 @@ video {
   top: 76px;
 }
 
-.top-6 {
-  top: 1.5rem;
-}
-
 .top-auto {
   top: auto;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
 }
 
 .-z-0 {
@@ -1408,6 +1408,10 @@ video {
   height: 1.25rem !important;
 }
 
+.\!h-6 {
+  height: 1.5rem !important;
+}
+
 .\!h-8 {
   height: 2rem !important;
 }
@@ -1708,14 +1712,6 @@ video {
   height: 100%;
 }
 
-.\!h-4 {
-  height: 1rem !important;
-}
-
-.\!h-6 {
-  height: 1.5rem !important;
-}
-
 .min-h-\[124px\] {
   min-height: 124px;
 }
@@ -1758,6 +1754,10 @@ video {
 
 .\!w-5 {
   width: 1.25rem !important;
+}
+
+.\!w-6 {
+  width: 1.5rem !important;
 }
 
 .\!w-8 {
@@ -1970,14 +1970,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.\!w-4 {
-  width: 1rem !important;
-}
-
-.\!w-6 {
-  width: 1.5rem !important;
 }
 
 .min-w-\[238px\] {
@@ -4724,6 +4716,16 @@ header.active #headerarrow path{
   background: #EE5D38 !important;
 }
 
+.swiper-pagination5 {
+  background: #f0f0f0;
+  /* رنگ پس‌زمینه خاکستری */
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  /* ایجاد شکل هلالی */
+  -webkit-clip-path: ellipse(50% 100% at 50% 0%);
+          clip-path: ellipse(50% 100% at 50% 0%);
+  /* برش به شکل هلال */
+}
+
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;
 }
@@ -5166,6 +5168,10 @@ header.active #headerarrow path{
   right: 1rem;
 }
 
+:is([dir="ltr"] .ltr\:right-5) {
+  right: 1.25rem;
+}
+
 :is([dir="ltr"] .ltr\:right-7) {
   right: 1.75rem;
 }
@@ -5174,16 +5180,16 @@ header.active #headerarrow path{
   right: -1px;
 }
 
+:is([dir="ltr"] .ltr\:right-\[29px\]) {
+  right: 29px;
+}
+
 :is([dir="ltr"] .ltr\:right-\[52px\]) {
   right: 52px;
 }
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:right-5) {
-  right: 1.25rem;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -5545,8 +5551,16 @@ header.active #headerarrow path{
   left: 2.5rem;
 }
 
+:is([dir="rtl"] .rtl\:left-5) {
+  left: 1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:left-\[-1px\]) {
   left: -1px;
+}
+
+:is([dir="rtl"] .rtl\:left-\[29px\]) {
+  left: 29px;
 }
 
 :is([dir="rtl"] .rtl\:left-\[52px\]) {
@@ -5671,10 +5685,6 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:top-\[-3px\]) {
   top: -3px;
-}
-
-:is([dir="rtl"] .rtl\:left-5) {
-  left: 1.25rem;
 }
 
 :is([dir="rtl"] .rtl\:-ml-20) {
@@ -8035,6 +8045,10 @@ header.active #headerarrow path{
     left: -1.75rem;
   }
 
+  :is([dir="ltr"] .ltr\:xl\:-right-10) {
+    right: -2.5rem;
+  }
+
   :is([dir="ltr"] .ltr\:xl\:-right-7) {
     right: -1.75rem;
   }
@@ -8085,6 +8099,10 @@ header.active #headerarrow path{
 
   :is([dir="ltr"] .ltr\:xl\:pr-\[0px\]) {
     padding-right: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:-left-10) {
+    left: -2.5rem;
   }
 
   :is([dir="rtl"] .rtl\:xl\:-left-7) {

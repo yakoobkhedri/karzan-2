@@ -37,7 +37,7 @@ var banner = new Swiper(".banner", {
   },
   direction: "vertical",
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination5",
     clickable: true,
   },
     navigation: {

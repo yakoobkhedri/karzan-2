@@ -20,6 +20,14 @@ tab.forEach((item) => {
 
 // swiper
 
+var banner = new Swiper(".banner", {
+  slidesPerView: 5,
+  centeredSlides: true,   // فعال کردن حالت وسط چین
+  loop: true,
+  spaceBetween: 20,
+  direction: "vertical",
+});
+
 var solutions = new Swiper(".solutions", {
   // تنظیمات پایه
   loop: true,

@@ -1293,10 +1293,6 @@ video {
   margin-top: 28px;
 }
 
-.mt-\[29px\] {
-  margin-top: 29px;
-}
-
 .mt-\[30px\] {
   margin-top: 30px;
 }
@@ -1415,6 +1411,10 @@ video {
 
 .\!h-\[190px\] {
   height: 190px !important;
+}
+
+.\!h-\[54px\] {
+  height: 54px !important;
 }
 
 .h-1 {
@@ -1587,6 +1587,10 @@ video {
 
 .h-\[46px\] {
   height: 46px;
+}
+
+.h-\[483px\] {
+  height: 483px;
 }
 
 .h-\[486px\] {
@@ -1861,6 +1865,10 @@ video {
   width: 233px;
 }
 
+.w-\[238px\] {
+  width: 238px;
+}
+
 .w-\[264px\] {
   width: 264px;
 }
@@ -1963,6 +1971,10 @@ video {
 
 .min-w-\[256px\] {
   min-width: 256px;
+}
+
+.min-w-\[\[238px\]\] {
+  min-width: [238px];
 }
 
 .max-w-\[1237px\] {
@@ -4016,6 +4028,10 @@ header.active #headerarrow path{
   opacity: 100%;
 }
 
+.text-nowrap{
+  text-wrap: nowrap;
+}
+
 /* scroll */
 
 .noscroll {
@@ -4630,6 +4646,63 @@ header.active #headerarrow path{
 }
 
 /* swiper */
+
+.banner .swiper-slide.swiper-slide-active > div{
+  background: #EDF2F8;
+  width: 427px;
+  opacity: 100%;
+  border: none;
+}
+
+.banner .swiper-slide.swiper-slide-next > div,.banner .swiper-slide.swiper-slide-prev > div{
+  width: 332px;
+  opacity: 60%;
+}
+
+.banner .swiper-slide {
+  transition: all 0.4s;
+}
+
+.banner .swiper-slide.swiper-slide-active {
+  height: 103px !important;
+}
+
+.banner .swiper-slide.swiper-slide-next,.banner .swiper-slide.swiper-slide-prev {
+  height: 78px !important;
+}
+
+.banner .swiper-slide > div h2:first-child,.banner .swiper-slide > div h2:last-child
+{
+  transition: all 0.4s;
+  text-wrap: nowrap;
+}
+
+.banner .swiper-slide.swiper-slide-active > div h2:first-child{
+  font-size: 30px
+}
+
+.banner .swiper-slide.swiper-slide-next > div h2:first-child,.banner .swiper-slide.swiper-slide-prev > div h2:first-child{
+  font-size: 22px
+}
+
+.banner .swiper-slide.swiper-slide-active > div h2:last-child{
+  font-size: 20px
+}
+
+.banner .swiper-slide.swiper-slide-next > div h2:last-child,.banner .swiper-slide.swiper-slide-prev > div h2:last-child{
+  font-size: 14px
+}
+
+.banner .swiper-slide.swiper-slide-active > div > div:last-child{
+  opacity: 100%;
+  visibility: visible;
+}
+
+.banner .swiper-slide > div > div:last-child{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
 
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;

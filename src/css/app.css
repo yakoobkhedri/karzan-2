@@ -469,6 +469,9 @@ header.active #headerarrow path{
 .arrowShape.active{
   opacity: 100%;
 }
+.text-nowrap{
+  text-wrap: nowrap;
+}
 /* scroll */
 .noscroll {
   scrollbar-width: none; /* برای Firefox */
@@ -825,6 +828,51 @@ header.active #headerarrow path{
   background-color: #ddd;
 }
 /* swiper */
+.banner .swiper-slide.swiper-slide-active > div{
+  background: #EDF2F8;
+  width: 427px;
+  opacity: 100%;
+  border: none;
+}
+.banner .swiper-slide.swiper-slide-next > div,.banner .swiper-slide.swiper-slide-prev > div{
+  width: 332px;
+  opacity: 60%;
+}
+.banner .swiper-slide {
+  transition: all 0.4s;
+}
+.banner .swiper-slide.swiper-slide-active {
+  height: 103px !important;
+}
+.banner .swiper-slide.swiper-slide-next,.banner .swiper-slide.swiper-slide-prev {
+  height: 78px !important;
+}
+.banner .swiper-slide > div h2:first-child,.banner .swiper-slide > div h2:last-child
+{
+ transition: all 0.4s;
+ text-wrap: nowrap;
+}
+.banner .swiper-slide.swiper-slide-active > div h2:first-child{
+font-size: 30px
+}
+.banner .swiper-slide.swiper-slide-next > div h2:first-child,.banner .swiper-slide.swiper-slide-prev > div h2:first-child{
+font-size: 22px
+}
+.banner .swiper-slide.swiper-slide-active > div h2:last-child{
+font-size: 20px
+}
+.banner .swiper-slide.swiper-slide-next > div h2:last-child,.banner .swiper-slide.swiper-slide-prev > div h2:last-child{
+font-size: 14px
+}
+.banner .swiper-slide.swiper-slide-active > div > div:last-child{
+  opacity: 100%;
+  visibility: visible;
+}
+.banner .swiper-slide > div > div:last-child{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;
 }

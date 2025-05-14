@@ -882,32 +882,24 @@ font-size: 14px
   border-radius: 100% !important;
   background: #EE5D38 !important;
 }
-.swiper-pagination5:after {
-  position: absolute;
-  background-color: white;
-  content: '';
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 10px;
-  border-top-left-radius: 286%;
-  border-bottom-left-radius: 286%;
-  z-index: 9;
-}
 .swiper-pagination5:before {
   position: absolute;
-  background-color: white;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
+  content: url('../src/img/Identicator.png');
+  inset: 0;
+  width: 100%;
   height: 100%;
-  width: 10px;
-  border-top-right-radius: 286%;
-  border-bottom-right-radius: 286%;
-  z-index: 9;
-  transform: rotateX(90deg);
+}
+.swiper-pagination5 .swiper-pagination-bullet{
+  margin: 0 !important;
+}
+.swiper-pagination5 .swiper-pagination-bullet{
+  height: calc(93px * 0.1);
+  width: 100%;
+  background-color: transparent;
+}
+.swiper-pagination5 .swiper-pagination-bullet-active{
+  height: 18px;
+  background-color: #110E2D;
 }
 .swiper-button-prev::after,.swiper-button-next::after {
   content: none !important;

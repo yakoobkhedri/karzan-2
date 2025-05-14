@@ -1132,6 +1132,10 @@ video {
   margin-top: -18px;
 }
 
+.-mt-\[2px\] {
+  margin-top: -2px;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1874,10 +1878,6 @@ video {
 
 .w-\[238px\] {
   width: 238px;
-}
-
-.w-\[24px\] {
-  width: 24px;
 }
 
 .w-\[264px\] {
@@ -4724,33 +4724,24 @@ header.active #headerarrow path{
   background: #EE5D38 !important;
 }
 
-.swiper-pagination5:after {
-  position: absolute;
-  background-color: white;
-  content: '';
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 10px;
-  border-top-left-radius: 286%;
-  border-bottom-left-radius: 286%;
-  z-index: 9;
-}
-
 .swiper-pagination5:before {
   position: absolute;
-  background-color: white;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
+  content: url('../src/img/Identicator.png');
+  inset: 0;
+  width: 100%;
   height: 100%;
-  width: 10px;
-  border-top-right-radius: 286%;
-  border-bottom-right-radius: 286%;
-  z-index: 9;
-  transform: rotateX(90deg);
+}
+
+.swiper-pagination5 .swiper-pagination-bullet{
+  margin: 0 !important;
+  height: calc(93px * 0.1);
+  width: 100%;
+  background-color: transparent;
+}
+
+.swiper-pagination5 .swiper-pagination-bullet-active{
+  height: 18px;
+  background-color: #110E2D;
 }
 
 .swiper-button-prev::after,.swiper-button-next::after {
@@ -5217,6 +5208,10 @@ header.active #headerarrow path{
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
+}
+
+:is([dir="ltr"] .ltr\:right-\[22px\]) {
+  right: 22px;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -5712,6 +5707,10 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:top-\[-3px\]) {
   top: -3px;
+}
+
+:is([dir="rtl"] .rtl\:left-\[22px\]) {
+  left: 22px;
 }
 
 :is([dir="rtl"] .rtl\:-ml-20) {

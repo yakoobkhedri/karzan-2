@@ -1513,6 +1513,10 @@ video {
   height: 21px;
 }
 
+.h-\[224px\] {
+  height: 224px;
+}
+
 .h-\[22px\] {
   height: 22px;
 }
@@ -1585,10 +1589,6 @@ video {
   height: 410px;
 }
 
-.h-\[453px\] {
-  height: 453px;
-}
-
 .h-\[46px\] {
   height: 46px;
 }
@@ -1627,6 +1627,10 @@ video {
 
 .h-\[61px\] {
   height: 61px;
+}
+
+.h-\[62px\] {
+  height: 62px;
 }
 
 .h-\[66px\] {
@@ -1899,6 +1903,10 @@ video {
 
 .w-\[5px\] {
   width: 5px;
+}
+
+.w-\[62px\] {
+  width: 62px;
 }
 
 .w-\[70px\] {
@@ -2242,6 +2250,18 @@ video {
 
 .gap-y-\[94px\] {
   row-gap: 94px;
+}
+
+.gap-y-\[42px\] {
+  row-gap: 42px;
+}
+
+.gap-y-\[55px\] {
+  row-gap: 55px;
+}
+
+.gap-y-\[60px\] {
+  row-gap: 60px;
 }
 
 .overflow-auto {
@@ -4806,7 +4826,38 @@ header.active #headerarrow path{
 @media (max-width: 768px){
 }
 
-@media (max-width: 660px){
+@media (max-width: 640px){
+  .banner .swiper-slide.swiper-slide-active > div{
+    width: 274px;
+  }
+
+  .banner .swiper-slide.swiper-slide-next > div,.banner .swiper-slide.swiper-slide-prev > div{
+    width: 224px;
+  }
+
+  .banner .swiper-slide.swiper-slide-active {
+    height: 78px !important;
+  }
+
+  .banner .swiper-slide.swiper-slide-next,.banner .swiper-slide.swiper-slide-prev {
+    height: 57px !important;
+  }
+
+  .banner .swiper-slide.swiper-slide-active > div h2:first-child{
+    font-size: 16px
+  }
+
+  .banner .swiper-slide.swiper-slide-next > div h2:first-child,.banner .swiper-slide.swiper-slide-prev > div h2:first-child{
+    font-size: 13px
+  }
+
+  .banner .swiper-slide.swiper-slide-active > div h2:last-child{
+    font-size: 10px
+  }
+
+  .banner .swiper-slide.swiper-slide-next > div h2:last-child,.banner .swiper-slide.swiper-slide-prev > div h2:last-child{
+    font-size: 10px
+  }
 }
 
 .hover\:bg-primary:hover {
@@ -6124,6 +6175,14 @@ header.active #headerarrow path{
     height: 329px;
   }
 
+  .sm\:h-\[453px\] {
+    height: 453px;
+  }
+
+  .sm\:h-\[82px\] {
+    height: 82px;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -6178,6 +6237,10 @@ header.active #headerarrow path{
 
   .sm\:w-\[82\%\] {
     width: 82%;
+  }
+
+  .sm\:w-\[82px\] {
+    width: 82px;
   }
 
   .sm\:w-\[89\%\] {
@@ -7019,6 +7082,10 @@ header.active #headerarrow path{
 
   .md\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .md\:mt-\[70px\] {
+    margin-top: 70px;
   }
 
   .md\:line-clamp-6 {

@@ -21,14 +21,20 @@ tab.forEach((item) => {
 // swiper
 
 var banner = new Swiper(".banner", {
-  slidesPerView: 5,
+  slidesPerView: 3,
+  spaceBetween: 15,
+   breakpoints: {
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
   centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 3000,
-    reverseDirection: true
+    reverseDirection: true,
   },
-  spaceBetween: 20,
   direction: "vertical",
   pagination: {
     el: ".swiper-pagination",

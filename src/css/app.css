@@ -963,6 +963,29 @@ font-size: 14px
 @media (max-width: 768px){
  
 }
-@media (max-width: 660px){
-
+@media (max-width: 640px){
+.banner .swiper-slide.swiper-slide-active > div{
+  width: 274px;
+}
+.banner .swiper-slide.swiper-slide-next > div,.banner .swiper-slide.swiper-slide-prev > div{
+  width: 224px;
+}
+.banner .swiper-slide.swiper-slide-active {
+  height: 78px !important;
+}
+.banner .swiper-slide.swiper-slide-next,.banner .swiper-slide.swiper-slide-prev {
+  height: 57px !important;
+}
+  .banner .swiper-slide.swiper-slide-active > div h2:first-child{
+font-size: 16px
+}
+.banner .swiper-slide.swiper-slide-next > div h2:first-child,.banner .swiper-slide.swiper-slide-prev > div h2:first-child{
+font-size: 13px
+}
+.banner .swiper-slide.swiper-slide-active > div h2:last-child{
+font-size: 10px
+}
+.banner .swiper-slide.swiper-slide-next > div h2:last-child,.banner .swiper-slide.swiper-slide-prev > div h2:last-child{
+font-size: 10px
+}
 }

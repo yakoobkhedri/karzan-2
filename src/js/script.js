@@ -22,10 +22,43 @@ tab.forEach((item) => {
 
 var banner = new Swiper(".banner", {
   slidesPerView: 5,
-  centeredSlides: true,   // فعال کردن حالت وسط چین
+  centeredSlides: true,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    reverseDirection: true
+  },
   spaceBetween: 20,
   direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  allowTouchMove: false,
+  
+  // اضافه کردن رویداد slideChange
+  on: {
+    slideChange: function() {
+      // پیدا کردن اسلاید فعال
+      const activeSlide = this.slides[this.activeIndex];
+      const dataId = activeSlide.getAttribute('data-id');
+      
+      // حذف کلاس active از همه تب‌های محتوا
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // اضافه کردن کلاس active به تب محتوای مربوطه
+      const activeTab = document.querySelector(`.tab-content[data-id="${dataId}"]`);
+      if(activeTab) {
+        activeTab.classList.add('active');
+      }
+    },
+    // اجرای کد هنگام مقداردهی اولیه
+    init: function() {
+      this.emit('slideChange'); // برای فعال کردن تب اول هنگام لود صفحه
+    }
+  }
 });
 
 var solutions = new Swiper(".solutions", {

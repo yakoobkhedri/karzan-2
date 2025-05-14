@@ -807,10 +807,13 @@ header.active #headerarrow path{
 }
 .tab-content {
   transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  display: none;
 }
 
 .tab-content.active {
   display: block;
+  opacity: 100%;
   animation: fadeIn 0.5s ease;
 }
 
@@ -830,7 +833,7 @@ header.active #headerarrow path{
 /* swiper */
 .banner .swiper-slide.swiper-slide-active > div{
   background: #EDF2F8;
-  width: 427px;
+  width: 479px;
   opacity: 100%;
   border: none;
 }

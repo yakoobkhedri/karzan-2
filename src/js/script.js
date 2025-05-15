@@ -142,19 +142,6 @@ function showContent(id) {
   }
 }
 
-// تابع برای نمایش محتوای مرتبط
-function showContent(id) {
-  // مخفی کردن همه محتواها
-  document.querySelectorAll('.services2Content').forEach(content => {
-    content.classList.remove('active');
-  });
-  
-  // نمایش محتوای مربوطه
-  const activeContent = document.querySelector(`.services2Content[data-id="${id}"]`);
-  if (activeContent) {
-    activeContent.classList.add('active');
-  }
-}
 
 // مقداردهی Swiper
 var services2 = new Swiper(".services2", {
@@ -204,6 +191,72 @@ document.querySelectorAll('.tab2').forEach((tab, index) => {
     
     // اضافه کردن استایل فعال به تب کلیک شده
     document.querySelectorAll('.tab2').forEach(t => {
+      t.parentElement.classList.remove('swiper-slide-active'); // کلاس فرضی برای تب فعال
+    });
+    this.parentElement.classList.add('swiper-slide-active');
+  });
+});
+// تابع برای نمایش محتوای مرتبط
+function showContent2(id) {
+  // مخفی کردن همه محتواها
+  document.querySelectorAll('.services3Content').forEach(content => {
+    content.classList.remove('active');
+  });
+  
+  // نمایش محتوای مربوطه
+  const activeContent = document.querySelector(`.services3Content[data-id="${id}"]`);
+  if (activeContent) {
+    activeContent.classList.add('active');
+  }
+}
+// مقداردهی Swiper
+var services3 = new Swiper(".services3", {
+  // autoplay: true,
+  slidesPerView: 1.2,
+  loop: true,
+  spaceBetween: 33,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  on: {
+    init: function() {
+      const activeSlide = this.slides[this.activeIndex];
+      const activeId = activeSlide.querySelector('.tab3').getAttribute('data-id');
+      showContent2(activeId);
+    },
+    slideChange: function() {
+      const activeSlide = this.slides[this.activeIndex];
+      const activeId = activeSlide.querySelector('.tab3').getAttribute('data-id');
+      showContent2(activeId);
+    }
+  }
+});
+
+// مدیریت کلیک روی تب‌ها
+document.querySelectorAll('.tab3').forEach((tab, index) => {
+  tab.addEventListener('click', function() {
+    const id = this.getAttribute('data-id');
+    
+    // فعال کردن اسلاید مربوطه در Swiper
+    services3.slideTo(index); // این خط اسلاید مربوطه را فعال می‌کند
+    
+    // نمایش محتوای مرتبط
+    showContent2(id);
+    
+    // اضافه کردن استایل فعال به تب کلیک شده
+    document.querySelectorAll('.tab3').forEach(t => {
       t.parentElement.classList.remove('swiper-slide-active'); // کلاس فرضی برای تب فعال
     });
     this.parentElement.classList.add('swiper-slide-active');

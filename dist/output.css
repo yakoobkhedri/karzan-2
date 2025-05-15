@@ -627,6 +627,10 @@ video {
   top: -1.25rem !important;
 }
 
+.\!bottom-0 {
+  bottom: 0px !important;
+}
+
 .\!bottom-3 {
   bottom: 0.75rem !important;
 }
@@ -933,10 +937,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.\!bottom-0 {
-  bottom: 0px !important;
 }
 
 .-z-0 {
@@ -4496,7 +4496,7 @@ header.active #headerarrow path{
 
 /* tab */
 
-.tab:hover,.tab.active{
+.tab:hover,.tab.active,.tab3:hover, .tab3.active{
   background-color: white;
   opacity: 100%;
 }
@@ -4551,16 +4551,16 @@ header.active #headerarrow path{
   flex: 0 0 auto;
 }
 
-.tabs > div.active,.tabs2 > div.active  {
+.tabs > div.active,.tabs2 > div.active,.tabs3 > div.active  {
   background-color: transparent;
 }
 
-.tabs > div.active > div:first-child,.tabs2 > div.active > div:first-child {
+.tabs > div.active > div:first-child,.tabs2 > div.active > div:first-child,.tabs3 > div.active > div:first-child {
   opacity: 50%;
   visibility: visible;
 }
 
-.tabs > div.active > img,.tabs2 > div.active > img {
+.tabs > div.active > img,.tabs2 > div.active > img,.tabs3 > div.active > img {
   opacity: 100%;
   visibility: visible;
 }
@@ -4784,7 +4784,7 @@ header.active #headerarrow path{
   animation: fadeIn 0.5s ease;
 }
 
-.services2Content {
+.services2Content,.services3Content {
   transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 0;
   display: none;
@@ -4792,6 +4792,12 @@ header.active #headerarrow path{
 
 .services2Content.active {
   display: grid;
+  opacity: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.services3Content.active {
+  display: block;
   opacity: 100%;
   animation: fadeIn 0.5s ease;
 }
@@ -4819,12 +4825,12 @@ header.active #headerarrow path{
 
 /* swiper */
 
-.services2 .swiper-slide-active > div{
+.services2 .swiper-slide-active > div,.services3 .swiper-slide-active > div{
   background-color: transparent;
   opacity: 100%;
 }
 
-.services2 .swiper-slide-active >div > div:first-child{
+.services2 .swiper-slide-active >div > div:first-child,.services3 .swiper-slide-active >div > div:first-child{
   opacity: 50%;
   visibility: visible;
 }
@@ -4835,7 +4841,12 @@ header.active #headerarrow path{
   transform: rotateX(180deg);
 }
 
-.services2 .swiper-slide-active >div > svg{
+.services3 .swiper-slide-active >div > img{
+  opacity: 100%;
+  visibility: visible;
+}
+
+.services2 .swiper-slide-active >div > svg,.services3 .swiper-slide-active >div > svg{
   opacity: 0%;
   visibility: visible;
 }
@@ -5646,6 +5657,10 @@ header.active #headerarrow path{
   padding-right: 54px;
 }
 
+:is([dir="ltr"] .ltr\:pr-3) {
+  padding-right: 0.75rem;
+}
+
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
 }
@@ -6114,6 +6129,10 @@ header.active #headerarrow path{
 
 :is([dir="rtl"] .rtl\:pr-\[25px\]) {
   padding-right: 25px;
+}
+
+:is([dir="rtl"] .rtl\:pl-3) {
+  padding-left: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
@@ -7068,16 +7087,12 @@ header.active #headerarrow path{
     padding-right: 0px;
   }
 
-  :is([dir="ltr"] .ltr\:sm\:pr-\[30px\]) {
-    padding-right: 30px;
-  }
-
-  :is([dir="ltr"] .ltr\:sm\:pr-\[22px\]) {
-    padding-right: 22px;
-  }
-
   :is([dir="ltr"] .ltr\:sm\:pr-4) {
     padding-right: 1rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:pr-\[30px\]) {
+    padding-right: 30px;
   }
 
   :is([dir="ltr"] .ltr\:sm\:text-left) {
@@ -7218,6 +7233,10 @@ header.active #headerarrow path{
     padding-left: 0px;
   }
 
+  :is([dir="rtl"] .rtl\:sm\:pl-4) {
+    padding-left: 1rem;
+  }
+
   :is([dir="rtl"] .rtl\:sm\:pl-\[30px\]) {
     padding-left: 30px;
   }
@@ -7244,14 +7263,6 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:pr-\[80px\]) {
     padding-right: 80px;
-  }
-
-  :is([dir="rtl"] .rtl\:sm\:pl-4) {
-    padding-left: 1rem;
-  }
-
-  :is([dir="rtl"] .rtl\:sm\:pl-\[22px\]) {
-    padding-left: 22px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:text-right) {

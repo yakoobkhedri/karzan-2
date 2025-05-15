@@ -142,18 +142,34 @@ function showContent(id) {
   }
 }
 
+// تابع برای نمایش محتوای مرتبط
+function showContent(id) {
+  // مخفی کردن همه محتواها
+  document.querySelectorAll('.services2Content').forEach(content => {
+    content.classList.remove('active');
+  });
+  
+  // نمایش محتوای مربوطه
+  const activeContent = document.querySelector(`.services2Content[data-id="${id}"]`);
+  if (activeContent) {
+    activeContent.classList.add('active');
+  }
+}
+
+// مقداردهی Swiper
 var services2 = new Swiper(".services2", {
-  slidesPerView: 1.3,
+  autoplay: true,
+  slidesPerView: 1.2,
   loop: true,
   spaceBetween: 33,
   breakpoints: {
-    640: {
+    576: {
       slidesPerView: 2,
     },
-    768: {
+    992: {
       slidesPerView: 3,
     },
-    1100: {
+    1200: {
       slidesPerView: 4,
     },
   },
@@ -163,13 +179,11 @@ var services2 = new Swiper(".services2", {
   },
   on: {
     init: function() {
-      // هنگام مقداردهی اولیه، اسلاید فعال اول را پیدا کنید
       const activeSlide = this.slides[this.activeIndex];
       const activeId = activeSlide.querySelector('.tab2').getAttribute('data-id');
       showContent(activeId);
     },
     slideChange: function() {
-      // هنگام تغییر اسلاید، اسلاید فعال جدید را پیدا کنید
       const activeSlide = this.slides[this.activeIndex];
       const activeId = activeSlide.querySelector('.tab2').getAttribute('data-id');
       showContent(activeId);
@@ -177,11 +191,22 @@ var services2 = new Swiper(".services2", {
   }
 });
 
-// همچنین برای کلیک روی هر تب
-document.querySelectorAll('.tab2').forEach(tab => {
+// مدیریت کلیک روی تب‌ها
+document.querySelectorAll('.tab2').forEach((tab, index) => {
   tab.addEventListener('click', function() {
     const id = this.getAttribute('data-id');
+    
+    // فعال کردن اسلاید مربوطه در Swiper
+    services2.slideTo(index); // این خط اسلاید مربوطه را فعال می‌کند
+    
+    // نمایش محتوای مرتبط
     showContent(id);
+    
+    // اضافه کردن استایل فعال به تب کلیک شده
+    document.querySelectorAll('.tab2').forEach(t => {
+      t.parentElement.classList.remove('swiper-slide-active'); // کلاس فرضی برای تب فعال
+    });
+    this.parentElement.classList.add('swiper-slide-active');
   });
 });
 var portfollio = new Swiper(".portfollio", {

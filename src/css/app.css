@@ -852,6 +852,18 @@ header.active #headerarrow path{
   background-color: #ddd;
 }
 /* swiper */
+.services2 .swiper-slide-active > div{
+  background-color: transparent;
+  opacity: 100%;
+}
+.services2 .swiper-slide-active >div > div:first-child{
+  opacity: 50%;
+  visibility: visible;
+}
+.services2 .swiper-slide-active >div > img{
+ opacity: 100%;
+  visibility: visible;
+}
 .banner .swiper-slide.swiper-slide-active > div{
   background: #EDF2F8;
   width: 479px;

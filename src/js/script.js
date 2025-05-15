@@ -128,6 +128,26 @@ var services = new Swiper(".services", {
     clickable: true,
   },
 });
+var services2 = new Swiper(".services2", {
+  slidesPerView: 1.2,
+  loop: true,
+  spaceBetween: 33,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,
   loop: true,

@@ -128,18 +128,32 @@ var services = new Swiper(".services", {
     clickable: true,
   },
 });
+// ابتدا تابع showContent را به صورت جداگانه تعریف می‌کنیم
+function showContent(id) {
+  // ابتدا همه محتواها را مخفی کنید
+  document.querySelectorAll('.services2Content').forEach(content => {
+    content.classList.remove('active');
+  });
+  
+  // سپس محتوای مربوط به اسلاید فعال را نمایش دهید
+  const activeContent = document.querySelector(`.services2Content[data-id="${id}"]`);
+  if (activeContent) {
+    activeContent.classList.add('active');
+  }
+}
+
 var services2 = new Swiper(".services2", {
-  slidesPerView: 1.2,
+  slidesPerView: 1.3,
   loop: true,
   spaceBetween: 33,
   breakpoints: {
-    576: {
+    640: {
       slidesPerView: 2,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
-    1200: {
+    1100: {
       slidesPerView: 4,
     },
   },
@@ -147,6 +161,28 @@ var services2 = new Swiper(".services2", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  on: {
+    init: function() {
+      // هنگام مقداردهی اولیه، اسلاید فعال اول را پیدا کنید
+      const activeSlide = this.slides[this.activeIndex];
+      const activeId = activeSlide.querySelector('.tab2').getAttribute('data-id');
+      showContent(activeId);
+    },
+    slideChange: function() {
+      // هنگام تغییر اسلاید، اسلاید فعال جدید را پیدا کنید
+      const activeSlide = this.slides[this.activeIndex];
+      const activeId = activeSlide.querySelector('.tab2').getAttribute('data-id');
+      showContent(activeId);
+    }
+  }
+});
+
+// همچنین برای کلیک روی هر تب
+document.querySelectorAll('.tab2').forEach(tab => {
+  tab.addEventListener('click', function() {
+    const id = this.getAttribute('data-id');
+    showContent(id);
+  });
 });
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,

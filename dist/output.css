@@ -4780,6 +4780,18 @@ header.active #headerarrow path{
   animation: fadeIn 0.5s ease;
 }
 
+.services2Content {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  display: none;
+}
+
+.services2Content.active {
+  display: grid;
+  opacity: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -4815,6 +4827,12 @@ header.active #headerarrow path{
 
 .services2 .swiper-slide-active >div > img{
   opacity: 100%;
+  visibility: visible;
+  transform: rotateX(180deg);
+}
+
+.services2 .swiper-slide-active >div > svg{
+  opacity: 0%;
   visibility: visible;
 }
 
@@ -7050,6 +7068,14 @@ header.active #headerarrow path{
     padding-right: 30px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:pr-\[22px\]) {
+    padding-right: 22px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:pr-4) {
+    padding-right: 1rem;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:text-left) {
     text-align: left;
   }
@@ -7214,6 +7240,14 @@ header.active #headerarrow path{
 
   :is([dir="rtl"] .rtl\:sm\:pr-\[80px\]) {
     padding-right: 80px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pl-4) {
+    padding-left: 1rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pl-\[22px\]) {
+    padding-left: 22px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:text-right) {

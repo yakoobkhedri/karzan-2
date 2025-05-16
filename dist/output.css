@@ -3197,6 +3197,14 @@ video {
   padding-top: 84px;
 }
 
+.pt-\[124px\] {
+  padding-top: 124px;
+}
+
+.\!pt-\[124px\] {
+  padding-top: 124px !important;
+}
+
 .text-center {
   text-align: center;
 }
@@ -8034,6 +8042,14 @@ header.active #headerarrow path{
 
   .lg\:pt-\[30px\] {
     padding-top: 30px;
+  }
+
+  .lg\:pt-\[84px\] {
+    padding-top: 84px;
+  }
+
+  .lg\:\!pt-\[84px\] {
+    padding-top: 84px !important;
   }
 
   .lg\:text-right {

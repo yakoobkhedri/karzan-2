@@ -16,6 +16,5 @@ dropdownBtn.forEach((item)=>{
 hamIcon.addEventListener('click', function () {
   hamIcon.classList.toggle('active');
   document.querySelector('.mobileMenu').classList.toggle('active');
-  document.getElementById('overlay').classList.toggle('active');
   document.querySelector('header').classList.toggle('active');
 })

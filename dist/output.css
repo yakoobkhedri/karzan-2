@@ -943,6 +943,18 @@ video {
   top: auto;
 }
 
+.\!bottom-\[3px\] {
+  bottom: 3px !important;
+}
+
+.\!-top-0 {
+  top: -0px !important;
+}
+
+.\!-bottom-1 {
+  bottom: -0.25rem !important;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1745,6 +1757,10 @@ video {
   height: 100%;
 }
 
+.\!h-10 {
+  height: 2.5rem !important;
+}
+
 .min-h-\[124px\] {
   min-height: 124px;
 }
@@ -2011,6 +2027,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.\!w-10 {
+  width: 2.5rem !important;
+}
+
+.\!w-auto {
+  width: auto !important;
 }
 
 .min-w-\[238px\] {
@@ -5627,6 +5651,14 @@ header.active{
   padding-right: 54px;
 }
 
+:is([dir="ltr"] .ltr\:pl-\[18px\]) {
+  padding-left: 18px;
+}
+
+:is([dir="ltr"] .ltr\:pr-\[18px\]) {
+  padding-right: 18px;
+}
+
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
 }
@@ -6111,6 +6143,14 @@ header.active{
 
 :is([dir="rtl"] .rtl\:pr-\[25px\]) {
   padding-right: 25px;
+}
+
+:is([dir="rtl"] .rtl\:pl-\[18px\]) {
+  padding-left: 18px;
+}
+
+:is([dir="rtl"] .rtl\:pr-\[18px\]) {
+  padding-right: 18px;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {

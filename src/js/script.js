@@ -106,7 +106,7 @@ var solutions = new Swiper(".solutions", {
   },
 
   pagination: {
-    el: ".swiper-pagination3",
+    el: ".swiper-4",
     clickable: true,
   }
 });
@@ -227,8 +227,12 @@ var services3 = new Swiper(".services3", {
     },
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination4",
     clickable: true,
+  },
+    navigation: {
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
   },
   on: {
     init: function() {

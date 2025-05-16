@@ -302,6 +302,10 @@ linear-gradient(180deg, #FF8946 49.09%, rgba(211, 104, 44, 0.48) 145.21%);
   backdrop-filter: blur(11.800000190734863px);
   -webkit-backdrop-filter: blur(11.800000190734863px);
 }
+.bg-blur-6{
+  backdrop-filter: blur(16.100000381469727px);
+  -webkit-backdrop-filter: blur(16.100000381469727px);
+}
 .reverse{
   @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]
 }
@@ -360,6 +364,9 @@ header ul > li:hover > a,header .mobileMenu  ul li:hover > a{
 }
 header .mobileMenu ul li > a .arrowSvg path{
   transition: all .4s;
+}
+header .mobileMenu ul li > a .arrowSvg path{
+  stroke: white;
 }
 header .mobileMenu ul li:hover > a .arrowSvg path{
   stroke: #EE5D37;

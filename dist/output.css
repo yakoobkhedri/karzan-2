@@ -923,6 +923,10 @@ video {
   top: -1px;
 }
 
+.top-\[100px\] {
+  top: 100px;
+}
+
 .top-\[109px\] {
   top: 109px;
 }
@@ -937,10 +941,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.top-\[100px\] {
-  top: 100px;
 }
 
 .-z-0 {
@@ -3912,6 +3912,11 @@ linear-gradient(180deg, #FF8946 49.09%, rgba(211, 104, 44, 0.48) 145.21%);
   -webkit-backdrop-filter: blur(11.800000190734863px);
 }
 
+.bg-blur-6{
+  backdrop-filter: blur(16.100000381469727px);
+  -webkit-backdrop-filter: blur(16.100000381469727px);
+}
+
 :is([dir="ltr"] .reverse) {
   transform: rotateY(0deg);
 }
@@ -3996,6 +4001,7 @@ header ul > li:hover > a,header .mobileMenu  ul li:hover > a{
 
 header .mobileMenu ul li > a .arrowSvg path{
   transition: all .4s;
+  stroke: white;
 }
 
 header .mobileMenu ul li:hover > a .arrowSvg path{

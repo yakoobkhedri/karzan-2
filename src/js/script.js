@@ -34,6 +34,7 @@ var banner = new Swiper(".banner", {
   autoplay: {
     delay: 3000,
     reverseDirection: true,
+    disableOnInteraction: false, // توقف نشود!
   },
   direction: "vertical",
   pagination: {
@@ -70,12 +71,14 @@ var banner = new Swiper(".banner", {
     }
   }
 });
-
 var solutions = new Swiper(".solutions", {
   // تنظیمات پایه
   loop: true,
   spaceBetween: 30,
-
+ autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   // تنظیمات پیش‌فرض برای موبایل (زیر 768px)
   slidesPerView: 2,
   grid: {
@@ -106,13 +109,17 @@ var solutions = new Swiper(".solutions", {
   },
 
   pagination: {
-    el: ".swiper-4",
+    el: ".swiper-pagination3",
     clickable: true,
   }
 });
 var skills = new Swiper(".skills", {
   slidesPerView: 1,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -122,6 +129,10 @@ var skills = new Swiper(".skills", {
 var services = new Swiper(".services", {
   slidesPerView: 2,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -141,11 +152,12 @@ function showContent(id) {
     activeContent.classList.add('active');
   }
 }
-
-
 // مقداردهی Swiper
 var services2 = new Swiper(".services2", {
-  autoplay: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   slidesPerView: 1.2,
   loop: true,
   spaceBetween: 33,
@@ -177,7 +189,6 @@ var services2 = new Swiper(".services2", {
     }
   }
 });
-
 // مدیریت کلیک روی تب‌ها
 document.querySelectorAll('.tab2').forEach((tab, index) => {
   tab.addEventListener('click', function() {
@@ -211,7 +222,10 @@ function showContent2(id) {
 }
 // مقداردهی Swiper
 var services3 = new Swiper(".services3", {
-  // autoplay: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   slidesPerView: 1.2,
   loop: true,
   spaceBetween: 33,
@@ -247,7 +261,6 @@ var services3 = new Swiper(".services3", {
     }
   }
 });
-
 // مدیریت کلیک روی تب‌ها
 document.querySelectorAll('.tab3').forEach((tab, index) => {
   tab.addEventListener('click', function() {
@@ -268,6 +281,10 @@ document.querySelectorAll('.tab3').forEach((tab, index) => {
 });
 var portfollio = new Swiper(".portfollio", {
   slidesPerView: 1,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   loop: true,
   spaceBetween: 30,
   navigation: {
@@ -279,10 +296,13 @@ var portfollio = new Swiper(".portfollio", {
     clickable: true,
   },
 });
-
 var costumer = new Swiper(".costumer", {
   slidesPerView: 1,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 45,
   breakpoints: {
     576: {
@@ -310,6 +330,10 @@ var costumer = new Swiper(".costumer", {
 var costumer2 = new Swiper(".costumer2", {
   slidesPerView: 1,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 30,
   breakpoints: {
     576: {
@@ -334,7 +358,10 @@ var costumer2 = new Swiper(".costumer2", {
 var customer3 = new Swiper(".customer3", {
   effect: "coverflow",
   loop: true,
-  autoplay: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -354,6 +381,10 @@ var customer3 = new Swiper(".customer3", {
 var blog = new Swiper(".blog", {
   slidesPerView: 1,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 30,
   breakpoints: {
     630: {
@@ -374,6 +405,10 @@ var blog = new Swiper(".blog", {
 var team = new Swiper(".team", {
   slidesPerView: 1,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 33,
   breakpoints: {
     576: {
@@ -397,6 +432,10 @@ var team = new Swiper(".team", {
 var roadmap = new Swiper(".roadmap", {
   slidesPerView: 4,
   loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
   spaceBetween: 5,
   direction: "vertical",
 });

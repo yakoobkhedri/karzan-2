@@ -1026,7 +1026,10 @@ font-size: 14px
  }
 }
 @media (max-width: 768px){
- 
+ .bg-img-1 {
+  background-image: url('../src/img/image - Copy.png');
+  background-size: 100% 100%;
+}
 }
 @media (max-width: 640px){
 .banner .swiper-slide.swiper-slide-active > div{

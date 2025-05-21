@@ -6693,6 +6693,14 @@ header.active{
     order: 9999;
   }
 
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -7856,6 +7864,14 @@ header.active{
     grid-column: span 9 / span 9;
   }
 
+  .md\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -8374,6 +8390,18 @@ header.active{
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .lg\:col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-12 {
+    grid-column: span 12 / span 12;
   }
 
   .lg\:mx-8 {
@@ -8913,6 +8941,10 @@ header.active{
     margin-top: -6rem;
   }
 
+  .xl\:mt-\[38px\] {
+    margin-top: 38px;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -8999,6 +9031,10 @@ header.active{
 
   .xl\:gap-\[70px\] {
     gap: 70px;
+  }
+
+  .xl\:gap-\[38px\] {
+    gap: 38px;
   }
 
   .xl\:fill-\[\#f4f4f4\] {

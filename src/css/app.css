@@ -984,6 +984,9 @@ font-size: 14px
 .customer3 .swiper-slide-visible.swiper-slide-next{
   transform: translate3d(56px, 33px, -53px) rotateX(0deg) rotateY(0deg) scale(1) rotate(-12deg) !important;
 }
+.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
 /* demo portfollio effect */
 .demo-bg:hover{
   background-position: center bottom;

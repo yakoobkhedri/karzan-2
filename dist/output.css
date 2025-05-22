@@ -947,10 +947,6 @@ video {
   top: 100px;
 }
 
-.top-\[109px\] {
-  top: 109px;
-}
-
 .top-\[143px\] {
   top: 143px;
 }
@@ -5127,6 +5123,10 @@ header.active{
   transform: translate3d(56px, 33px, -53px) rotateX(0deg) rotateY(0deg) scale(1) rotate(-12deg) !important;
 }
 
+.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
+
 /* demo portfollio effect */
 
 .demo-bg:hover{
@@ -5467,10 +5467,6 @@ header.active{
 
 :is([dir="ltr"] .ltr\:left-\[-1px\]) {
   left: -1px;
-}
-
-:is([dir="ltr"] .ltr\:left-\[15px\]) {
-  left: 15px;
 }
 
 :is([dir="ltr"] .ltr\:left-\[17px\]) {
@@ -6040,10 +6036,6 @@ header.active{
 
 :is([dir="rtl"] .rtl\:right-\[-1px\]) {
   right: -1px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[15px\]) {
-  right: 15px;
 }
 
 :is([dir="rtl"] .rtl\:right-\[17px\]) {

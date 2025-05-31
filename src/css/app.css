@@ -281,6 +281,11 @@ linear-gradient(180deg, #FF8946 49.09%, rgba(211, 104, 44, 0.48) 145.21%);
   position: absolute;
   background: linear-gradient(211.32deg, #64C2DB 0%, #7476ED 51.04%, #E56F8C 100%);
 }
+.text-gradient-1{
+  background: linear-gradient(0deg, #EAEAEA, #EAEAEA00), linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFF 73.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .bg-blur {
   background-color: #9A9A9A9C;
   backdrop-filter: blur(16.100000381469727px);

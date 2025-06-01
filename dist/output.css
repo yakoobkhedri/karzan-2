@@ -1810,6 +1810,14 @@ video {
   min-height: 96px;
 }
 
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
+.min-h-\[86px\] {
+  min-height: 86px;
+}
+
 .\!w-10 {
   width: 2.5rem !important;
 }
@@ -6706,6 +6714,10 @@ header.active{
 
   .sm\:min-h-\[116px\] {
     min-height: 116px;
+  }
+
+  .sm\:min-h-\[100px\] {
+    min-height: 100px;
   }
 
   .sm\:\!w-10 {

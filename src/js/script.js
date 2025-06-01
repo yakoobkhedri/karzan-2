@@ -230,7 +230,7 @@ var services3 = new Swiper(".services3", {
   loop: true,
   spaceBetween: 33,
   breakpoints: {
-    576: {
+    768: {
       slidesPerView: 2,
     },
     992: {

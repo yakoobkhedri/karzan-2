@@ -955,12 +955,12 @@ video {
   top: 76px;
 }
 
-.top-auto {
-  top: auto;
-}
-
 .top-\[89px\] {
   top: 89px;
+}
+
+.top-auto {
+  top: auto;
 }
 
 .-z-0 {
@@ -1399,13 +1399,6 @@ video {
   -webkit-line-clamp: 3;
 }
 
-.line-clamp-4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-}
-
 .line-clamp-\[9\] {
   overflow: hidden;
   display: -webkit-box;
@@ -1527,6 +1520,10 @@ video {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[107px\] {
@@ -1665,6 +1662,10 @@ video {
   height: 54px;
 }
 
+.h-\[58px\] {
+  height: 58px;
+}
+
 .h-\[5px\] {
   height: 5px;
 }
@@ -1783,10 +1784,6 @@ video {
 
 .min-h-\[64px\] {
   min-height: 64px;
-}
-
-.min-h-\[75px\] {
-  min-height: 75px;
 }
 
 .min-h-\[76px\] {
@@ -5479,6 +5476,14 @@ header.active{
   left: -1px;
 }
 
+:is([dir="ltr"] .ltr\:left-\[-35px\]) {
+  left: -35px;
+}
+
+:is([dir="ltr"] .ltr\:left-\[-53px\]) {
+  left: -53px;
+}
+
 :is([dir="ltr"] .ltr\:left-\[17px\]) {
   left: 17px;
 }
@@ -5581,22 +5586,6 @@ header.active{
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:left-\[39px\]) {
-  left: 39px;
-}
-
-:is([dir="ltr"] .ltr\:left-\[-39px\]) {
-  left: -39px;
-}
-
-:is([dir="ltr"] .ltr\:left-\[-53px\]) {
-  left: -53px;
-}
-
-:is([dir="ltr"] .ltr\:left-\[-35px\]) {
-  left: -35px;
 }
 
 :is([dir="ltr"] .ltr\:-ml-2) {
@@ -6064,6 +6053,18 @@ header.active{
   right: -1px;
 }
 
+:is([dir="rtl"] .rtl\:right-\[-28px\]) {
+  right: -28px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[-35px\]) {
+  right: -35px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[-39px\]) {
+  right: -39px;
+}
+
 :is([dir="rtl"] .rtl\:right-\[17px\]) {
   right: 17px;
 }
@@ -6130,22 +6131,6 @@ header.active{
 
 :is([dir="rtl"] .rtl\:top-\[-3px\]) {
   top: -3px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[39px\]) {
-  right: 39px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[-39px\]) {
-  right: -39px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[-35px\]) {
-  right: -35px;
-}
-
-:is([dir="rtl"] .rtl\:right-\[-28px\]) {
-  right: -28px;
 }
 
 :is([dir="rtl"] .rtl\:-ml-20) {
@@ -6721,10 +6706,6 @@ header.active{
 
   .sm\:min-h-\[116px\] {
     min-height: 116px;
-  }
-
-  .sm\:min-h-\[128px\] {
-    min-height: 128px;
   }
 
   .sm\:\!w-10 {

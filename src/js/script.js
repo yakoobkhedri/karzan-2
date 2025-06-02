@@ -31,11 +31,11 @@ var banner = new Swiper(".banner", {
   },
   centeredSlides: true,
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   reverseDirection: true,
-  //   disableOnInteraction: false, // توقف نشود!
-  // },
+  autoplay: {
+    delay: 3000,
+    reverseDirection: true,
+    disableOnInteraction: false, // توقف نشود!
+  },
   direction: "vertical",
   pagination: {
     el: ".swiper-pagination5",

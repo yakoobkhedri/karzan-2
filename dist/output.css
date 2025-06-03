@@ -4522,16 +4522,6 @@ header.active{
   border-bottom-width: 0px !important;
 }
 
-.editor-section a{
-  /* background-color: #7e7eff;
-  opacity: 100%;
-  border-radius: 8px;
-  padding: 3px;
-  color: white;
-  margin-right: 4px;
-  margin-left: 4px; */
-}
-
 .editor-section ul{
   font-weight: bold;
   color: 404040;
@@ -4608,6 +4598,61 @@ header.active{
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #00000070;
+}
+
+/* editor 2 */
+
+.editor-section2 ul {
+  margin-top: 1.5rem;
+}
+
+.editor-section2 ul li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 20px;
+  padding: 0.75rem;
+}
+
+.editor-section2 ul li:last-child {
+  margin-bottom: 0px;
+}
+
+:is([dir="ltr"] .editor-section2 ul li) {
+  padding-left: 2.5rem;
+}
+
+:is([dir="rtl"] .editor-section2 ul li) {
+  padding-right: 2.5rem;
+}
+
+.editor-section2 ul li{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 151, 4, 0.1) 100%);
+}
+
+.editor-section2 ul li::before{
+  content: url('../src/img/tick-circle.png');
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+:is([dir="ltr"] .editor-section2 ul li)::before {
+  left: 0.5rem;
+}
+
+:is([dir="rtl"] .editor-section2 ul li)::before {
+  right: 0.5rem;
+}
+
+.editor-section2 ul li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(44 44 44 / var(--tw-text-opacity));
 }
 
 /* tab */

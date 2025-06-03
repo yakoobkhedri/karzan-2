@@ -154,10 +154,10 @@ function showContent(id) {
 }
 // مقداردهی Swiper
 var services2 = new Swiper(".services2", {
-   autoplay: {
-    delay: 3000,
-    disableOnInteraction: false, // توقف نشود!
-},
+//    autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false, // توقف نشود!
+// },
   slidesPerView: 1.2,
   loop: true,
   spaceBetween: 33,

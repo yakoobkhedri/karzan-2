@@ -189,24 +189,7 @@ var services2 = new Swiper(".services2", {
     }
   }
 });
-// مدیریت کلیک روی تب‌ها
-document.querySelectorAll('.tab2').forEach((tab, index) => {
-  tab.addEventListener('click', function() {
-    const id = this.getAttribute('data-id');
-    
-    // فعال کردن اسلاید مربوطه در Swiper
-    services2.slideTo(index); // این خط اسلاید مربوطه را فعال می‌کند
-    
-    // نمایش محتوای مرتبط
-    showContent(id);
-    
-    // اضافه کردن استایل فعال به تب کلیک شده
-    document.querySelectorAll('.tab2').forEach(t => {
-      t.parentElement.classList.remove('swiper-slide-active'); // کلاس فرضی برای تب فعال
-    });
-    this.parentElement.classList.add('swiper-slide-active');
-  });
-});
+
 // تابع برای نمایش محتوای مرتبط
 function showContent2(id) {
   // مخفی کردن همه محتواها

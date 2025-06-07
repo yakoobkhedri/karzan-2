@@ -544,10 +544,10 @@ header.active{
   @apply py-5 opacity-60 border-b border-[#00000020] leading-6;
 }
 .editor-section tbody td:nth-child(1){
-  @apply w-1/3
+  /* @apply w-1/3 */
 }
 .editor-section tbody td:nth-child(2){
-  @apply w-2/3
+  /* @apply w-2/3 */
 }
 .editor-section tbody tr:last-child td{
   @apply !border-b-0;

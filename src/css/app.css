@@ -510,6 +510,11 @@ header.active{
   margin-left: auto;
   margin-right: auto;
 }
+.editor-section h2{
+ font-family: IranSansFaNum-Black !important;
+ font-size: 28px !important;
+ word-spacing: 1px !important;
+}
 .editor-section table{
   @apply overflow-hidden w-full ltr:text-left text-right;
 }

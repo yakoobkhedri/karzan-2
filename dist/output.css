@@ -4332,6 +4332,12 @@ header.active{
   margin-right: auto;
 }
 
+.editor-section h2{
+  font-family: IranSansFaNum-Black !important;
+  font-size: 28px !important;
+  word-spacing: 1px !important;
+}
+
 .editor-section table {
   width: 100%;
   overflow: hidden;

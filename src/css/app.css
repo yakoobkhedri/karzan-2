@@ -510,10 +510,22 @@ header.active{
   margin-left: auto;
   margin-right: auto;
 }
-.editor-section h2{
- font-family: IranSansFaNum-Black !important;
+.editor-section h1{
  font-size: 28px !important;
+}
+.editor-section h1,.editor-section h2,.editor-section h3{
+ font-family: IranSansFaNum-Black !important;
  word-spacing: 1px !important;
+}
+.editor-section p{
+  font-family: IranSansFaNum-Regular !important;
+  line-height: 35px !important;
+}
+.editor-section span,.editor-section strong{
+  font-family: IranSansFaNum-Regular !important;
+}
+.editor-section blockquote{
+  @apply bg-[#E8EDF3] rounded-[15px] py-2.5 px-5 text-sm mt-[14px] inline-block;
 }
 .editor-section table{
   @apply overflow-hidden w-full ltr:text-left text-right;

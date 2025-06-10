@@ -1058,6 +1058,9 @@ font-size: 14px
 .swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left {
   background-image: none;
 }
+.fade-transition {
+  transition: opacity 0.5s ease-in-out;
+}
 /* demo portfollio effect */
 .demo-bg:hover{
   background-position: center bottom;

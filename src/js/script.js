@@ -425,8 +425,17 @@ var roadmap = new Swiper(".roadmap", {
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
+let acordionBtn2 = Array.from(document.getElementsByClassName('acordionBtn2'));
 
 acordionBtn.forEach((item) => {
+  item.addEventListener('click', function () {
+    item.parentElement.classList.toggle('active');
+    item.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+});
+
+acordionBtn2.forEach((item) => {
   item.addEventListener('click', function () {
     item.parentElement.classList.toggle('active');
     item.classList.toggle('active');

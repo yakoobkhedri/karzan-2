@@ -650,6 +650,42 @@ header.active{
 .ltrReverse4{
   @apply ltr:[transform:rotateX(180deg)];
 }
+.line, .line2, .line3 {
+  position: relative;
+}
+/* .line::before {
+  content: url('../src/img/Line 6 (4).PNG');
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: -35px;
+  @apply rtl:right-2 ltr:left-2;
+} */
+.accordionContent.active, .accordionContent2.active {
+  max-height: 2000px;
+}
+.dropdownContent, .dropdownContent2, .accordionContent, .accordionContent2 {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.line2::before {
+  content: url('../src/img/Line 7.PNG');
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0px;
+   @apply rtl:right-[11px] ltr:left-[11px];
+}
+.line3::before {
+  content: url('../src/img/Line 8.PNG');
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 10px;
+   @apply rtl:right-4 ltr:left-4;
+}
 /* tab slider */
 .tabs,.tabs2 {
   display: flex;

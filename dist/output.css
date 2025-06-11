@@ -971,6 +971,10 @@ video {
   top: auto;
 }
 
+.\!top-0 {
+  top: 0px !important;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1029,6 +1033,10 @@ video {
 
 .col-span-12 {
   grid-column: span 12 / span 12;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
 }
 
 .m-4 {
@@ -5276,10 +5284,6 @@ header.active{
   background-image: none;
 }
 
-.fade-transition {
-  transition: opacity 0.5s ease-in-out;
-}
-
 /* demo portfollio effect */
 
 .demo-bg:hover{
@@ -6934,6 +6938,10 @@ header.active{
     width: auto;
   }
 
+  .sm\:max-w-\[176px\] {
+    max-width: 176px;
+  }
+
   .sm\:max-w-\[228px\] {
     max-width: 228px;
   }
@@ -6944,10 +6952,6 @@ header.active{
 
   .sm\:max-w-\[517px\] {
     max-width: 517px;
-  }
-
-  .sm\:max-w-\[176px\] {
-    max-width: 176px;
   }
 
   .sm\:flex-shrink-0 {

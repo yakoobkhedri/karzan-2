@@ -279,6 +279,16 @@ var portfollio = new Swiper(".portfollio", {
     clickable: true,
   },
 });
+var portfolio2 = new Swiper(".portfolio2", {
+  slidesPerView: 1,
+   autoplay: false,
+  loop: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
+  },
+});
 var costumer = new Swiper(".costumer", {
   slidesPerView: 1,
   loop: true,
@@ -421,58 +431,6 @@ var roadmap = new Swiper(".roadmap", {
 },
   spaceBetween: 5,
   direction: "vertical",
-});
-// portfolio slider
-document.addEventListener('DOMContentLoaded', function() {
-  // انتخاب تمام دکمه‌های prev و next (هم نسخه دسکتاپ و هم موبایل)
-  const prevButtons = document.querySelectorAll('.swiper-button-prev');
-  const nextButtons = document.querySelectorAll('.swiper-button-next');
-  let currentId = 1;
-  const totalItems = 2; // تعداد کل آیتم‌ها
-
-  // اضافه کردن کلاس‌های لازم برای انیمیشن
-  document.querySelectorAll('[data-id]').forEach(item => {
-    item.classList.add('fade-transition');
-  });
-
-  function updateContent(id) {
-    // مخفی کردن آیتم فعلی با افکت
-    document.querySelectorAll(`[data-id="${currentId}"]`).forEach(item => {
-      item.classList.remove('visible');
-      item.classList.add('hidden');
-    });
-    
-    // نمایش آیتم جدید با افکت
-    setTimeout(() => {
-      document.querySelectorAll(`[data-id="${id}"]`).forEach(item => {
-        item.classList.remove('hidden');
-        setTimeout(() => item.classList.add('visible'), 10);
-      });
-      currentId = id;
-    }, 100); // مطابق با مدت زمان transition
-  }
-
-  // اضافه کردن event listener برای تمام دکمه‌های prev
-  prevButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const newId = currentId > 1 ? currentId - 1 : totalItems;
-      updateContent(newId);
-    });
-  });
-
-  // اضافه کردن event listener برای تمام دکمه‌های next
-  nextButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const newId = currentId < totalItems ? currentId + 1 : 1;
-      updateContent(newId);
-    });
-  });
-
-  // مقداردهی اولیه
-  document.querySelectorAll(`[data-id="${currentId}"]`).forEach(item => {
-    item.classList.remove('hidden');
-    item.classList.add('visible');
-  });
 });
 // acordion
 

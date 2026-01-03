@@ -659,8 +659,8 @@ video {
   bottom: 6px !important;
 }
 
-.\!top-1 {
-  top: 0.25rem !important;
+.\!top-0 {
+  top: 0px !important;
 }
 
 .\!top-auto {
@@ -971,8 +971,20 @@ video {
   top: auto;
 }
 
-.\!top-0 {
-  top: 0px !important;
+.-top-\[67px\] {
+  top: -67px;
+}
+
+.-bottom-\[73px\] {
+  bottom: -73px;
+}
+
+.-bottom-\[93px\] {
+  bottom: -93px;
+}
+
+.-bottom-\[103px\] {
+  bottom: -103px;
 }
 
 .-z-0 {
@@ -1035,8 +1047,12 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.col-span-8 {
-  grid-column: span 8 / span 8;
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-7 {
+  grid-column: span 7 / span 7;
 }
 
 .m-4 {
@@ -1399,6 +1415,18 @@ video {
 
 .mt-\[92px\] {
   margin-top: 92px;
+}
+
+.mt-\[86px\] {
+  margin-top: 86px;
+}
+
+.mt-\[76px\] {
+  margin-top: 76px;
+}
+
+.mt-\[52px\] {
+  margin-top: 52px;
 }
 
 .line-clamp-2 {
@@ -2066,6 +2094,26 @@ video {
   width: 100%;
 }
 
+.w-\[178px\] {
+  width: 178px;
+}
+
+.w-\[418px\] {
+  width: 418px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[380px\] {
+  width: 380px;
+}
+
+.w-\[320px\] {
+  width: 320px;
+}
+
 .min-w-\[238px\] {
   min-width: 238px;
 }
@@ -2322,6 +2370,10 @@ video {
   gap: 51px;
 }
 
+.gap-\[52px\] {
+  gap: 52px;
+}
+
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -2329,10 +2381,6 @@ video {
 
 .gap-y-10 {
   row-gap: 2.5rem;
-}
-
-.gap-y-14 {
-  row-gap: 3.5rem;
 }
 
 .gap-y-3 {
@@ -2563,6 +2611,10 @@ video {
 
 .border-dashed {
   border-style: dashed;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-\[\#00000012\] {
@@ -3324,6 +3376,10 @@ video {
   padding-top: 84px;
 }
 
+.pb-\[75px\] {
+  padding-bottom: 75px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3421,6 +3477,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[23px\] {
+  font-size: 23px;
 }
 
 .font-black {
@@ -3555,6 +3615,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#110e2d50\] {
+  color: #110e2d50;
 }
 
 .underline {
@@ -5738,6 +5802,38 @@ header.active{
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:left-14) {
+  left: 3.5rem;
+}
+
+:is([dir="ltr"] .ltr\:right-14) {
+  right: 3.5rem;
+}
+
+:is([dir="ltr"] .ltr\:-right-12) {
+  right: -3rem;
+}
+
+:is([dir="ltr"] .ltr\:right-\[157px\]) {
+  right: 157px;
+}
+
+:is([dir="ltr"] .ltr\:right-\[100px\]) {
+  right: 100px;
+}
+
+:is([dir="ltr"] .ltr\:-right-16) {
+  right: -4rem;
+}
+
+:is([dir="ltr"] .ltr\:-right-28) {
+  right: -7rem;
+}
+
+:is([dir="ltr"] .ltr\:-right-32) {
+  right: -8rem;
+}
+
 :is([dir="ltr"] .ltr\:-ml-2) {
   margin-left: -0.5rem;
 }
@@ -5828,6 +5924,10 @@ header.active{
 
 :is([dir="ltr"] .ltr\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="ltr"] .ltr\:mr-\[52px\]) {
+  margin-right: 52px;
 }
 
 :is([dir="ltr"] .ltr\:-rotate-90) {
@@ -6013,6 +6113,22 @@ header.active{
 
 :is([dir="ltr"] .ltr\:pr-\[54px\]) {
   padding-right: 54px;
+}
+
+:is([dir="ltr"] .ltr\:pl-\[60px\]) {
+  padding-left: 60px;
+}
+
+:is([dir="ltr"] .ltr\:pr-14) {
+  padding-right: 3.5rem;
+}
+
+:is([dir="ltr"] .ltr\:pr-\[144px\]) {
+  padding-right: 144px;
+}
+
+:is([dir="ltr"] .ltr\:pr-\[52px\]) {
+  padding-right: 52px;
 }
 
 :is([dir="ltr"] .ltr\:text-right) {
@@ -6287,6 +6403,38 @@ header.active{
   top: -3px;
 }
 
+:is([dir="rtl"] .rtl\:right-14) {
+  right: 3.5rem;
+}
+
+:is([dir="rtl"] .rtl\:left-14) {
+  left: 3.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-12) {
+  left: -3rem;
+}
+
+:is([dir="rtl"] .rtl\:left-\[157px\]) {
+  left: 157px;
+}
+
+:is([dir="rtl"] .rtl\:left-\[100px\]) {
+  left: 100px;
+}
+
+:is([dir="rtl"] .rtl\:-left-16) {
+  left: -4rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-28) {
+  left: -7rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-32) {
+  left: -8rem;
+}
+
 :is([dir="rtl"] .rtl\:-ml-20) {
   margin-left: -5rem;
 }
@@ -6361,6 +6509,10 @@ header.active{
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="rtl"] .rtl\:ml-\[52px\]) {
+  margin-left: 52px;
 }
 
 :is([dir="rtl"] .rtl\:rotate-0) {
@@ -6537,6 +6689,22 @@ header.active{
 
 :is([dir="rtl"] .rtl\:pr-\[25px\]) {
   padding-right: 25px;
+}
+
+:is([dir="rtl"] .rtl\:pr-\[60px\]) {
+  padding-right: 60px;
+}
+
+:is([dir="rtl"] .rtl\:pl-14) {
+  padding-left: 3.5rem;
+}
+
+:is([dir="rtl"] .rtl\:pl-\[144px\]) {
+  padding-left: 144px;
+}
+
+:is([dir="rtl"] .rtl\:pl-\[52px\]) {
+  padding-left: 52px;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {

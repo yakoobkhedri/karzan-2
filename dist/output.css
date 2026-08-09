@@ -1043,6 +1043,14 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -2956,6 +2964,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fce0da\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 224 218 / var(--tw-bg-opacity));
 }
 
 .fill-\[\#1b192a\] {
@@ -5932,6 +5945,10 @@ header.active{
   border-bottom-right-radius: 5px;
 }
 
+:is([dir="ltr"] .ltr\:rounded-br-none) {
+  border-bottom-right-radius: 0px;
+}
+
 :is([dir="ltr"] .ltr\:rounded-tl-\[15px\]) {
   border-top-left-radius: 15px;
 }
@@ -6344,6 +6361,10 @@ header.active{
   top: -3px;
 }
 
+:is([dir="rtl"] .rtl\:right-\[101px\]) {
+  right: 101px;
+}
+
 :is([dir="rtl"] .rtl\:-ml-20) {
   margin-left: -5rem;
 }
@@ -6470,6 +6491,10 @@ header.active{
 
 :is([dir="rtl"] .rtl\:rounded-bl-\[5px\]) {
   border-bottom-left-radius: 5px;
+}
+
+:is([dir="rtl"] .rtl\:rounded-bl-none) {
+  border-bottom-left-radius: 0px;
 }
 
 :is([dir="rtl"] .rtl\:rounded-br-\[5px\]) {
@@ -8077,6 +8102,14 @@ header.active{
     border-radius: 200px;
   }
 
+  .md\:rounded-\[30px\] {
+    border-radius: 30px;
+  }
+
+  .md\:rounded-\[20px\] {
+    border-radius: 20px;
+  }
+
   .md\:rounded-t-none {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -8185,6 +8218,18 @@ header.active{
     left: auto;
   }
 
+  :is([dir="ltr"] .ltr\:md\:-left-\[160px\]) {
+    left: -160px;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:right-\[101px\]) {
+    right: 101px;
+  }
+
+  :is([dir="ltr"] .ltr\:md\:right-\[121px\]) {
+    right: 121px;
+  }
+
   :is([dir="ltr"] .ltr\:md\:-ml-6) {
     margin-left: -1.5rem;
   }
@@ -8255,6 +8300,22 @@ header.active{
 
   :is([dir="rtl"] .rtl\:md\:right-auto) {
     right: auto;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:-right-\[160px\]) {
+    right: -160px;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:right-\[101px\]) {
+    right: 101px;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:left-\[101px\]) {
+    left: 101px;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:left-\[121px\]) {
+    left: 121px;
   }
 
   :is([dir="rtl"] .rtl\:md\:-mr-6) {
@@ -9027,16 +9088,8 @@ header.active{
     margin-top: auto;
   }
 
-  .xl\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .xl\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .xl\:mt-7 {
-    margin-top: 1.75rem;
   }
 
   .xl\:block {
